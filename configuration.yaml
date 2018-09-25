@@ -1,0 +1,182 @@
+
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: 37.7471
+  longitude: -121.118
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 24
+  # metric for Metric, imperial for Imperial
+  unit_system: imperial
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: America/Los_Angeles
+  # Customization file
+  customize: !include customize.yaml
+
+# Show links to resources in log and frontend
+#introduction:
+
+# Enables the frontend
+frontend:
+
+# Enables configuration UI
+config:
+
+http:
+  # Secrets are defined in the file secrets.yaml
+  # api_password: !secret http_password
+  # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+  # base_url: example.duckdns.org:8123
+
+# Checks for available updates
+# Note: This component will send some information about your system to
+# the developers to assist with development of Home Assistant.
+# For more information, please see:
+# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
+updater:
+  # Optional, allows Home Assistant developers to focus on popular components.
+  # include_used_components: true
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time
+history:
+
+# View all events in a logbook
+logbook:
+
+# Enables a map showing the location of tracked devices
+map:
+
+# Track the sun
+sun:
+
+# Weather prediction
+sensor:
+  - platform: yr
+  - platform: onewire
+
+# Text to speech
+tts:
+  - platform: google
+
+cloud:
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+
+device_tracker:
+  - platform: unifi
+    host: 192.168.200.170
+    username: hassio
+    password: !secret unifi_password
+    verify_ssl: False
+    detection_time: 150
+    ssid_filter:
+      - 'listen-node.ea32b1af.NSA.GOV'
+    new_device_defaults:
+      track_new_devices: False
+      hide_if_away: False
+
+insteon:
+  host: 192.168.200.169
+  ip_port: 9761
+  username: admin
+  password: !secret insteon_password
+
+ring:
+  username: !secret ring_username
+  password: !secret ring_password
+
+climate:
+  - platform: honeywell
+    username: !secret honeywell_username
+    password: !secret honeywell_password
+    scan_interval: 300
+    region: us
+
+mqtt:
+
+light:
+  - platform: mqtt_json
+    name: "Portable LEDs"
+    state_topic: "deptg33k/LED"
+    command_topic: "deptg33k/LED/set"
+    effect: true
+    effect_list:
+
+      - bpm
+      - candy cane  
+      - confetti  
+      - cyclon rainbow  
+      - dots  
+      - fire  
+      - glitter  
+      - juggle  
+      - lightning
+      - noise  
+      - police all  
+      - police one  
+      - rainbow  
+      - rainbow with glitter  
+      - ripple  
+      - sinelon  
+      - solid  
+      - twinkle  
+    brightness: true
+    flash: true
+    rgb: true
+    optimistic: false
+    qos: 0
+
+  - platform: mqtt_json
+    name: "Big LEDs"
+    state_topic: "deptg33k/BigLED"
+    command_topic: "deptg33k/BigLED/set"
+    effect: true
+    effect_list:
+
+      - bpm
+      - candy cane  
+      - confetti  
+      - cyclon rainbow  
+      - dots  
+      - fire  
+      - glitter  
+      - juggle  
+      - lightning
+      - noise  
+      - police all  
+      - police one  
+      - rainbow  
+      - rainbow with glitter  
+      - ripple  
+      - sinelon  
+      - solid  
+      - twinkle  
+    brightness: true
+    flash: true
+    rgb: true
+    optimistic: false
+    qos: 0
+
+binary_sensor:
+  - platform: ping
+    host: 192.168.200.254
+    name: HomeRouter
+  - platform: ping
+    host: 8.8.8.8
+    name: GoogleDNS
+  - platform: ping
+    host: 1.1.1.1
+    name: CloudFlareDNS
+  - platform: rpi_gpio
+    ports:
+      23: Garage Man Door
+      24: Garage Door
