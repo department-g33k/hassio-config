@@ -1,0 +1,24 @@
+sensor.280215030ffaff_temperature:
+  friendly_name: HVAC Temperature
+sensor.280315041abeff_temperature:
+  friendly_name: Garage Temperature
+sensor.280315043b90ff_temperature:
+  friendly_name: Outdoor (Front Porch) Temperature
+sensor.280315050445ff_temperature:
+  friendly_name: Server Rack Temperature
+switch.30cd2c:
+  friendly_name: Side Yard Light
+light.3ab32f:
+  friendly_name: Office Light
+light.3ab32f_2:
+  friendly_name: Office overhead light
+light.2be2ca:
+  friendly_name: Kitchen Lights
+light.167ccf:
+  friendly_name: Hall Lights
+switch.167ccf_5:
+  friendly_name: Office Light Button
+switch.30cd2c_2:
+  friendly_name: Side Yard Light
+switch.167ccf_2:
+  friendly_name: Hallway Lights Button
