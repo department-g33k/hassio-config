@@ -17,6 +17,9 @@ homeassistant:
 # Show links to resources in log and  frontend
 #introduction:
 
+#add /home/homeassistant/.homeassistant/scripts
+script: !include_dir_merge_list scripts/
+
 # Enables the frontend
 frontend:
 
