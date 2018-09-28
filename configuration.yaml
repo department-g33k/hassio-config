@@ -13,6 +13,8 @@ homeassistant:
   time_zone: America/Los_Angeles
   # Customization file
   customize: !include customize.yaml
+  
+  script: !include_dir_merge_named scripts
 
 # Show links to resources in log and frontend
 #introduction:
