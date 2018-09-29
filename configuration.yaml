@@ -18,7 +18,7 @@ homeassistant:
 #introduction:
 
 #add /home/homeassistant/.homeassistant/script
-script: !include_dir_merge_list script/
+script: !include_dir_merge_list script
 
 # Enables the frontend
 frontend:
@@ -117,23 +117,23 @@ light:
     effect_list:
 
       - bpm
-      - candy cane  
-      - confetti  
-      - cyclon rainbow  
-      - dots  
-      - fire  
-      - glitter  
-      - juggle  
+      - candy cane
+      - confetti
+      - cyclon rainbow
+      - dots
+      - fire
+      - glitter
+      - juggle
       - lightning
-      - noise  
-      - police all  
-      - police one  
-      - rainbow  
-      - rainbow with glitter  
-      - ripple  
-      - sinelon  
-      - solid  
-      - twinkle  
+      - noise
+      - police all
+      - police one
+      - rainbow
+      - rainbow with glitter
+      - ripple
+      - sinelon
+      - solid
+      - twinkle
     brightness: true
     flash: true
     rgb: true
@@ -148,23 +148,23 @@ light:
     effect_list:
 
       - bpm
-      - candy cane  
-      - confetti  
-      - cyclon rainbow  
-      - dots  
-      - fire  
-      - glitter  
-      - juggle  
+      - candy cane
+      - confetti
+      - cyclon rainbow
+      - dots
+      - fire
+      - glitter
+      - juggle
       - lightning
-      - noise  
-      - police all  
-      - police one  
-      - rainbow  
-      - rainbow with glitter  
-      - ripple  
-      - sinelon  
-      - solid  
-      - twinkle  
+      - noise
+      - police all
+      - police one
+      - rainbow
+      - rainbow with glitter
+      - ripple
+      - sinelon
+      - solid
+      - twinkle
     brightness: true
     flash: true
     rgb: true
