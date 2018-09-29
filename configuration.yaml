@@ -18,7 +18,7 @@ homeassistant:
 #introduction:
 
 #add /home/homeassistant/.homeassistant/script
-script: !include_dir_merge_list script
+#script: !include_dir_merge_list script
 
 # Enables the frontend
 frontend:
@@ -75,6 +75,7 @@ wemo:
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
+script old: !include script
 
 device_tracker:
   - platform: unifi
