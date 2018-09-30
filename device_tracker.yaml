@@ -1,8 +1,7 @@
-device_tracker:
   - platform: unifi
     host: 192.168.200.170
     username: hassio
-    password: hassi0
+    password: !secret unifi_password
     verify_ssl: False
     detection_time: 150
     ssid_filter:
