@@ -26,6 +26,8 @@ frontend:
 # Enables configuration UI
 config:
 
+mqtt:
+
 http:
   # Secrets are defined in the file secrets.yaml
   # api_password: !secret http_password
@@ -95,8 +97,6 @@ climate:
     password: !secret honeywell_password
     scan_interval: 300
     region: us
-
-mqtt:
 
 light:
   - platform: mqtt_json
