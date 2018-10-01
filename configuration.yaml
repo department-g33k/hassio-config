@@ -11,6 +11,7 @@ homeassistant:
   unit_system: imperial
   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: America/Los_Angeles
+
   # Customization file
   customize: !include customize.yaml
 
@@ -26,8 +27,6 @@ frontend:
 # Enables configuration UI
 config:
 
-mqtt:
-
 http:
   # Secrets are defined in the file secrets.yaml
   # api_password: !secret http_password
@@ -35,13 +34,7 @@ http:
   # base_url: example.duckdns.org:8123
 
 # Checks for available updates
-# Note: This component will send some information about your system to
-# the developers to assist with development of Home Assistant.
-# For more information, please see:
-# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
 updater:
-  # Optional, allows Home Assistant developers to focus on popular components.
-  # include_used_components: true
 
 # Discover some devices automatically
 discovery:
@@ -71,15 +64,15 @@ tts:
   - platform: google
 
 cloud:
-
 wemo:
+mqtt:
 
 group: !include groups.yaml
 automation: !include automations.yaml
+device_tracker: !include device_tracker.yaml
+
 #script: !include scripts.yaml
 #script old: !include script
-
-device_tracker: !include device_tracker.yaml
 
 insteon:
   host: 192.168.200.169
