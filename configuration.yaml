@@ -66,7 +66,6 @@ tts:
 cloud:
 wemo:
 mqtt:
-  user: hassmqtt
   password: !secret mqtt_password
   
 
