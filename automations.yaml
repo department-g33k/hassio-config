@@ -33,6 +33,7 @@
   - condition: state
     entity_id: light.2be2ca
     state: 'off'
+  - condition: time
   action:
   - data:
       brightness: 128
