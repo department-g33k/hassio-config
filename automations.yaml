@@ -1,0 +1,142 @@
+- id: '1532815413356'
+  alias: A/C On - Indicator
+  trigger:
+  - entity_id: climate.thermostat
+    from: idle
+    platform: state
+    to: cool
+  condition: []
+  action:
+  - data:
+      brightness: 175
+      effect: solid
+      entity_id: light.portable_leds
+      rgb_color:
+      - 0
+      - 200
+      - 255
+    service: light.turn_on
+  - delay: '5'
+  - alias: ''
+    data:
+      entity_id: light.portable_leds
+      transition: 1
+    service: homeassistant.turn_off
+- id: '1532815450249'
+  alias: There isn't motion
+  trigger:
+  - entity_id: binary_sensor.wemo_motion
+    from: 'on'
+    platform: state
+    to: 'off'
+  condition: []
+  action:
+  - data:
+      entity_id: light.3ab32f
+      transition: 1
+    service: homeassistant.turn_off
+- id: '1532816012846'
+  alias: Kitchen Lights Motion
+  trigger:
+  - entity_id: binary_sensor.wemo_motion
+    from: 'off'
+    platform: state
+    to: 'on'
+  condition:
+  - condition: state
+    entity_id: light.2be2ca
+    state: 'off'
+  action:
+  - data:
+      brightness: 128
+      entity_id: light.2be2ca
+      transition: 3
+    service: light.turn_on
+  - delay: '45'
+  - alias: ''
+    data:
+      entity_id: light.2be2ca
+      transition: 3
+    service: light.turn_off
+- id: '1532818092153'
+  alias: New Automation
+  trigger:
+  - entity_id: light.3ab32f
+    from: 'off'
+    platform: state
+    to: 'on'
+  condition: []
+  action:
+  - service: light.turn_on
+- id: '1535862775948'
+  alias: Yellow Light Warning
+  trigger:
+  - at: '22:15'
+    platform: time
+  condition: []
+  action:
+  - data:
+      brightness: 255
+      effect: solid
+      entity_id: light.portable_leds
+      rgb_color:
+      - 255
+      - 255
+      - 0
+      transition: 1
+    service: light.turn_on
+- id: '1535863112483'
+  alias: Red Light Warning
+  trigger:
+  - at: '22:25'
+    platform: time
+  condition: []
+  action:
+  - data:
+      brightness: 255
+      effect: solid
+      entity_id: light.portable_leds
+      rgb_color:
+      - 255
+      - 0
+      - 0
+      transition: 3
+    service: light.turn_on
+  - delay: '600'
+  - data:
+      entity_id: light.portable_leds
+      transition: 3
+    service: light.turn_off
+- id: '1537337187026'
+  alias: Office Light Match Button
+  trigger:
+  - entity_id: switch.167ccf_5
+    from: 'Off'
+    platform: state
+    to: 'On'
+  condition: []
+  action:
+  - data:
+      brightness: 255
+      entity_id: light.3a.b3.2f
+      transition: 0
+    service: light.turn_on
+- id: '1538622903667'
+  alias: insteon to LED test
+  trigger:
+  - entity_id: switch.167ccf_6
+    from: 'off'
+    platform: state
+    to: 'on'
+  condition: []
+  action:
+  - data:
+      brightness: 255
+      effect: solid
+      entity_id: light.portable_leds
+      rgb_color:
+      - 255
+      - 0
+      - 255
+      transition: 3
+    service: light.turn_on
