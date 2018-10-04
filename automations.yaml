@@ -34,6 +34,8 @@
     entity_id: light.2be2ca
     state: 'off'
   - condition: time
+        after: '23:00:00'
+        before: '05:00:00'
   action:
   - data:
       brightness: 128

@@ -176,5 +176,4 @@ binary_sensor:
 switch:
   - platform: rpi_gpio
     ports:
-      18: GPIO18
-      12: GPIO12
+      18: Sprinkler Rain Mode

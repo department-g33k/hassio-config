@@ -1,2 +1,13 @@
 - platform: yr
 - platform: onewire
+- platform: openweathermap
+  api_key: 612d4b28cc2c7d7b40030569b3adf10e
+  monitored_conditions:
+      - weather
+      - temperature
+      - wind_speed
+      - wind_bearing
+      - humidity
+      - pressure
+      - clouds
+      - rain
