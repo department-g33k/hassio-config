@@ -20,7 +20,5 @@ light.16266e:
   friendly_name: Living Room Lights
 switch.22cdf9:
   friendly_name: Porch Lights
-switch.30cd2c:
-  friendly_name: Side Yard Light
-lihgt.1bc095:
+light.1bc095:
   friendly_name: Hall Light Remote
