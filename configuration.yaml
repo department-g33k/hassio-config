@@ -178,7 +178,7 @@ switch:
     ports:
       18: Sprinkler Rain Mode
 
-      shell_command:
+shell_command:
   get_latest_config: bash /home/homeassistant/.homeassistant/pullconfig.sh
 
 script:
