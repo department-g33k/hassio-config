@@ -11,11 +11,10 @@
       - pressure
       - clouds
       - rain
-  - platform: darksky
-    api_key: e2f39ae845f15070a7aa304dc9a1c943
-    monitored_conditions:
+- platform: darksky
+  api_key: e2f39ae845f15070a7aa304dc9a1c943
+  monitored_conditions:
       - summary
       - icon
       - nearest_storm_distance
-      -precip_accumulation
-      
+      - precip_accumulation
