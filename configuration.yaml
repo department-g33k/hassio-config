@@ -125,9 +125,9 @@ light:
     qos: 0
 
   - platform: mqtt_json
-    name: "Big LEDs"
-    state_topic: "deptg33k/BigLED"
-    command_topic: "deptg33k/BigLED/set"
+    name: "Monitor LEDs"
+    state_topic: "deptg33k/MonLED"
+    command_topic: "deptg33k/MonLED/set"
     effect: true
     effect_list:
 
