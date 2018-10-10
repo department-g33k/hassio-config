@@ -24,3 +24,4 @@ light.1bc095:
   friendly_name: Hall Light Remote
 light.3ab1e7:
   friendly_name: Desk Lamp
+  icon: mdi:desk-lamp
