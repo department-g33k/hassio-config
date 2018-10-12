@@ -97,7 +97,7 @@
     condition: []
     action:
     - service: input_boolean:turn_off
-    - data: {entity_id:light.3ab1e7}
+    - data: {entity_id: light.3ab1e7}
       service: light.turn_off
-    - data: {entity_id:light.monitor_led}
+    - data: {entity_ id:light.monitor_leds}
       service: light.turn_off
