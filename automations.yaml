@@ -75,7 +75,7 @@
   - data:
       brightness: 255
       effect: solid
-      entity_id: light.portable_leds
+      entity_id: light.monitor_leds
       rgb_color:
       - 255
       - 0
@@ -84,6 +84,20 @@
     service: light.turn_on
   - delay: '600'
   - data:
-      entity_id: light.portable_leds
+      entity_id: light.monitor_leds
       transition: 3
     service: light.turn_off
+- id: '1539323477333'
+  alias: Lights Out
+  trigger:
+    - entity_id: input_boolean:lights_out
+      from: 'off'
+      platform: state
+      to: 'on'
+    condition: []
+    action:
+    - service: input_boolean:turn_off
+    - data: {entity_id:light.3ab1e7}
+      service: light.turn_off
+    - data: {entity_id:light.monitor_led}
+      service: light.turn_off
