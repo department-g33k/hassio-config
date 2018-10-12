@@ -195,6 +195,7 @@ group:
     entities:
       - light.3ab1e7
       - light.monitor_leds
+      - input_boolean: lights_out
 
 input_boolean:
   lights_out:
