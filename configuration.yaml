@@ -186,3 +186,12 @@ script:
     sequence:
       - service: shell_command.get_latest_config
       - service: homeassistant.restart
+
+group:
+  office_remote:
+    icon: mdi:cube-unfolded
+    view: yes
+    name: office_remote
+    entities:
+      - light.3ab1e7
+      - light.monitor_leds
