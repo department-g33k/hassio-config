@@ -21,3 +21,9 @@
       - precip_type
       - temperature
       - wind_speed
+
+- platform: mqtt
+  state_topic: "temp/wireless_1"
+  name: "Wireless Thermometer"
+  unit_of_measurement: "°F"
+  icon: mdi:temperature-fahrenheit
