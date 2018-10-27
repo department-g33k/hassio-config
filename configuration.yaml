@@ -98,6 +98,7 @@ light:
     state_topic: "deptg33k/LED"
     command_topic: "deptg33k/LED/set"
     effect: true
+    transition: 100
     effect_list:
 
       - bpm
@@ -107,9 +108,7 @@ light:
       - dots
       - fire
       - glitter
-      - juggle
       - lightning
-      - noise
       - police all
       - police one
       - rainbow
@@ -129,16 +128,14 @@ light:
     state_topic: "deptg33k/MonLED"
     command_topic: "deptg33k/MonLED/set"
     effect: true
+    transition: 100
     effect_list:
 
-      - bpm
       - candy cane
       - confetti
       - cyclon rainbow
       - dots
       - fire
-      - glitter
-      - juggle
       - lightning
       - noise
       - police all
@@ -146,7 +143,6 @@ light:
       - rainbow
       - rainbow with glitter
       - ripple
-      - sinelon
       - solid
       - twinkle
     brightness: true
