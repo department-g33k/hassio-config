@@ -5,7 +5,6 @@
 - platform: openweathermap
   api_key: 612d4b28cc2c7d7b40030569b3adf10e
   monitored_conditions:
-      - weather
       - temperature
       - wind_speed
       - humidity
@@ -14,8 +13,6 @@
 - platform: darksky
   api_key: e2f39ae845f15070a7aa304dc9a1c943
   monitored_conditions:
-      - summary
-      - icon
       - nearest_storm_distance
       - precip_accumulation
       - precip_type
