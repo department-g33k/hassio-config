@@ -1,0 +1,5 @@
+- appdaemon:
+- hadashboard:
+    dash_dir: /
+    dash_url: http://192.168.200.162:5050
+    dash_password: !secret dash_password
