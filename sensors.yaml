@@ -26,7 +26,7 @@
   unit_of_measurement: "°F"
   qos: 0
 
-  - platform: min_max
+- platform: min_max
     type: mean
     entity_ids:
       - sensor.dark_sky_temperature
