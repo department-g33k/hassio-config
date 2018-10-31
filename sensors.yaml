@@ -25,3 +25,13 @@
   icon: mdi:temperature-fahrenheit
   unit_of_measurement: "°F"
   qos: 0
+
+sensor:
+  - platform: min_max
+    type: mean
+    entity_ids:
+      - sensor.dark_sky_temperature
+      - sensor.owm_temperature
+      - sensor.280315043b90ff_temperature
+    icon: mdi:thermometer
+    name: Outdoor Temperature Aggregate
