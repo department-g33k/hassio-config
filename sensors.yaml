@@ -26,7 +26,6 @@
   unit_of_measurement: "°F"
   qos: 0
 
-sensor:
   - platform: min_max
     type: mean
     entity_ids:
