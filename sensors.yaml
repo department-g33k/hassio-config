@@ -26,11 +26,11 @@
   unit_of_measurement: "°F"
   qos: 0
 
-- platform: template
-    sensors:
-    outdoor_avg_temp:
-      friendly_name: "Outdoor Temp Avg"
-      unit_of_measurement: "°F"
-      icon: mdi:Thermometer
-      value_template: >-
-        {{ ((float(states.sensor.dark_sky_temperature.state) + float(states.sensor.sensor.280315043b90ff_temperature.state) + float(states.sensor.sensor.owm_temperature.state)) / 3) | round(2) }}
+#- platform: template
+#    sensors:
+#    outdoor_avg_temp:
+#      friendly_name: "Outdoor Temp Avg"
+#      unit_of_measurement: "°F"
+#      icon: mdi:Thermometer
+#      value_template: >-
+#        {{ ((float(states.sensor.dark_sky_temperature.state) + float(states.sensor.sensor.280315043b90ff_temperature.state) + float(states.sensor.sensor.owm_temperature.state)) / 3) | round(2) }}
