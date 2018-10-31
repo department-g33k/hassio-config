@@ -13,11 +13,11 @@ excluded_entities:
   - weblink.router
 views:
     # View tab title.
-  - title: Example
+  - title: g33k_home
     # Unique id for direct access /lovelace/${id}. If you don't specify one, it is added automatically.
     id: example
     # Optional background (overwrites the global background).
-    background: radial-gradient(crimson, skyblue)
+    #background: radial-gradient(crimson, skyblue)
     # Each view can have a different theme applied. Theme should be defined in the frontend.
     theme: dark-mode
     # The cards to show on this view.
@@ -33,11 +33,16 @@ views:
         card:
           type: glance
           title: People that are home
+      - id: lights
+        type: entity-filter
+        entities:
+          - light.16266e
+          - light.2be2ca
 
         # The picture entity card will represent an entity with a picture
-      - type: picture-entity
-        image: https://www.home-assistant.io/images/default-social.png
-        entity: light.bed_light
+    #  - type: picture-entity
+    #    image: https://www.home-assistant.io/images/default-social.png
+    #    entity: light.bed_light
 
     # Specify a tab icon if you want the view tab to be an icon.
   - icon: mdi:home-assistant
