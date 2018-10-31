@@ -29,23 +29,26 @@ views:
           - device_tracker.samsungsmg950u
           - device_tracker.departmentg33k
         state_filter:
-          - 'home'
+          - home
         card:
           type: glance
           title: People that are home
 
         # The picture entity card will represent an entity with a picture
-      - type: picture-entity
+      - id: 0db34310eefa49bd90e0cdee3c0a00c2  # Automatically created id
+        type: picture-entity
         image: https://www.home-assistant.io/images/default-social.png
         entity: light.bed_light
 
     # Specify a tab icon if you want the view tab to be an icon.
-  - icon: mdi:home-assistant
+  - id: 1  # Automatically created id
+    icon: mdi:home-assistant
     # Title of the view. Will be used as the tooltip for tab icon
     title: Second view
     cards:
         # Entities card will take a list of entities and show their state.
-      - type: entities
+      - id: a91b2eb78be94be29fe9ed8b723761f6  # Automatically created id
+        type: entities
         # Title of the entities card
         title: Example
         # The entities here will be shown in the same order as specified.
@@ -58,7 +61,8 @@ views:
             name: LR Lights
 
         # The markdown card will render markdown text.
-      - type: markdown
+      - id: f376fa36b7b543849426aee1977d1b21  # Automatically created id
+        type: markdown
         title: Lovelace
         content: >
           Welcome to your **Lovelace UI**.
