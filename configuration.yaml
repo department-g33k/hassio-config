@@ -150,30 +150,30 @@ light:
     rgb: true
     optimistic: false
     qos: 0
-#
-# binary_sensor:
-#   - platform: ping
-#     host: 192.168.200.254
-#     name: HomeRouter
-#   - platform: ping
-#     host: 8.8.8.8
-#     name: GoogleDNS
-#   - platform: ping
-#     host: 1.1.1.1
-#     name: CloudFlareDNS
-#   - platform: ping
-#     host: 192.168.200.105
-#     name: FamilyRoomTV
-#   - platform: rpi_gpio
-#     ports:
-#       23: Garage Man Door
-#       24: Garage Door
-#
-# switch:
-#   - platform: rpi_gpio
-#     ports:
-#       18: Sprinkler Rain Mode
-#
+
+binary_sensor:
+  - platform: ping
+    host: 192.168.200.254
+    name: HomeRouter
+  - platform: ping
+    host: 8.8.8.8
+    name: GoogleDNS
+  - platform: ping
+    host: 1.1.1.1
+    name: CloudFlareDNS
+  - platform: ping
+    host: 192.168.200.105
+    name: FamilyRoomTV
+  - platform: rpi_gpio
+    ports:
+      23: Garage Man Door
+      24: Garage Door
+
+switch:
+  - platform: rpi_gpio
+    ports:
+      18: Sprinkler Rain Mode
+
 # shell_command:
 #   get_latest_config: bash /home/homeassistant/.homeassistant/pullconfig.sh
 #
