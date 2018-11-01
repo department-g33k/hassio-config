@@ -63,17 +63,17 @@ tts:
   - platform: google
 
 cloud:
+
 wemo:
+
 mqtt:
   password: !secret mqtt_password
 
-
 group: !include groups.yaml
-#automation: !include automations.yaml
-device_tracker: !include device_tracker.yaml
 
-#script: !include scripts.yaml
-#script old: !include script
+automation: !include automations.yaml
+
+device_tracker: !include device_tracker.yaml
 
 insteon:
   host: 192.168.200.169
