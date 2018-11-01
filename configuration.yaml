@@ -92,106 +92,106 @@ climate:
     scan_interval: 300
     region: us
 
-light:
-  - platform: mqtt_json
-    name: "Portable LEDs"
-    state_topic: "deptg33k/LED"
-    command_topic: "deptg33k/LED/set"
-    effect: true
-    transition: 100
-    effect_list:
-
-      - bpm
-      - candy cane
-      - confetti
-      - cyclon rainbow
-      - dots
-      - fire
-      - glitter
-      - lightning
-      - police all
-      - police one
-      - rainbow
-      - rainbow with glitter
-      - ripple
-      - sinelon
-      - solid
-      - twinkle
-    brightness: true
-    flash: true
-    rgb: true
-    optimistic: false
-    qos: 0
-
-  - platform: mqtt_json
-    name: "Monitor LEDs"
-    state_topic: "deptg33k/MonLED"
-    command_topic: "deptg33k/MonLED/set"
-    effect: true
-    transition: 100
-    effect_list:
-
-      - candy cane
-      - confetti
-      - cyclon rainbow
-      - dots
-      - fire
-      - lightning
-      - noise
-      - police all
-      - police one
-      - rainbow
-      - rainbow with glitter
-      - ripple
-      - solid
-      - twinkle
-    brightness: true
-    flash: true
-    rgb: true
-    optimistic: false
-    qos: 0
-
-binary_sensor:
-  - platform: ping
-    host: 192.168.200.254
-    name: HomeRouter
-  - platform: ping
-    host: 8.8.8.8
-    name: GoogleDNS
-  - platform: ping
-    host: 1.1.1.1
-    name: CloudFlareDNS
-  - platform: ping
-    host: 192.168.200.105
-    name: FamilyRoomTV
-  - platform: rpi_gpio
-    ports:
-      23: Garage Man Door
-      24: Garage Door
-
-switch:
-  - platform: rpi_gpio
-    ports:
-      18: Sprinkler Rain Mode
-
-shell_command:
-  get_latest_config: bash /home/homeassistant/.homeassistant/pullconfig.sh
-
-script:
-  update_config:
-    sequence:
-      - service: shell_command.get_latest_config
-      - service: homeassistant.restart
-
-group:
-  office_remote:
-    icon: mdi:cube-unfolded
-    view: yes
-    name: office_remote
-    entities:
-      - light.3ab1e7
-      - light.monitor_leds
-      - input_boolean: lights_out
+# light:
+#   - platform: mqtt_json
+#     name: "Portable LEDs"
+#     state_topic: "deptg33k/LED"
+#     command_topic: "deptg33k/LED/set"
+#     effect: true
+#     transition: 100
+#     effect_list:
+#
+#       - bpm
+#       - candy cane
+#       - confetti
+#       - cyclon rainbow
+#       - dots
+#       - fire
+#       - glitter
+#       - lightning
+#       - police all
+#       - police one
+#       - rainbow
+#       - rainbow with glitter
+#       - ripple
+#       - sinelon
+#       - solid
+#       - twinkle
+#     brightness: true
+#     flash: true
+#     rgb: true
+#     optimistic: false
+#     qos: 0
+#
+#   - platform: mqtt_json
+#     name: "Monitor LEDs"
+#     state_topic: "deptg33k/MonLED"
+#     command_topic: "deptg33k/MonLED/set"
+#     effect: true
+#     transition: 100
+#     effect_list:
+#
+#       - candy cane
+#       - confetti
+#       - cyclon rainbow
+#       - dots
+#       - fire
+#       - lightning
+#       - noise
+#       - police all
+#       - police one
+#       - rainbow
+#       - rainbow with glitter
+#       - ripple
+#       - solid
+#       - twinkle
+#     brightness: true
+#     flash: true
+#     rgb: true
+#     optimistic: false
+#     qos: 0
+#
+# binary_sensor:
+#   - platform: ping
+#     host: 192.168.200.254
+#     name: HomeRouter
+#   - platform: ping
+#     host: 8.8.8.8
+#     name: GoogleDNS
+#   - platform: ping
+#     host: 1.1.1.1
+#     name: CloudFlareDNS
+#   - platform: ping
+#     host: 192.168.200.105
+#     name: FamilyRoomTV
+#   - platform: rpi_gpio
+#     ports:
+#       23: Garage Man Door
+#       24: Garage Door
+#
+# switch:
+#   - platform: rpi_gpio
+#     ports:
+#       18: Sprinkler Rain Mode
+#
+# shell_command:
+#   get_latest_config: bash /home/homeassistant/.homeassistant/pullconfig.sh
+#
+# script:
+#   update_config:
+#     sequence:
+#       - service: shell_command.get_latest_config
+#       - service: homeassistant.restart
+#
+# group:
+#   office_remote:
+#     icon: mdi:cube-unfolded
+#     view: yes
+#     name: office_remote
+#     entities:
+#       - light.3ab1e7
+#       - light.monitor_leds
+#       - input_boolean: lights_out
 
 input_boolean:
   lights_out:
