@@ -62,3 +62,32 @@ views:
         title: Lovelace
         content: >
           Welcome to your **Lovelace UI**.
+  - icon: mdi:deskphone
+    title: Wall Panel
+    id: wall_panel
+    cards:
+      - type: glance
+        title: Wall Panel
+        entities:
+          - entity: light.30cd2c
+            name: Side Yard Light
+          - entity: light.3ab32f
+            name: Office Light
+          - entity: light.3ab32f_2
+            name: Office overhead light
+          - entity: light.2be2ca
+            name: Kitchen Lights
+          - entity: light.167ccf
+            name: Hall Lights
+          - entity: light.16266e
+            name: Living Room Lights
+          - entity: switch.22cdf9
+            name: Porch Lights
+          - entity: light.1bc095
+            name: Hall Light Remote
+          - entity: light.3ab1e7
+            name: Desk Lamp
+            icon: mdi:desk-lamp
+          - entity: light.1bbfe2
+            name: Front Bathroom
+            icon: mdi:toilet
