@@ -62,7 +62,7 @@ sensor: !include sensors.yaml
 tts:
   - platform: google
 
-cloud:
+#cloud:
 
 wemo:
 
@@ -92,64 +92,64 @@ climate:
     scan_interval: 300
     region: us
 
-# light:
-#   - platform: mqtt_json
-#     name: "Portable LEDs"
-#     state_topic: "deptg33k/LED"
-#     command_topic: "deptg33k/LED/set"
-#     effect: true
-#     transition: 100
-#     effect_list:
-#
-#       - bpm
-#       - candy cane
-#       - confetti
-#       - cyclon rainbow
-#       - dots
-#       - fire
-#       - glitter
-#       - lightning
-#       - police all
-#       - police one
-#       - rainbow
-#       - rainbow with glitter
-#       - ripple
-#       - sinelon
-#       - solid
-#       - twinkle
-#     brightness: true
-#     flash: true
-#     rgb: true
-#     optimistic: false
-#     qos: 0
-#
-#   - platform: mqtt_json
-#     name: "Monitor LEDs"
-#     state_topic: "deptg33k/MonLED"
-#     command_topic: "deptg33k/MonLED/set"
-#     effect: true
-#     transition: 100
-#     effect_list:
-#
-#       - candy cane
-#       - confetti
-#       - cyclon rainbow
-#       - dots
-#       - fire
-#       - lightning
-#       - noise
-#       - police all
-#       - police one
-#       - rainbow
-#       - rainbow with glitter
-#       - ripple
-#       - solid
-#       - twinkle
-#     brightness: true
-#     flash: true
-#     rgb: true
-#     optimistic: false
-#     qos: 0
+light:
+  - platform: mqtt_json
+    name: "Portable LEDs"
+    state_topic: "deptg33k/LED"
+    command_topic: "deptg33k/LED/set"
+    effect: true
+    transition: 100
+    effect_list:
+
+      - bpm
+      - candy cane
+      - confetti
+      - cyclon rainbow
+      - dots
+      - fire
+      - glitter
+      - lightning
+      - police all
+      - police one
+      - rainbow
+      - rainbow with glitter
+      - ripple
+      - sinelon
+      - solid
+      - twinkle
+    brightness: true
+    flash: true
+    rgb: true
+    optimistic: false
+    qos: 0
+
+  - platform: mqtt_json
+    name: "Monitor LEDs"
+    state_topic: "deptg33k/MonLED"
+    command_topic: "deptg33k/MonLED/set"
+    effect: true
+    transition: 100
+    effect_list:
+
+      - candy cane
+      - confetti
+      - cyclon rainbow
+      - dots
+      - fire
+      - lightning
+      - noise
+      - police all
+      - police one
+      - rainbow
+      - rainbow with glitter
+      - ripple
+      - solid
+      - twinkle
+    brightness: true
+    flash: true
+    rgb: true
+    optimistic: false
+    qos: 0
 #
 # binary_sensor:
 #   - platform: ping
