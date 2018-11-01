@@ -25,9 +25,6 @@ light.1bc095:
 light.3ab1e7:
   friendly_name: Desk Lamp
   icon: mdi:desk-lamp
-<<<<<<< HEAD
 light.1bbfe2:
   friendly_name: Front Bathroom
   icon: mdi-toilet
-=======
->>>>>>> parent of ab7c764... changed light name
