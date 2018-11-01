@@ -69,10 +69,6 @@ views:
       - type: glance
         title: Wall Panel
         entities:
-          - entity: light.30cd2c
-            name: Side Yard Light
-          - entity: light.3ab32f
-            name: Office Light
           - entity: light.3ab32f_2
             name: Office overhead light
           - entity: light.2be2ca
@@ -81,8 +77,6 @@ views:
             name: Hall Lights
           - entity: light.16266e
             name: Living Room Lights
-          - entity: switch.22cdf9
-            name: Porch Lights
           - entity: light.1bc095
             name: Hall Light Remote
           - entity: light.3ab1e7

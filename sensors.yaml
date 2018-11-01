@@ -25,3 +25,12 @@
   icon: mdi:temperature-fahrenheit
   unit_of_measurement: "°F"
   qos: 0
+
+- platform: min_max
+  name: Local Temperature
+  round_digits: 1
+  type: mean
+  entity_ids:
+    - sensor.dark_sky_temperature
+    - sensor.owm_temperature
+    - sensor.280315043b90ff_temperature
