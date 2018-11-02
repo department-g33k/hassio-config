@@ -86,7 +86,6 @@ views:
           - entity: light.1bbfe2
             name: Front Bathroom
             icon: mdi:toilet
-          - entity:
   - icon: mdi:flask-outline
     title: Laboratory
     id: lab
