@@ -192,3 +192,4 @@ homekit:
   filter:
     include_domains:
       - light
+      - switch
