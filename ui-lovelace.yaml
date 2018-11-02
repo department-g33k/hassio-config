@@ -74,20 +74,27 @@ views:
             tap_action: toggle
           - entity: light.2be2ca
             name: Kitchen Lights
+            tap_action: toggle
           - entity: light.167ccf
             name: Hall Lights
+            tap_action: toggle
           - entity: light.16266e
             name: Living Room Lights
+            tap_action: toggle
           - entity: light.1bc095
             name: Hall Light Remote
+            tap_action: toggle
           - entity: light.3ab1e7
             name: Desk Lamp
             icon: mdi:desk-lamp
+            tap_action: toggle
           - entity: light.1bbfe2
             name: Front Bathroom
             icon: mdi:toilet
+            tap_action: toggle
   - icon: mdi:flask-outline
     title: Laboratory
     id: lab
     cards:
-      - type: buttons
+      - type: weather-forecast
+        entity: weather.demo_weather_north
