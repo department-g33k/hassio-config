@@ -187,9 +187,3 @@ input_boolean:
     name: Lights Out
     initial: off
     icon: mdi:lighthouse
-
-homekit:
-  filter:
-    include_domains:
-      - light
-      - switch
