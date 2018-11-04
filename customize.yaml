@@ -9,9 +9,7 @@ sensor.280315050445ff_temperature:
 switch.30cd2c:
   friendly_name: Side Yard Light
 light.3ab32f:
-  friendly_name: Office Light
-light.3ab32f_2:
-  friendly_name: Office overhead light
+  friendly_name: Nightstand Light
 light.2be2ca:
   friendly_name: Kitchen Lights
 light.167ccf:
