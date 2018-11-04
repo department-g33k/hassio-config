@@ -63,7 +63,7 @@ views:
             name: Bathroom
             icon: mdi:toilet
             tap_action: toggle
-          - entity: light.3ab32f
+          - entity: light.3ab32f_2
             name: Nightstand
             icon: mdi:lamp
             tap_action: toggle
@@ -74,6 +74,6 @@ views:
           - entity: sensor.local_temperature
             name: Outdoor
             icon: mdi:thermometer
-          - entity: binary_sensor.FamilyRoomTV
+          - entity: binary_sensor.familyroomtv
             name: TV On
             icon: mdi:television
