@@ -39,7 +39,7 @@ views:
   - icon: mdi:deskphone
     title: Wall Panel
     id: wall_panel
-    - type: horizontal-stack
+    type: vertical-stack
     cards:
       - type: glance
         title: Wall Panel
