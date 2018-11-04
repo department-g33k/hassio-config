@@ -63,12 +63,14 @@ views:
             name: Bathroom
             icon: mdi:toilet
             tap_action: toggle
+          - entity: light.3ab32f_2
+            name: Nightstand
+            icon: mdi:lamp
+            tap_action: toggle
           - entity: binary_sensor.garage_door
             name: Garage Door
+          - entity: binary_sensor.garage_man_door
+            name: Garage Man Door
           - entity: sensor.local_temperature
             name: Outdoor
             icon: mdi:thermometer
-      - type: entity-button
-        entity: light.3ab32f_2
-        name: Nightstand
-        icon: mdi:lamp
