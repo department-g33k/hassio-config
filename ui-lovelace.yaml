@@ -13,16 +13,8 @@ excluded_entities:
   - weblink.router
 views:
     # View tab title.
-  - title: Example
-    # Unique id for direct access /lovelace/${id}. If you don't specify one, it is added automatically.
-    id: example
-    # Optional background (overwrites the global background).
-    background: radial-gradient(crimson, skyblue)
-    # Each view can have a different theme applied. Theme should be defined in the frontend.
-    theme: dark-mode
-    # The cards to show on this view.
+  - title: Second view
     cards:
-        # The filter card will filter entities for their state
       - id: peoplehome # Every card needs an ID, if you don't specify one, it is added automatically.
         type: entity-filter
         entities:
@@ -32,19 +24,7 @@ views:
           - 'home'
         card:
           type: glance
-          title: People that are home
-
-        # The picture entity card will represent an entity with a picture
-      - type: picture-entity
-        image: https://www.home-assistant.io/images/default-social.png
-        entity: light.bed_light
-
-    # Specify a tab icon if you want the view tab to be an icon.
-  - icon: mdi:home-assistant
-    # Title of the view. Will be used as the tooltip for tab icon
-    title: Second view
-    cards:
-        # Entities card will take a list of entities and show their state.
+          title: People that are home  # Entities card will take a list of entities and show their state.
       - type: entities
         # Title of the entities card
         title: Example
@@ -58,10 +38,13 @@ views:
             name: LR Lights
 
         # The markdown card will render markdown text.
-      - type: markdown
-        title: Lovelace
-        content: >
-          Welcome to your **Lovelace UI**.
+#     - type: custom:useful-markdown-card
+#       padding: 0 15%
+#       fontSize: 200px
+       #title: Time
+#       content: >
+
+         [[ sensor.time.state ]]
   - icon: mdi:deskphone
     title: Wall Panel
     id: wall_panel
