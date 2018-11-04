@@ -58,10 +58,13 @@ views:
             name: LR Lights
 
         # The markdown card will render markdown text.
-      - type: markdown
-        title: Lovelace
-        content: >
-          Welcome to your **Lovelace UI**.
+     - type: custom:useful-markdown-card
+       padding: 0 15%
+       fontSize: 200px
+       #title: Time
+       content: >
+
+         [[ sensor.time.state ]]
   - icon: mdi:deskphone
     title: Wall Panel
     id: wall_panel
