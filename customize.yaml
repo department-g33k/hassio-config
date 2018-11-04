@@ -28,3 +28,7 @@ light.3ab1e7:
 light.1bbfe2:
   friendly_name: Front Bathroom
   icon: mdi:toilet
+binary_sensor.garage_door
+  device_class: garage_door
+binary_sensor.garage_man_door
+  device_class: door
