@@ -69,32 +69,28 @@ views:
       - type: glance
         title: Wall Panel
         entities:
-          - entity: light.3ab32f_2
-            name: Office overhead light
-            tap_action: toggle
           - entity: light.2be2ca
-            name: Kitchen Lights
+            name: Kitchen
             tap_action: toggle
           - entity: light.167ccf
-            name: Hall Lights
+            name: Hall
             tap_action: toggle
           - entity: light.16266e
-            name: Living Room Lights
-            tap_action: toggle
-          - entity: light.1bc095
-            name: Hall Light Remote
+            name: Family Room
             tap_action: toggle
           - entity: light.3ab1e7
             name: Desk Lamp
             icon: mdi:desk-lamp
             tap_action: toggle
           - entity: light.1bbfe2
-            name: Front Bathroom
+            name: Bathroom
             icon: mdi:toilet
             tap_action: toggle
-  - icon: mdi:flask-outline
-    title: Laboratory
-    id: lab
-    cards:
-      - type: weather-forecast
-        entity: weather.demo_weather_north
+          - entity: binary_sensor.garage_door
+            name: Garage Door
+          - entity: sensor.local_temperature
+            name: Outdoor
+      - type: entity-button
+        entity: light.3ab32f_2
+        name: Nightstand
+        icon: mdi:lamp
