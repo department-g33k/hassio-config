@@ -37,21 +37,6 @@ views:
             # Override the name to use
             name: LR Lights
 
-        # The markdown card will render markdown text.
-<<<<<<< HEAD
-#     - type: custom:useful-markdown-card
-#       padding: 0 15%
-#       fontSize: 200px
-       #title: Time
-#       content: >
-=======
-     - type: custom:useful-markdown-card
-       padding: 0 15%
-       fontSize: 200px
-       #title: Time
-       content: >
->>>>>>> 43223363c07c0bf77fd8cbfc4070ba216b0a90ca
-
          [[ sensor.time.state ]]
   - icon: mdi:deskphone
     title: Wall Panel
