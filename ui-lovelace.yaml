@@ -36,8 +36,6 @@ views:
           - entity: light.living_room
             # Override the name to use
             name: LR Lights
-
-         [[ sensor.time.state ]]
   - icon: mdi:deskphone
     title: Wall Panel
     id: wall_panel
