@@ -9,7 +9,6 @@ jobs:
       - run:
           name: Check config
           command: |
-            touch fake.pem
             mv secrets_redacted.yaml secrets.yaml
             python3.6 -m venv .
             source bin/activate
