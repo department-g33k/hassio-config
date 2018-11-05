@@ -38,7 +38,7 @@ views:
             name: LR Lights
   - icon: mdi:deskphone
     theme: night
-    title: 
+    title: Wall Panel
     id: wall_panel
     type: vertical-stack
     cards:
