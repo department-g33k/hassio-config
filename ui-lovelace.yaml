@@ -37,6 +37,7 @@ views:
             # Override the name to use
             name: LR Lights
   - icon: mdi:deskphone
+    theme: night
     title: Wall Panel
     id: wall_panel
     type: vertical-stack
