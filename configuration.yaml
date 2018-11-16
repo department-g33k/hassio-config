@@ -179,8 +179,9 @@ shell_command:
 
 script:
   update_config:
+    name: Update Configuration
     sequence:
-      - service: shell_command.get_latest_config
+      - service: shell_command.github_pull
       - service: homeassistant.restart
 
 input_boolean:
