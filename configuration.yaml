@@ -71,7 +71,7 @@ mqtt:
 
 #group: !include groups.yaml
 
-automation: !include automations.yaml
+automation: !include automation.yaml
 
 device_tracker: !include device_tracker.yaml
 

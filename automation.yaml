@@ -1,0 +1,36 @@
+- id: '1532816012846'
+  alias: Kitchen Lights Motion
+  trigger:
+  - entity_id: binary_sensor.wemo_motion
+    from: 'off'
+    platform: state
+    to: 'on'
+  condition:
+  - condition: state
+    entity_id: light.2be2ca
+    state: 'off'
+# - condition: time
+#        after: '23:00:00'
+#        before: '05:00:00'
+  action:
+  - data:
+      brightness: 128
+      entity_id: light.2be2ca
+      transition: 3
+    service: light.turn_on
+  - delay: '45'
+  - alias: ''
+    data:
+      entity_id: light.2be2ca
+      transition: 3
+    service: light.turn_off
+
+- alias: 'Update config if travis build is successfull'
+  trigger:
+    platform: state
+    entity_id: sensor.departmentg33khassioconfig_last_build_state
+    from: 'started'
+    to: 'passed'
+  action:
+    - service: shell_command.github_pull
+    - service: homeassistant.restart
