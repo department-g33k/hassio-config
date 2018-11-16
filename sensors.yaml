@@ -35,4 +35,6 @@
     - sensor.owm_temperature
     - sensor.280315043b90ff_temperature
 
-- platBREAKSOMETHING
+- platform: travisci
+  api_key: !secret travisapi_key
+  repository: hassio-config

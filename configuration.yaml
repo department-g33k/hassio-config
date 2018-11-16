@@ -168,11 +168,6 @@ binary_sensor:
     ports:
       23: Garage Man Door
       24: Garage Door
-  - platform: rest
-    name: Travis Status
-    resource: https://api.travis-ci.org/repos/department-g33k/hassio-config/cc.json?branch=master
-    scan_interval: 60
-    value_template: "{{ value_json.last_build_status|int(1) == 0 }}"
 
 switch:
   - platform: rpi_gpio
