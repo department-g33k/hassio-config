@@ -25,7 +25,8 @@
       transition: 3
     service: light.turn_off
 
-- alias: 'Update config if travis build is successfull'
+- id: '1545178911234'
+  alias: 'Update config if travis build is successfull'
   trigger:
     platform: state
     entity_id: sensor.departmentg33khassioconfig_last_build_state
