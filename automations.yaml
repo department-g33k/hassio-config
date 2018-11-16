@@ -101,3 +101,12 @@
       service: light.turn_off
     - data: {entity_ id:light.monitor_leds}
       service: light.turn_off
+- alias: 'Misc: Update config if travis build is successfull'
+  trigger:
+    platform: state
+    entity_id: sensor.departmentg33khassioconfig_last_build_state
+    from: 'started'
+    to: 'passed'
+  action:
+    - service: shell_command.github_pull
+    - service: homeassistant.restart
