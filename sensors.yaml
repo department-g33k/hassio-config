@@ -34,3 +34,9 @@
     - sensor.dark_sky_temperature
     - sensor.owm_temperature
     - sensor.280315043b90ff_temperature
+
+- platform: rest
+  name: Travis Status Label
+  resource: https://api.travis-ci.org/repos/department-g33k/hassio-config/cc.json?branch=master
+  scan_interval: 60
+  value_template: "{{ value_json.last_build_number }}"
