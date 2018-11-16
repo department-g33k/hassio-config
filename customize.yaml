@@ -24,7 +24,7 @@ light.3ab1e7:
   friendly_name: Desk Lamp
   icon: mdi:desk-lamp
 light.1bbfe2:
-  friendly_name: Front Bathroom
+  friendly_name: Kid's Bathroom
   icon: mdi:toilet
 binary_sensor.garage_door:
   device_class: garage_door
