@@ -42,7 +42,7 @@
     - last_build_started_at
     - last_build_state
     - state
-- platform:
+- platform: airvisual
   api_key: !secret airvisual_key
   monitored_conditions:
     - us
