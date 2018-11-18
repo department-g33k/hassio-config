@@ -34,12 +34,9 @@
     - sensor.280315043b90ff_temperature
 
 - platform: travisci
-name: Config Status
   api_key: !secret travisapi_key
   repository: hassio-config
   monitored_conditions:
-    - last_build_started_at
-    - last_build_state
     - state
 - platform: airvisual
   api_key: !secret airvisual_key
