@@ -42,3 +42,7 @@
   api_key: !secret airvisual_key
   monitored_conditions:
     - us
+
+- platform: time_date
+  display_options:
+    - 'time'
