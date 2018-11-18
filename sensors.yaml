@@ -13,11 +13,9 @@
 - platform: darksky
   api_key: e2f39ae845f15070a7aa304dc9a1c943
   monitored_conditions:
-      - nearest_storm_distance
       - precip_accumulation
       - precip_type
       - temperature
-      - wind_speed
 
 - platform: mqtt
   state_topic: "temp/wireless_1"
@@ -36,6 +34,7 @@
     - sensor.280315043b90ff_temperature
 
 - platform: travisci
+name: Config Status
   api_key: !secret travisapi_key
   repository: hassio-config
   monitored_conditions:

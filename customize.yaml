@@ -1,11 +1,11 @@
 sensor.280215030ffaff_temperature:
-  friendly_name: HVAC Temperature
+  friendly_name: HVAC Temp
 sensor.280315041abeff_temperature:
-  friendly_name: Garage Temperature
+  friendly_name: Garage Temp
 sensor.280315043b90ff_temperature:
-  friendly_name: Outdoor (Front Porch) Temperature
+  friendly_name: Porch Temp
 sensor.280315050445ff_temperature:
-  friendly_name: Server Rack Temperature
+  friendly_name: Rack Temp
 switch.30cd2c:
   friendly_name: Side Yard Light
 light.3ab32f:
