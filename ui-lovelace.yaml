@@ -38,7 +38,7 @@ views:
           - entity: light.living_room
             # Override the name to use
             name: LR Lights
-  - id: kit_wall
+  - id: kit_wall_kiosk
     icon: mdi:brain
     title: kitchen
     type: vertical-stack
@@ -72,6 +72,8 @@ views:
             name: Bathroom
             icon: mdi:toilet
             tap_action: toggle
+          - entity: sensor.time
+            name: Time
     background:
   - icon: mdi:deskphone
     background: black
