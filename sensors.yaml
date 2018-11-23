@@ -42,6 +42,9 @@
   api_key: !secret airvisual_key
   monitored_conditions:
     - us
+  city: Modesto
+  state: California
+  country: USA
 
 - platform: time_date
   display_options:
