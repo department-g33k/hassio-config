@@ -65,7 +65,11 @@ tts:
 #cloud:
 
 wemo:
-
+  static:
+    - 192.186.200.135
+    - 192.168.200.147
+    - 192.168.200.155
+    - 192.168.200.168
 mqtt:
   password: !secret mqtt_password
 
@@ -112,10 +116,10 @@ binary_sensor:
       23: Garage Man Door
       24: Garage Door
 
-switch:
-  - platform: rpi_gpio
-    ports:
-      18: Sprinkler Rain Mode
+switch: !include switch.yaml
+  # - platform: rpi_gpio
+  #   ports:
+  #     18: Sprinkler Rain Mode
 
 shell_command:
   github_pull: bash /home/homeassistant/.homeassistant/git pull
