@@ -32,5 +32,5 @@ binary_sensor.garage_man_door:
   device_class: door
 sensor.departmentg33khassioconfig_state:
   friendly_name: Config State
-script.update_config
+script.update_config:
   friendly_name: Update Configuration
