@@ -85,7 +85,7 @@
     service: switch.turn_on
 
 - id: '58888675309'
-  alias: Sunset - Christmas Lights On
+  alias: Christmas Lights on at Sunset
   trigger:
     platform: sun
     event: sunset
@@ -95,6 +95,7 @@
     entity_id: switch.outdoor_christmas_lights
 
 - id: '58888675310'
+  alias: Christmas Lights off at 22:30
   trigger:
     platform: time
     at: "22:30:00"
