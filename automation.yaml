@@ -59,3 +59,45 @@
   - data:
       entity_id: switch.outdoor_christmas_lights
     service: switch.turn_off
+
+- id: '1532018712848'
+  alias: Tree Lights Button Link On
+  trigger:
+  - entity_id: switch.22cdf9_4
+    from: 'off'
+    platform: state
+    to: 'on'
+  action:
+  - data:
+      entity_id: switch.christmas_lights_2
+    service: switch.turn_on
+
+- id: '1532018712849'
+  alias: Tree Lights Button Link Off
+  trigger:
+  - entity_id: switch.22cdf9_4
+    from: 'on'
+    platform: state
+    to: 'off'
+  action:
+  - data:
+      entity_id: switch.christmas_lights_2
+    service: switch.turn_on
+
+- id: '58888675309'
+  alias: Sunset - Christmas Lights On
+  trigger:
+    platform: sun
+    event: sunset
+    offset: "-00:45:00"
+  action:
+    service: switch.turn_on
+    entity_id: switch.outdoor_christmas_lights
+
+- id: '58888675310'
+  trigger:
+    platform: time
+    at: "22:30:00"
+  action:
+    service: switch.turn_off
+    entity_id: switch.outdoor_christmas_lights
