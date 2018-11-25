@@ -35,3 +35,27 @@
   action:
     - service: shell_command.github_pull
     - service: homeassistant.restart
+
+- id: '1532018612846'
+  alias: Outdoor Lights Button Link On
+  trigger:
+  - entity_id: switch.22cdf9_3
+    from: 'off'
+    platform: state
+    to: 'on'
+  action:
+  - data:
+      entity_id: switch.outdoor_christmas_lights
+    service: switch.turn_on
+
+- id: '1532018612847'
+  alias: Outdoor Lights Button Link Off
+  trigger:
+  - entity_id: switch.22cdf9_3
+    from: 'on'
+    platform: state
+    to: 'off'
+  action:
+  - data:
+      entity_id: switch.outdoor_christmas_lights
+    service: switch.turn_off
