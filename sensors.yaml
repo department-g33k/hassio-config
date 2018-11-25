@@ -49,26 +49,26 @@
 - platform: time_date
   display_options:
     - 'time'
-
-- platform: template
-  sensors:
-    switch.outdoor_christmas_lights_amps:
-      friendly_name_template: "{{ states.switch.outdoor_christmas_lights.name}} Current"
-      value_template: '{{ states.switch.outdoor_christmas_lights.attributes["current_a"] | float }}'
-      unit_of_measurement: 'A'
-    switch.outdoor_christmas_lights_watts:
-      friendly_name_template: "{{ states.switch.outdoor_christmas_lights.name}} Current Consumption"
-      value_template: '{{ states.switch.outdoor_christmas_lights.attributes["current_power_w"] | float }}'
-      unit_of_measurement: 'W'
-    switch.outdoor_christmas_lights_total_kwh:
-      friendly_name_template: "{{ states.switch.outdoor_christmas_lights.name}} Total Consumption"
-      value_template: '{{ states.switch.outdoor_christmas_lights.attributes["total_energy_kwh"] | float }}'
-      unit_of_measurement: 'kWh'
-    switch.outdoor_christmas_lights_volts:
-      friendly_name_template: "{{ states.switch.outdoor_christmas_lights.name}} Voltage"
-      value_template: '{{ states.switch.outdoor_christmas_lights.attributes["voltage"] | float }}'
-      unit_of_measurement: 'V'
-    switch.outdoor_christmas_lights_today_kwh:
-      friendly_name_template: "{{ states.switch.outdoor_christmas_lights.name}} Today's Consuption"
-      value_template: '{{ states.switch.outdoor_christmas_lights.attributes["today_energy_kwh"] | float }}'
-      unit_of_measurement: 'kWh'
+#
+# - platform: template
+#   sensors:
+#     switch.outdoor_christmas_lights_amps:
+#       friendly_name_template: "{{ states.switch.outdoor_christmas_lights.name}} Current"
+#       value_template: '{{ states.switch.outdoor_christmas_lights.attributes["current_a"] | float }}'
+#       unit_of_measurement: 'A'
+#     switch.outdoor_christmas_lights_watts:
+#       friendly_name_template: "{{ states.switch.outdoor_christmas_lights.name}} Current Consumption"
+#       value_template: '{{ states.switch.outdoor_christmas_lights.attributes["current_power_w"] | float }}'
+#       unit_of_measurement: 'W'
+#     switch.outdoor_christmas_lights_total_kwh:
+#       friendly_name_template: "{{ states.switch.outdoor_christmas_lights.name}} Total Consumption"
+#       value_template: '{{ states.switch.outdoor_christmas_lights.attributes["total_energy_kwh"] | float }}'
+#       unit_of_measurement: 'kWh'
+#     switch.outdoor_christmas_lights_volts:
+#       friendly_name_template: "{{ states.switch.outdoor_christmas_lights.name}} Voltage"
+#       value_template: '{{ states.switch.outdoor_christmas_lights.attributes["voltage"] | float }}'
+#       unit_of_measurement: 'V'
+#     switch.outdoor_christmas_lights_today_kwh:
+#       friendly_name_template: "{{ states.switch.outdoor_christmas_lights.name}} Today's Consuption"
+#       value_template: '{{ states.switch.outdoor_christmas_lights.attributes["today_energy_kwh"] | float }}'
+#       unit_of_measurement: 'kWh'
