@@ -128,7 +128,7 @@ views:
               - box-shadow: 3px 3px rgba(0,0,0,0.4)
 
   - id: ChristmasUI
-    icon: /local/img/santa_claus.png
+  #  icon: /local/img/santa_claus.png
     title: Christmas
     type: vertical-stack
     cards:
