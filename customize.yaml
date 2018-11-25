@@ -34,3 +34,11 @@ sensor.departmentg33khassioconfig_state:
   friendly_name: Config State
 script.update_config:
   friendly_name: Update Configuration
+switch.22cdf9_3:
+  friendly_name: Porch Light Button 3
+switch.22cdf9_4:
+  friendly_name: Porch Light Button 4
+switch.22cdf9_5:
+  friendly_name: Porch Light Button 5
+switch.22cdf9_6:
+  friendly_name: Porch Light Button 6
