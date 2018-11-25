@@ -137,7 +137,7 @@ views:
         entities:
           - entity: switch.outdoor_christmas_lights
             name: Christmas Tree Lights
-            icon: /local/img/christmas_tree.png
+            entity_picture: /local/img/christmas_tree.png
           - entity: switch.outdoor_christmas_lights_2
             name: Christmas Lights
-            icon: /local/img/christmas_lights.png
+            entity_picture: /local/img/christmas_lights.png
