@@ -65,7 +65,6 @@ tts:
 cloud:
   google_actions:
     filter:
-      include_entities:
       include_domains:
         - switch
         - light
@@ -79,7 +78,8 @@ cloud:
         room: living room
       switch.outdoor_christmas_lights:
         name: Outdoor Lights
-        alias: Christmas Lights
+        aliases:
+          - Christmas Lights
 
 wemo:
   static:
