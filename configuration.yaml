@@ -62,7 +62,24 @@ sensor: !include sensors.yaml
 tts:
   - platform: google
 
-#cloud:
+cloud:
+  google_actions:
+    filter:
+      include_entities:
+      include_domains:
+        - switch
+        - light
+        - cover
+        - climate
+      exclude_entities:
+        - switch.outside
+    entity_config:
+      switch.christmas_lights_2:
+        name: Christmas Tree Lights
+        room: living room
+      switch.outdoor_christmas_lights:
+        name: Outdoor Lights
+        alias: Christmas Lights
 
 wemo:
   static:
