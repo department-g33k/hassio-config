@@ -31,6 +31,11 @@
   unit_of_measurement: "cm"
   qos: 0
 
+- platform: mqtt
+  state_topic: "temp/kitchen"
+  name: "Kitchen Temperature"
+  unit_of_measurement: "°F"
+
 - platform: min_max
   name: Local Temperature
   round_digits: 1
