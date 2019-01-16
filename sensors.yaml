@@ -8,7 +8,6 @@
       - temperature
       - wind_speed
       - humidity
-      - rain
 
 - platform: darksky
   api_key: e2f39ae845f15070a7aa304dc9a1c943
