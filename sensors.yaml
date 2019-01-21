@@ -18,8 +18,8 @@
 
 - platform: mqtt
   state_topic: "temp/wireless_1"
-  name: "Wireless Thermometer"
-  icon: mdi:temperature-fahrenheit
+  name: "Kitchen Sink Temp"
+  icon: mdi:water-pump
   unit_of_measurement: "°F"
   qos: 0
 
