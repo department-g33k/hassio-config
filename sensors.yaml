@@ -27,8 +27,7 @@
   state_topic: "water/wetness"
   name: "Kitchen Water Sensor"
   icon: mdi:water
-  unit_of_measurement: "% wet"
-  value_template: '{{ ((value_json.ldr|float-1023)/1023*100)|round(0) }}'
+  unit_of_measurement: "how dry"
   qos: 0
 
 - platform: mqtt

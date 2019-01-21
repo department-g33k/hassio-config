@@ -15,6 +15,18 @@ light.2be2ca:
   friendly_name: Kitchen Lights
 light.167ccf:
   friendly_name: Hall Lights
+switch.167ccf_1:
+  friendly_name: Hall Lights
+switch.167ccf_2:
+  friendly_name: Hall Lights B
+switch.167ccf_3:
+  friendly_name: Hall Lights C
+switch.167ccf_4:
+  friendly_name: Hall Lights D
+switch.167ccf_5:
+  friendly_name: Hall Lights E
+switch.167ccf_6:
+  friendly_name: Hall Lights F
 light.16266e:
   friendly_name: Living Room Lights
 switch.22cdf9_2:
