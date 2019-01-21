@@ -24,6 +24,13 @@
   qos: 0
 
 - platform: mqtt
+  state_topic: "water/wetness"
+  name: "Kitchen Wetness"
+  icon: mdi:water
+  unit_of_measurement: "%"
+  qos: 0
+
+- platform: mqtt
   state_topic: "dist/salt_tank"
   name: "Softener Salt"
   icon: mdi:flask-outline
