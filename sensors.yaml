@@ -68,6 +68,11 @@
 - platform: time_date
   display_options:
     - 'time'
+
+- platform: mqtt
+  state_topic: "home-assistant/kitchen/temperature"
+  name: "Kitchen Temperature"
+  unit_of_measurement: "°F"
 #
 # - platform: template
 #   sensors:
