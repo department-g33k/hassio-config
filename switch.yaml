@@ -3,4 +3,5 @@
       18: Sprinkler Rain Mode
   - platform: tplink
     host: 192.168.200.200
-    name: TPLink Sensor Switch
+    name: Drying Fan
+    icon: mdi:fan
