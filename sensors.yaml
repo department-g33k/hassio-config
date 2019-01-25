@@ -17,14 +17,14 @@
       - temperature
 
 - platform: mqtt
-  state_topic: "temp/wireless_1"
+  state_topic: "multi/probe_temp"
   name: "Kitchen Sink Temp"
   icon: mdi:water-pump
   unit_of_measurement: "°F"
   qos: 0
 
 - platform: mqtt
-  state_topic: "water/wetness"
+  state_topic: "multi/wetness"
   name: "Kitchen Water Sensor"
   icon: mdi:water
   unit_of_measurement: "how dry"
@@ -35,6 +35,20 @@
   name: "Softener Salt"
   icon: mdi:flask-outline
   unit_of_measurement: "cm"
+  qos: 0
+
+- platform: mqtt
+  state_topic: "multi/humidity"
+  name: "Cabinet Humidity"
+  icon: mdi:water-percent
+  unit_of_measurement: "%"
+  qos: 0
+
+- platform: mqtt
+  state_topic: "multi/ambient_temp"
+  name: "Cabinet Ambient Temperature"
+  icon: mdi:oil-temperature
+  unit_of_measurement: "°F"
   qos: 0
 
 - platform: min_max
