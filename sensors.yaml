@@ -31,6 +31,27 @@
   qos: 0
 
 - platform: mqtt
+  state_topic: "lukesroom/lightlevel"
+  name: "Luke's Room Light Level"
+  icon: mdi:theme-light-dark
+  unit_of_measurement: "Lux"
+  qos: 0
+
+- platform: mqtt
+  state_topic: "lukesroom/ambient_temp"
+  name: "Luke's Room Temperature"
+  icon: mdi:temperature-fahrenheit
+  unit_of_measurement: "°F"
+  qos: 0
+
+- platform: mqtt
+  state_topic: "lukesroom/humidity"
+  name: "Luke's Room Humidity"
+  icon: mdi:water-percent
+  unit_of_measurement: "%"
+  qos: 0
+
+- platform: mqtt
   state_topic: "dist/salt_tank"
   name: "Softener Salt"
   icon: mdi:flask-outline
@@ -47,6 +68,20 @@
 - platform: mqtt
   state_topic: "multi/ambient_temp"
   name: "Cabinet Ambient Temperature"
+  icon: mdi:oil-temperature
+  unit_of_measurement: "°F"
+  qos: 0
+
+- platform: mqtt
+  state_topic: "bathroom/humidity"
+  name: "Bathroom Humidity"
+  icon: mdi:water-percent
+  unit_of_measurement: "%"
+  qos: 0
+
+- platform: mqtt
+  state_topic: "bathroom/ambient_temp"
+  name: "Bathroom Ambient Temperature"
   icon: mdi:oil-temperature
   unit_of_measurement: "°F"
   qos: 0
