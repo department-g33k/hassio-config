@@ -4,7 +4,6 @@
   state_topic: "deptg33k/MonLED"
   command_topic: "deptg33k/MonLED/set"
   effect: true
-  transition: 500
   effect_list:
 
     - candy cane
