@@ -1,6 +1,7 @@
 - id: kit_wall_kiosk
   icon: mdi:brain
   title: kitchen
+  name: kitchen-or-whatever
   type: vertical-stack
   cards:
     - type: glance
