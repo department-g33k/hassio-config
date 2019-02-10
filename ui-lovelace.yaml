@@ -33,4 +33,21 @@ views:
         - entity: light.16266e
           name: Living Room Lights
           toggle: true
-          #type: custom:slider-entity-row
+        - entity: light.2be2ca
+          label: Kitchen Lights
+        - type: section
+          label: hallway
+        - entity: light.167ccf
+          label: Hallway Lights
+        - entity: light.1bbfe2
+          label: Kid's Bathroom lights
+        - type: section
+          label: Master Bedroom
+        - entity: light.3ab32f_2
+          label: Nightstand Light
+        - type: section
+          label: Office
+        - entity: light.3ab1e7
+          label: Desk Lamp
+        - entity: light.monitor_leds
+          label: Monitor Light
