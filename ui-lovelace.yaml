@@ -1,12 +1,10 @@
-title: My Awesome Home
+title: Home
 # Include external resources
 resources:
   - url: /local/my-custom-card.js
     type: js
   - url: /local/my-webfont.css
     type: css
-  - url: /local/kiosk.js
-    type: js
 
 # Optional background for all views. Check https://developer.mozilla.org/en-US/docs/Web/CSS/background for more examples.
 background: center / cover no-repeat url("/background.png") fixed
@@ -18,21 +16,6 @@ views:
     icon: mdi:lightbulb-on
     path: lights
     cards:
-      - type: vertical-stack
-        cards:
-          # - type: custom:compact-custom-header
-          #   voice: false
-          #   clock: "options"
-          #   clock_format: 24
-    #- type: horizontal-stack
-    #  cards:
-      #  - type: picture
-      #    image: /local/lovelace_ui/bed.jpg
-      #    tap_action:
-      #      action: none
-      #    hold_action:
-      #      action: call-service
-      #      service: script.goodnight
     - type: entities
       title: Lighting Control
       show_header_toggle: false
