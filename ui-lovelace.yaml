@@ -14,19 +14,16 @@ background: center / cover no-repeat url("/background.png") fixed
 excluded_entities:
   - weblink.router
 views:
-    # View tab title.
-  - title: Second view
-  #--------------------------------------------
-title: Lights
-icon: mdi:lightbulb-on
-path: lights
-cards:
-  - type: vertical-stack
+  - title: Lights
+    icon: mdi:lightbulb-on
+    path: lights
     cards:
-    # - type: custom:compact-custom-header
-    #   voice: false
-    #   clock: "options"
-    #   clock_format: 24
+      - type: vertical-stack
+        cards:
+          # - type: custom:compact-custom-header
+          #   voice: false
+          #   clock: "options"
+          #   clock_format: 24
     #- type: horizontal-stack
     #  cards:
       #  - type: picture
@@ -48,143 +45,9 @@ cards:
           toggle: true
         - entity: switch.30cd2c_2
           name: Sideyard Lights
-
         - type: section
           label: Front House
         - entity: light.16266e
           name: Living Room Lights
           toggle: true
           type: custom:slider-entity-row
-        - entity: light.outdoor_hanging_lights
-          name: Chain lights
-        - entity: light.outdoor_yard_light_net
-          name: Light net
-  #--------------------------------------------
-    cards:
-      - id: peoplehome # Every card needs an ID, if you don't specify one, it is added automatically.
-        type: entity-filter
-        entities:
-          - device_tracker.samsungsmg950u
-          - device_tracker.departmentg33k
-        state_filter:
-          - 'home'
-        card:
-          type: glance
-          title: People that are home  # Entities card will take a list of entities and show their state.
-      - type: entities
-        # Title of the entities card
-        title: Example
-        # The entities here will be shown in the same order as specified.
-        # Each entry is an entity ID or a map with extra options.
-        entities:
-          - light.kitchen
-          - switch.ac
-          - entity: light.living_room
-            # Override the name to use
-            name: LR Lights
-  #Kitchen test Start
-  - id: kit_wall_kiosk
-    icon: mdi:brain
-    title: kitchen
-    type: vertical-stack
-    cards:
-      - type: glance
-        title: Status
-        entities:
-          - entity: sensor.us_air_quality_index
-            name: Air Quality
-          - entity: binary_sensor.garage_door
-            name: Garage Door
-          - entity: sensor.local_temperature
-            name: Outdoor
-            icon: mdi:thermometer
-          - entity: light.2be2ca
-            name: Kitchen
-            tap_action: toggle
-          - entity: light.167ccf
-            name: Hall
-            tap_action: toggle
-            icon: mdi:ceiling-light
-          - entity: light.16266e
-            name: Family Room
-            tap_action: toggle
-            icon: mdi:ceiling-light
-          - entity: light.3ab1e7
-            name: Desk Lamp
-            icon: mdi:desk-lamp
-            tap_action: toggle
-          - entity: light.1bbfe2
-            name: Bathroom
-            icon: mdi:toilet
-            tap_action: toggle
-          - entity: sensor.time
-            name: Time
-            background:
-
-  #Kitchen test End
-  - icon: mdi:deskphone
-    background: black
-    title: Wall Panel
-    id: wall_panel_kiosk
-    type: vertical-stack
-    cards:
-      - type: glance
-        title: Wall Panel
-        entities:
-          - entity: light.2be2ca
-            name: Kitchen
-            tap_action: toggle
-          - entity: light.167ccf
-            name: Hall
-            tap_action: toggle
-            icon: mdi:ceiling-light
-          - entity: light.16266e
-            name: Family Room
-            tap_action: toggle
-            icon: mdi:ceiling-light
-          - entity: light.3ab1e7
-            name: Desk Lamp
-            icon: mdi:desk-lamp
-            tap_action: toggle
-          - entity: light.1bbfe2
-            name: Bathroom
-            icon: mdi:toilet
-            tap_action: toggle
-          - entity: light.3ab32f_2
-            name: Nightstand
-            icon: mdi:lamp
-            tap_action: toggle
-          - entity: binary_sensor.garage_door
-            name: Garage Door
-          - entity: binary_sensor.garage_man_door
-            name: Garage Man Door
-          - entity: sensor.local_temperature
-            name: Outdoor
-            icon: mdi:thermometer
-          - entity: binary_sensor.familyroomtv
-            name: TV On
-            icon: mdi:television
-            style:
-              - background-image: url("/local/lovelace/cardback.png")
-              - background-repeat: no-repeat
-              - background-color: rgba(50,50,50,0.3)
-              - background-size: 100% 160px
-              - border-radius: 20px
-              - border: solid 1px rgba(100,100,100,0.3)
-              - color: "#999999"
-              - box-shadow: 3px 3px rgba(0,0,0,0.4)
-
-  - id: ChristmasUI
-  #  icon: /local/img/santa_claus.png
-    title: Christmas
-    type: vertical-stack
-    cards:
-      - type: glance
-        title: Status
-        entities:
-          - entity: switch.outdoor_christmas_lights
-            name: Christmas Tree Lights
-            entity_picture: /local/img/christmas_tree.png
-          - entity: switch.christmas_lights_2
-            name: Christmas Lights
-            entity_picture: /local/img/christmas_lights.png
