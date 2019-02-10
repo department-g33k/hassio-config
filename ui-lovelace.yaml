@@ -39,7 +39,6 @@ views:
             # Override the name to use
             name: LR Lights
   - !include lovelace/kitchen_wall.yaml
-    background:
   - icon: mdi:deskphone
     background: black
     title: Wall Panel

@@ -34,3 +34,4 @@
           tap_action: toggle
         - entity: sensor.time
           name: Time
+          background:
