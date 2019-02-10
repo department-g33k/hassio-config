@@ -33,8 +33,11 @@
     from: 'started'
     to: 'passed'
   action:
-    - service: shell_command.github_pull
-    - service: homeassistant.restart
+    #- service: shell_command.github_pull
+    #- service: homeassistant.restart
+    - service: light.turn_on
+      data:
+        entity_id: light.monitor_leds
 
 #- id: '1532018612846'
 #  alias: Outdoor Lights Button Link On
