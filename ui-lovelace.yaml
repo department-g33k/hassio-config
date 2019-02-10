@@ -27,8 +27,8 @@ cards:
     #   voice: false
     #   clock: "options"
     #   clock_format: 24
-    - type: horizontal-stack
-      cards:
+    #- type: horizontal-stack
+    #  cards:
       #  - type: picture
       #    image: /local/lovelace_ui/bed.jpg
       #    tap_action:
@@ -59,7 +59,6 @@ cards:
           name: Chain lights
         - entity: light.outdoor_yard_light_net
           name: Light net
-
   #--------------------------------------------
     cards:
       - id: peoplehome # Every card needs an ID, if you don't specify one, it is added automatically.
