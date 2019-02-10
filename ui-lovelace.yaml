@@ -24,7 +24,7 @@ views:
           label: Outdoor
         - entity: switch.22cdf9_2
           name: Porch Lights
-          type: custom:slider-entity-row
+          #type: custom:slider-entity-row
           toggle: true
         - entity: switch.30cd2c_2
           name: Sideyard Lights
@@ -33,4 +33,4 @@ views:
         - entity: light.16266e
           name: Living Room Lights
           toggle: true
-          type: custom:slider-entity-row
+          #type: custom:slider-entity-row
