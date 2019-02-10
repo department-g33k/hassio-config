@@ -1,0 +1,36 @@
+- id: kit_wall_kiosk
+  icon: mdi:brain
+  title: kitchen
+  type: vertical-stack
+  cards:
+    - type: glance
+      title: Status
+      entities:
+        - entity: sensor.us_air_quality_index
+          name: Air Quality
+        - entity: binary_sensor.garage_door
+          name: Garage Door
+        - entity: sensor.local_temperature
+          name: Outdoor
+          icon: mdi:thermometer
+        - entity: light.2be2ca
+          name: Kitchen
+          tap_action: toggle
+        - entity: light.167ccf
+          name: Hall
+          tap_action: toggle
+          icon: mdi:ceiling-light
+        - entity: light.16266e
+          name: Family Room
+          tap_action: toggle
+          icon: mdi:ceiling-light
+        - entity: light.3ab1e7
+          name: Desk Lamp
+          icon: mdi:desk-lamp
+          tap_action: toggle
+        - entity: light.1bbfe2
+          name: Bathroom
+          icon: mdi:toilet
+          tap_action: toggle
+        - entity: sensor.time
+          name: Time
