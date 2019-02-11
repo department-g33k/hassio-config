@@ -29,14 +29,14 @@ views:
         - entity: switch.30cd2c_2
           name: Sideyard Lights
         - type: section
-          label: Front House
+          label: Front Area
         - entity: light.16266e
           name: Living Room Lights
           toggle: true
         - entity: light.2be2ca
           label: Kitchen Lights
         - type: section
-          label: hallway
+          label: Gallway
         - entity: light.167ccf
           label: Hallway Lights
         - entity: light.1bbfe2
@@ -51,3 +51,10 @@ views:
           label: Desk Lamp
         - entity: light.monitor_leds
           label: Monitor Light
+  - title: Sensors
+    icon: mdi:gauge
+    path: sensor
+    cards:
+      - type: sensor
+        entity: sensor.luke_s_room_light_level
+        name: Luke's Room Light Level
