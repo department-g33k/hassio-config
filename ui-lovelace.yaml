@@ -54,7 +54,6 @@ views:
   - title: Sensors
     icon: mdi:gauge
     path: sensors
-  - type: vertical-stack
     cards:
       - type: sensor
         entity: sensor.luke_s_room_light_level
@@ -72,12 +71,12 @@ views:
         entity: sensor.softener_salt
         name: Water Softener Salt Level
         graph: line
-      - type: sensor
-        entity: binary_sensor.wemo_motion |||||
+      - type: entities
+        entity: binary_sensor.wemo_motion
         name: Family Room Motion
       - type: sensor
-        entity: binary_sensor.garage_door |||||
+        entity: binary_sensor.garage_door
         name: Garage Overhead Door
       - type: sensor
-        entity: binary_sensor.garage_man_door |||||
+        entity: binary_sensor.garage_man_door
         name: Garage Man Door
