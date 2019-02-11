@@ -71,6 +71,10 @@ views:
         entity: sensor.softener_salt
         name: Water Softener Salt Level
         graph: line
+  - title: Laboratory
+    icon: mdi:flask-empty-outline
+    path: lab
+    cards:
       - type: entities
         entities:
         entity: binary_sensor.wemo_motion
