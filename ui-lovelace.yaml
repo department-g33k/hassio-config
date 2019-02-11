@@ -82,13 +82,13 @@ views:
         entity: binary_sensor.garage_man_door
         name: Garage Man Door
 
-- type: entities
-  title: Sensors
-  show_header_toggle: false
-  entities:
-    - type: section
-      label: Misc
-    - entity: sensor.softener_salt
-      name: Softener Salt
-    - entity: binary_sensor.garage_man_door
-      name: Garage Man Door
+    - type: entities
+      title: Sensors
+      show_header_toggle: false
+      entities:
+      - type: section
+        label: Misc
+      - entity: sensor.softener_salt
+        name: Softener Salt
+      - entity: binary_sensor.garage_man_door
+        name: Garage Man Door
