@@ -81,7 +81,10 @@ views:
       - type: sensor
         entity: binary_sensor.garage_man_door
         name: Garage Man Door
-
+- title: Lab
+  icon: mdi:flask-empty-outline
+  path: labs
+  cards:
     - type: entities
       title: Sensors
       show_header_toggle: false
