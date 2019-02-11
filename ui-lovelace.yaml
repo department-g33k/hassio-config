@@ -54,8 +54,8 @@ views:
   - title: Sensors
     icon: mdi:gauge
     path: sensors
-    -type: vertical Stack
-     cards:
+    - type: vertical Stack
+      cards:
       - type: sensor
         entity: sensor.luke_s_room_light_level
         name: Luke's Room Light Level
