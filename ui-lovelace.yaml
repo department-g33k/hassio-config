@@ -12,6 +12,7 @@ background: center / cover no-repeat url("/background.png") fixed
 excluded_entities:
   - weblink.router
 views:
+  - !include: /config/lovelace/dexter.yaml  
   - title: Lights
     icon: mdi:lightbulb-on
     path: lights
@@ -71,4 +72,3 @@ views:
         entity: sensor.softener_salt
         name: Water Softener Salt Level
         graph: line
-  - !include: /config/lovelace/dexter.yaml  
