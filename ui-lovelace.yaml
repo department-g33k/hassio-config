@@ -7,7 +7,8 @@ resources:
     type: css
 
 views:
-  #- !include /config/lovelace/dexter.yaml  
+  #
+  - !include /config/lovelace/dexter.yaml
   - title: Lights
     icon: mdi:lightbulb-on
     path: lights
@@ -32,7 +33,7 @@ views:
         - entity: light.2be2ca
           label: Kitchen Lights
         - type: section
-          label: Gallway
+          label: Hallway
         - entity: light.167ccf
           label: Hallway Lights
         - entity: light.1bbfe2
@@ -67,3 +68,9 @@ views:
         entity: sensor.softener_salt
         name: Water Softener Salt Level
         graph: line
+  -  title: Garage
+     icon: mdi:garage
+     path: garage
+     cards:
+       - type: custom:bignumber-card
+         entity: sensor.time
