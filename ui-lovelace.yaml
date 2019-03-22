@@ -75,5 +75,4 @@ views:
          title: Front Door
          entities:
            - binary_sensor.ring_front_door_motion
-           - binary_sensor.ring_front_door.ding
          camera_image: camera.front_door
