@@ -159,7 +159,7 @@ lovelace:
 camera:
   - platform: mjpeg
     mjpeg_url: http://192.168.200.153:8088/videostream.cgi
-    name: Front Porch
+    name: Front Door
     username: admin
     password: !secret insteon_password
   - platform: ring
