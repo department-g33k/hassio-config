@@ -163,3 +163,9 @@ camera:
     username: admin
     password: !secret insteon_password
   - platform: ring
+  - platform: onvif
+    host: 192.168.200.190
+    username: admin
+    port: 8089
+    name: Driveway
+    password: !secret driveway_password
