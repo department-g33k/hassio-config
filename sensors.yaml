@@ -31,27 +31,6 @@
 #  qos: 0
 
 - platform: mqtt
-  state_topic: "lukesroom/lightlevel"
-  name: "Luke's Room Light Level"
-  icon: mdi:theme-light-dark
-  unit_of_measurement: "Lux"
-  qos: 0
-
-- platform: mqtt
-  state_topic: "lukesroom/ambient_temp"
-  name: "Luke's Room Temperature"
-  icon: mdi:temperature-fahrenheit
-  unit_of_measurement: "°F"
-  qos: 0
-
-- platform: mqtt
-  state_topic: "lukesroom/humidity"
-  name: "Luke's Room Humidity"
-  icon: mdi:water-percent
-  unit_of_measurement: "%"
-  qos: 0
-
-- platform: mqtt
   state_topic: "dist/salt_tank"
   name: "Softener Salt"
   icon: mdi:flask-outline
@@ -112,29 +91,36 @@
   display_options:
     - 'time'
 
-- platform: mqtt
-  state_topic: "home-assistant/kitchen/temperature"
-  name: "Kitchen Temperature"
-  unit_of_measurement: "°F"
+#- platform: mqtt
+#  state_topic: "home-assistant/kitchen/temperature"
+#  name: "Kitchen Temperature"
+#  unit_of_measurement: "°F"
 
 - platform: mqtt
   state_topic: "lukesroom/ldr"
   name: "Luke's Room Light Level"
+  icon: mdi:theme-light-dark
   unit_of_measurement: "LUX"
+  qos: 0
 
 - platform: mqtt
   state_topic: "lukesroom/motion"
   name: "Luke's Room Motion"
+  qos: 0
 
 - platform: mqtt
   state_topic: "lukesroom/heatindex"
   name: "Luke's Room Temperature"
+  icon: mdi:temperature-fahrenheit
   unit_of_measurement: "°F"
+  qos: 0
 
 - platform: mqtt
   state_topic: "lukesroom/humidity"
   name: "Luke's Room Humidity"
+  icon: mdi:water-percent
   unit_of_measurement: "%"
+  qos: 0
 
 #group:
 #  sensor_node_1_card:
