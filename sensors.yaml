@@ -52,14 +52,14 @@
   qos: 0
 
 - platform: mqtt
-  state_topic: "bathroom/humidity"
+  state_topic: "masterbath/humidity"
   name: "Bathroom Humidity"
   icon: mdi:water-percent
   unit_of_measurement: "%"
   qos: 0
 
 - platform: mqtt
-  state_topic: "bathroom/ambient_temp"
+  state_topic: "masaterbath/temp"
   name: "Bathroom Ambient Temperature"
   icon: mdi:oil-temperature
   unit_of_measurement: "°F"
