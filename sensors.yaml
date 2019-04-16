@@ -122,6 +122,12 @@
   unit_of_measurement: "%"
   qos: 0
 
+- platform: mqtt
+  state_topic: "testsensor/in/rssi"
+  name: "Wireless Sensor RSSI"
+  unit_of_measurement: "db"
+  qos: 0
+
 #group:
 #  sensor_node_1_card:
 #    name: Sensor Node 1
