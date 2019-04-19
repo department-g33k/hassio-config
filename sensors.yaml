@@ -128,6 +128,11 @@
   unit_of_measurement: "db"
   qos: 0
 
+- platform: mqtt
+  state_topic: "kitchenplants/soilmoisture"
+  name: "Kitchen plant soil dryness"
+  unit_of_measurement: ""
+  qos: 0
 #group:
 #  sensor_node_1_card:
 #    name: Sensor Node 1
