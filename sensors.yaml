@@ -131,7 +131,8 @@
 - platform: mqtt
   state_topic: "kitchenplants/soilmoisture"
   name: "Kitchen plant soil dryness"
-  unit_of_measurement: ""
+  unit_of_measurement: "%"
+  value_template: '{{ value | multiply(0.1) | float }}'
   qos: 0
 #group:
 #  sensor_node_1_card:
