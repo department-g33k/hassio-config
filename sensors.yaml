@@ -123,9 +123,10 @@
   qos: 0
 
 - platform: mqtt
-  state_topic: "testsensor/in/rssi"
-  name: "Wireless Sensor RSSI"
-  unit_of_measurement: "db"
+  state_topic: "batteryplants/moisture"
+  name: "Backyard Plant Dryness"
+  unit_of_measurement: "%"
+  icon: mdi:flower-poppy
   qos: 0
 
 - platform: mqtt

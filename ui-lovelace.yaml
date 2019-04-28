@@ -60,14 +60,6 @@ views:
         name: Kitchen Plant Soil Dryness
         graph: line
       - type: sensor
-        entity: sensor.kitchen_plant_soil_dryness
-        name: Kitchen Plant Soil Dryness
-        graph: none
-      - type: sensor
-        entity: sensor.kitchen_temperature
-        name: Kitchen Sink Water Temperature
-        graph: line
-      - type: sensor
         entity: sensor.softener_salt
         name: Water Softener Salt Level
         graph: line
