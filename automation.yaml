@@ -126,10 +126,21 @@
   alias: Plant Announcement
   trigger:
     platform: time
+    at: "9:00:00"
+    platform: time
     at: "11:00:00"
+    platform: time
+    at: "15:00:00"
+    platform: time
+    at: "18:00:00"
+  condition:
+    condition: numeric_state
+    entity_id:  sensor.kitchen_plant_soil_dryness
+    above: 75
+    below: 15
   action:
     service: tts.google_translate_say
-    entity_id: media_player.googlehome7008
+    entity_id: media_player.googlehomehub7838
     data_template:
       message: "Kitchen Plant Needs Attention"
       cache: false
