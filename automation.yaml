@@ -105,7 +105,7 @@
   action:
     service: switch.turn_off
     entity_id: switch.22cdf9_2
-
+S
 - id: '58888675311'
   alias: Entertainment Center off at 0430
   trigger:
@@ -128,10 +128,10 @@
   trigger:
     platform: time
     at: "11:00:00"
-  conditions:
-    - condition: state
-      entity_id: sensor.kitchen_plant_soil_dryness
-      above: 80
+  #conditions:
+  #  - condition: state
+  #    entity_id: sensor.kitchen_plant_soil_dryness
+  #S    above: 80
   action:
     service: tts.google_say
     entity_id: media_player.googlehome7008
