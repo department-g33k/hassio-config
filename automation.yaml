@@ -105,7 +105,6 @@
   action:
     service: switch.turn_off
     entity_id: switch.22cdf9_2
-S
 - id: '58888675311'
   alias: Entertainment Center off at 0430
   trigger:
