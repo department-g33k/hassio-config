@@ -128,7 +128,7 @@
     platform: time
     at: "11:00:00"
   action:
-    service: tts.google_say
+    service: tts.google_translate_say
     entity_id: media_player.googlehome7008
     data_template:
       message: "Kitchen Plant Needs Attention"
