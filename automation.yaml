@@ -128,10 +128,6 @@ S
   trigger:
     platform: time
     at: "11:00:00"
-  #conditions:
-  #  - condition: state
-  #    entity_id: sensor.kitchen_plant_soil_dryness
-  #S    above: 80
   action:
     service: tts.google_say
     entity_id: media_player.googlehome7008
