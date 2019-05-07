@@ -97,7 +97,7 @@
 #  unit_of_measurement: "°F"
 
 - platform: mqtt
-  state_topic: "lukesroom/ldr"
+  state_topic: "lrs/Light"
   name: "Luke's Room Light Level"
   icon: mdi:theme-light-dark
   unit_of_measurement: "LUX"
@@ -109,14 +109,14 @@
   qos: 0
 
 - platform: mqtt
-  state_topic: "lukesroom/heatindex"
+  state_topic: "lrs/temperature"
   name: "Luke's Room Temperature"
   icon: mdi:temperature-fahrenheit
   unit_of_measurement: "°F"
   qos: 0
 
 - platform: mqtt
-  state_topic: "lukesroom/humidity"
+  state_topic: "lrs/humidity"
   name: "Luke's Room Humidity"
   icon: mdi:water-percent
   unit_of_measurement: "%"
