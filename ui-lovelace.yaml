@@ -73,7 +73,7 @@ views:
            - binary_sensor.ring_front_door_motion
          camera_image: camera.front_door
   -  title: Temperatures
-     icon: mdi-thermometer-lines
+     icon: mdi:thermometer-lines
      path: thermo
      cards:
        - type: sensor
