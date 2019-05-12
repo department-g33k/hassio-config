@@ -148,7 +148,7 @@
   alias: Garage Man Door Announcement
   trigger:
       platform: state
-      endity_id: binary_sensor.garage_man_door
+      entity_id: binary_sensor.garage_man_door
   action:
       service: tts.google_translate_say
       #entity_id: media_player.googlehomehub7838
