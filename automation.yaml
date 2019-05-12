@@ -144,12 +144,12 @@
     data_template:
       message: "Kitchen Plant Needs Attention"
       cache: false
-  - id: '00004721002'
-    alias: Garage Man Door Announcement
-    trigger:
+- id: '00004721002'
+  alias: Garage Man Door Announcement
+  trigger:
       platform: state
       endity_id: binary_sensor.garage_man_door
-    action:
+  action:
       service: tts.google_translate_say
       #entity_id: media_player.googlehomehub7838
       entity_id: media_player.googlehomehub7008
