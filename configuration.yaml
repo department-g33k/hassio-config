@@ -132,21 +132,21 @@ binary_sensor:
     ports:
       23: Garage Man Door
       24: Garage Door
-  - platform: bayesian
-    prior: 0.5
-    name: 'Luke Awake'
-    probability_threshold: 0.95
-    observations:
-      - platform: 'state'
-        entity_id: sensor.luke_s_room_motion
-        prob_given_true: 0.6
-        prob_given_false: 0.4
-        to_state: 'off'
-      - platform: 'state'
-        entity_id: sensor.luke_s_room_light_level
-        prob_given_true: 0.8
-        prob_given_false: 0.2
-        to_state:
+#  - platform: bayesian
+#    prior: 0.5
+#    name: 'Luke Awake'
+#    probability_threshold: 0.95
+#    observations:
+#      - platform: 'state'
+#        entity_id: sensor.luke_s_room_motion
+#        prob_given_true: 0.6
+#        prob_given_false: 0.4
+#        to_state: 'off'
+#      - platform: 'state'
+#        entity_id: sensor.luke_s_room_light_level
+#        prob_given_true: 0.8
+#        prob_given_false: 0.2
+#        to_state:
 
 
 
