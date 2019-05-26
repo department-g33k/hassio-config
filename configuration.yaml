@@ -132,6 +132,10 @@ binary_sensor:
     ports:
       23: Garage Man Door
       24: Garage Door
+  - platform: threshold
+    entity_id: sensor.softener_salt
+    upper: 60
+    name: Softener Salt OK
 #  - platform: bayesian
 #    prior: 0.5
 #    name: 'Luke Awake'
