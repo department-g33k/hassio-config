@@ -56,7 +56,7 @@ switch.22cdf9_5:
 switch.22cdf9_6:
   friendly_name: Porch Light Button 6
 switch.christmas_lights_2:
-  friendly_name: Christmas Tree Lights
-  icon: mdi:pine-tree
+  friendly_name: Garage Intake Fan
+  icon: mdi:fan
 switch.outdoor_christmas_lights:
   icon: mdi:led-on
