@@ -104,7 +104,7 @@
   qos: 0
 
 - platform: mqtt
-  state_topic: "lukesroom/motion"
+  state_topic: "lrs/motion"
   name: "Luke's Room Motion"
   qos: 0
 
