@@ -190,3 +190,12 @@ camera:
     port: 8089
     name: Driveway
     password: !secret driveway_password
+
+panel_custom:
+  - name: States
+    sidebar_title: States
+    sidebar_icon: mdi:work
+    url_path: /local/states
+    #js_url: /local/my-panel.js
+    config:
+      who: world
