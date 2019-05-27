@@ -160,7 +160,7 @@ switch: !include switch.yaml
   #     18: Sprinkler Rain Mode
 
 shell_command:
-  github_pull: bash /home/homeassistant/.homeassistant/git pull
+  github_pull: bash /home/homeassistant/.homeassistant/pullconfig.sh
 
 script:
   update_config:
