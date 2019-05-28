@@ -184,8 +184,9 @@ camera:
     username: admin
     password: !secret insteon_password
   - platform: ring
-  - platform: onvif
-    host: 192.168.200.190
+  - platform: mjpeg
+    mjpeg_url: http://192.168.200.190:8089/videostream.cgi
+    #host: 192.168.200.190
     username: admin
     port: 8089
     name: Driveway
@@ -196,5 +197,6 @@ panel_custom:
     sidebar_title: States
     sidebar_icon: mdi:work
     url_path: /local/states
+
     config:
       who: world
