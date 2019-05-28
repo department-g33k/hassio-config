@@ -196,6 +196,5 @@ panel_custom:
     sidebar_title: States
     sidebar_icon: mdi:work
     url_path: /local/states
-    #js_url: /local/my-panel.js
     config:
       who: world
