@@ -197,6 +197,3 @@ panel_custom:
     sidebar_title: States
     sidebar_icon: mdi:work
     url_path: states
-
-    config:
-      who: world
