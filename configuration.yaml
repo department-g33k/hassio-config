@@ -196,4 +196,3 @@ panel_custom:
   - name: States
     sidebar_title: States
     sidebar_icon: mdi:work
-    url_path: states
