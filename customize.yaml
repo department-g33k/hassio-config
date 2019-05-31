@@ -7,13 +7,13 @@ sensor.28_0315043b90ff_temperature:
 sensor.28_0315050445ff_temperature:
 #sensor.280315050445ff_temperature:
   friendly_name: Rack Temp
-switch.30cd2c:
+switch.switchlinc_relay_dual_band_30_cd_2c:
   friendly_name: Side Yard Light
-light.3ab32f_2:
+light.lamplinc_dimmer_3a_b3_2f:
   friendly_name: Nightstand Light
-light.2be2ca:
+light.switchlinc_dimmer_2b_e2_ca:
   friendly_name: Kitchen Lights
-light.167ccf:
+light.keypadlinc_dimmer_16_7c_cf_main:
   friendly_name: Hall Lights
 switch.167ccf_1:
   friendly_name: Hall Lights
@@ -27,9 +27,9 @@ switch.167ccf_5:
   friendly_name: Hall Lights E
 switch.167ccf_6:
   friendly_name: Hall Lights F
-light.16266e:
+light.switchlinc_dimmer_16_26_6e:
   friendly_name: Living Room Lights
-switch.22cdf9_2:
+switch.keypadlinc_on_off_22_cd_f9_main:
   friendly_name: Porch Lights
 light.1bc095:
   friendly_name: Hall Light Remote
