@@ -91,3 +91,4 @@ views:
        - type: sensor
          name: Outdoor Temperature
          entity: sensor.local_temperature
+         #

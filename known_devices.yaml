@@ -14,7 +14,7 @@ android3d93e8c175686293:
   name: 00656e511933
   picture:
   track: false
-
+#
 amazon79bcad0c5:
   hide_if_away: false
   icon:
@@ -124,7 +124,7 @@ amazonfe6ea42d3:
   icon:
   mac: 78:E1:03:24:81:17
   name: Luke's Tablet
-  picture: 
+  picture:
   track: True
 
 deannasipad:

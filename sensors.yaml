@@ -121,7 +121,7 @@
   icon: mdi:water-percent
   unit_of_measurement: "%"
   qos: 0
-
+#
 - platform: mqtt
   state_topic: "batteryplants/moisture"
   name: "Backyard Plant Dryness"

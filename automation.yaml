@@ -151,7 +151,7 @@
       entity_id: binary_sensor.garage_man_door
   action:
       service: tts.google_translate_say
-      #entity_id: media_player.googlehomehub7838
+      #entity_id: media_player.googlehomehub7838 
       entity_id: media_player.googlehome7008
       data_template:
         message: "Garage Man Door"
