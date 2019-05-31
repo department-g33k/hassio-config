@@ -157,7 +157,7 @@ binary_sensor:
 switch: !include switch.yaml
   # - platform: rpi_gpio
   #   ports:
-  #     18: Sprinkler Rain Mode
+  #     18: Sprinkler Rain Mode 
 
 shell_command:
   github_pull: bash /home/homeassistant/.homeassistant/pullconfig.sh
