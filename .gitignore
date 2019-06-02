@@ -3,3 +3,4 @@ secrets.yaml
 *.db
 *.log
 *.DS_Store
+.DS_Store

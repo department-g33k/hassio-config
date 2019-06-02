@@ -29,15 +29,13 @@
   alias: 'Update config if travis build is successful'
   trigger:
     platform: state
-    entity_id: sensor.departmentg33khassioconfig_last_build_state
+    entity_id: sensor.department_g33k_hassio_config_state
+    #entity_id: sensor.departmentg33khassioconfig_last_build_state
     from: 'started'
     to: 'passed'
   action:
-    #- service: shell_command.github_pull
-    #- service: homeassistant.restart
-    - service: light.turn_on
-      data:
-        entity_id: light.monitor_leds
+    - service: shell_command.github_pull
+    - service: homeassistant.restart
 
 #- id: '1532018612846'
 #  alias: Outdoor Lights Button Link On
@@ -151,7 +149,7 @@
       entity_id: binary_sensor.garage_man_door
   action:
       service: tts.google_translate_say
-      #entity_id: media_player.googlehomehub7838 
+      #entity_id: media_player.googlehomehub7838
       entity_id: media_player.googlehome7008
       data_template:
         message: "Garage Man Door"
