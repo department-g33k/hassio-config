@@ -157,7 +157,7 @@ binary_sensor:
 switch: !include switch.yaml
   # - platform: rpi_gpio
   #   ports:
-  #     18: Sprinkler Rain Mode 
+  #     18: Sprinkler Rain Mode
 
 shell_command:
   github_pull: bash /home/homeassistant/.homeassistant/pullconfig.sh
@@ -191,8 +191,3 @@ camera:
     port: 8089
     name: Driveway
     password: !secret driveway_password
-
-panel_custom:
-  - name: States
-    sidebar_title: States
-    sidebar_icon: mdi:work

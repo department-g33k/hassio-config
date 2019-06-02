@@ -31,7 +31,19 @@ light.switchlinc_dimmer_16_26_6e:
   friendly_name: Living Room Lights
 switch.keypadlinc_on_off_22_cd_f9_main:
   friendly_name: Porch Lights
-light.1bc095:
+switch.keypadlinc_on_off_22_cd_f9_button_a:
+  friendly_name: Porch Lights A
+  icon: mdi:alpha-a-box-outline
+switch.keypadlinc_on_off_22_cd_f9_button_b:
+  friendly_name: Porch Lights B
+  icon: mdi:alpha-b-box-outline
+switch.keypadlinc_on_off_22_cd_f9_button_c:
+  friendly_name: Porch Lights C
+  icon: mdi:alpha-c-box-outline
+switch.keypadlinc_on_off_22_cd_f9_button_d:
+  friendly_name: Porch Lights D
+  icon: mdi:alpha-d-box-outline
+light.switchlinc_dimmer_1b_c0_95:
   friendly_name: Hall Light Remote
 light.lamplinc_dimmer_3a_b1_e7:
   friendly_name: Desk Lamp
