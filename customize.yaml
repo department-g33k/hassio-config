@@ -55,6 +55,9 @@ binary_sensor.garage_door:
   device_class: garage_door
 binary_sensor.garage_man_door:
   device_class: door
+sensor.department_g33k_hassio_config_state:
+  friendly_name: Configuration
+  icon:mdi:test-tube
 sensor.departmentg33khassioconfig_state:
   friendly_name: Config State
 script.update_config:
