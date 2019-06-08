@@ -15,34 +15,58 @@ light.switchlinc_dimmer_2b_e2_ca:
   friendly_name: Kitchen Lights
 light.keypadlinc_dimmer_16_7c_cf_main:
   friendly_name: Hall Lights
-switch.167ccf_1:
-  friendly_name: Hall Lights
-switch.167ccf_2:
+switch.keypadlinc_dimmer_16_7c_cf_button_b:
   friendly_name: Hall Lights B
-switch.167ccf_3:
+  icon: mdi:alpha-b-box-outline
+switch.keypadlinc_dimmer_16_7c_cf_button_c:
   friendly_name: Hall Lights C
-switch.167ccf_4:
+  icon: mdi:alpha-c-box-outline
+switch.keypadlinc_dimmer_16_7c_cf_button_d:
   friendly_name: Hall Lights D
-switch.167ccf_5:
+  icon: mdi:alpha-d-box-outline
+switch.keypadlinc_dimmer_16_7c_cf_button_e:
   friendly_name: Hall Lights E
-switch.167ccf_6:
+  icon: mdi:alpha-e-box-outline
+switch.keypadlinc_dimmer_16_7c_cf_button_f:
   friendly_name: Hall Lights F
+  icon: mdi:alpha-f-box-outline
+switch.keypadlinc_dimmer_16_7c_cf_button_g:
+  friendly_name: Hall Lights G
+  icon: mdi:alpha-g-box-outline
+switch.keypadlinc_dimmer_16_7c_cf_button_h:
+  friendly_name: Hall Lights H
+  icon: mdi:alpha-h-box-outline
 light.switchlinc_dimmer_16_26_6e:
   friendly_name: Living Room Lights
 switch.keypadlinc_on_off_22_cd_f9_main:
   friendly_name: Porch Lights
-light.1bc095:
+switch.keypadlinc_on_off_22_cd_f9_button_a:
+  friendly_name: Porch Lights A
+  icon: mdi:alpha-a-box-outline
+switch.keypadlinc_on_off_22_cd_f9_button_b:
+  friendly_name: Porch Lights B
+  icon: mdi:alpha-b-box-outline
+switch.keypadlinc_on_off_22_cd_f9_button_c:
+  friendly_name: Porch Lights C
+  icon: mdi:alpha-c-box-outline
+switch.keypadlinc_on_off_22_cd_f9_button_d:
+  friendly_name: Porch Lights D
+  icon: mdi:alpha-d-box-outline
+light.switchlinc_dimmer_1b_c0_95:
   friendly_name: Hall Light Remote
 light.lamplinc_dimmer_3a_b1_e7:
   friendly_name: Desk Lamp
   icon: mdi:desk-lamp
-light.1bbfe2:
+light.switchlinc_dimmer_1b_bf_e2:
   friendly_name: Kid's Bathroom
   icon: mdi:toilet
 binary_sensor.garage_door:
   device_class: garage_door
 binary_sensor.garage_man_door:
   device_class: door
+sensor.department_g33k_hassio_config_state:
+  friendly_name: Configuration
+  icon: mdi:test-tube
 sensor.departmentg33khassioconfig_state:
   friendly_name: Config State
 script.update_config:

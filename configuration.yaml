@@ -157,7 +157,7 @@ binary_sensor:
 switch: !include switch.yaml
   # - platform: rpi_gpio
   #   ports:
-  #     18: Sprinkler Rain Mode 
+  #     18: Sprinkler Rain Mode
 
 shell_command:
   github_pull: bash /home/homeassistant/.homeassistant/pullconfig.sh
@@ -184,15 +184,10 @@ camera:
     username: admin
     password: !secret insteon_password
   - platform: ring
-  - platform: mjpeg
-    mjpeg_url: http://192.168.200.190:8089/videostream.cgi
-    #host: 192.168.200.190
-    username: admin
-    port: 8089
-    name: Driveway
-    password: !secret driveway_password
-
-panel_custom:
-  - name: States
-    sidebar_title: States
-    sidebar_icon: mdi:work
+#  - platform: mjpeg
+#    mjpeg_url: http://192.168.200.190:8089/videostream.cgi
+#    #host: 192.168.200.190
+#    username: admin
+#    port: 8089
+#    name: Driveway
+#    password: !secret driveway_password
