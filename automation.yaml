@@ -155,7 +155,7 @@
         message: "Garage Man Door"
         cache: false
 - id: '00004721003'
-  alias: Two Minute Warning
+  alias: Two Minute Warning Spiel
   trigger:
       platform: state
       entity_id: binary_sensor.garage_man_door
