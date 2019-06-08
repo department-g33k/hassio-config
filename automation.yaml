@@ -151,8 +151,20 @@
       entity_id: binary_sensor.garage_man_door
   action:
       service: tts.google_translate_say
-      #entity_id: media_player.googlehomehub7838 
+      #entity_id: media_player.googlehomehub7838
       entity_id: media_player.googlehome7008
       data_template:
         message: "Garage Man Door"
+        cache: false
+- id: '00004721003'
+  alias: Two Minute Warning
+  trigger:
+      platform: state
+      entity_id: binary_sensor.garage_man_door
+  action:
+      service: tts.google_translate_say
+      #entity_id: media_player.googlehomehub7838
+      entity_id: media_player.whole_house_speakers
+      data_template:
+        message: "Attention!  This is your two Minute Warning!"
         cache: false
