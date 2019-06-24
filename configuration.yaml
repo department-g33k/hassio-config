@@ -196,5 +196,3 @@ tplink:
   discovery: false
   switch:
     - host: 192.168.200.200
-      name: Drying Fan
-      icon: mdi:fan
