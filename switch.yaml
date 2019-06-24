@@ -1,8 +1,4 @@
   - platform: rpi_gpio
     ports:
       18: Sprinkler Rain Mode
-  - platform: tplink
-    host: 192.168.200.200
-    name: Drying Fan
-    icon: mdi:fan
 #
