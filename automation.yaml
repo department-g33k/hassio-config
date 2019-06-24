@@ -94,7 +94,6 @@
   action:
     service: switch.turn_on
     entity_id: switch.22cdf9_2
-
 - id: '58888675310'
   alias: Porch Lights off at 22:30
   trigger:
@@ -120,28 +119,6 @@
   action:
     service: switch.turn_on
     entity_id: switch.christmas_lights
-- id: '00004721001'
-  alias: Plant Announcement
-  trigger:
-    platform: time
-    at: "9:00:00"
-    platform: time
-    at: "11:00:00"
-    platform: time
-    at: "15:10:00"
-    platform: time
-    at: "18:00:00"
-  condition:
-    condition: numeric_state
-    entity_id:  sensor.kitchen_plant_soil_dryness
-    above: 75
-    below: 15
-  action:
-    service: tts.google_translate_say
-    entity_id: media_player.googlehomehub7838
-    data_template:
-      message: "Kitchen Plant Needs Attention"
-      cache: false
 - id: '00004721002'
   alias: Garage Man Door Announcement
   trigger:
