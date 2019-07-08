@@ -1,4 +1,4 @@
-  - platform: rpi_gpio
-    ports:
-      18: Sprinkler Rain Mode
+  #- platform: rpi_gpio
+  #  ports:
+  #    18: Sprinkler Rain Mode
 #
