@@ -94,7 +94,7 @@ mqtt:
 
 automation: !include automation.yaml
 
-device_tracker: !include device_tracker.yaml
+#device_tracker: !include device_tracker.yaml
 
 insteon:
   host: 192.168.200.169
