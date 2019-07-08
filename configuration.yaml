@@ -25,14 +25,14 @@ frontend:
 # Enables configuration UI
 config:
 
-#http:
+http:
   # Secrets are defined in the file secrets.yaml
   # api_password: !secret http_password
   # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
   # base_url: example.duckdns.org:8123
 
 # Checks for available updates
-#updater:
+updater:
 
 # Discover some devices automatically
 discovery:
@@ -56,7 +56,7 @@ map:
 sun:
 
 # Weather prediction
-#sensor: !include sensors.yaml
+sensor: !include sensors.yaml
 
 # Text to speech
 tts:
@@ -87,12 +87,12 @@ wemo:
     - 192.168.200.147
     - 192.168.200.155
     - 192.168.200.168
-#mqtt:
-#  password: !secret mqtt_password
+mqtt:
+  password: !secret mqtt_password
 
 #group: !include groups.yaml
 
-#automation: !include automation.yaml
+automation: !include automation.yaml
 
 #device_tracker: !include device_tracker.yaml
 
@@ -102,9 +102,9 @@ wemo:
 #  username: admin
 #  password: !secret insteon_password
 
-#ring:
-#  username: !secret ring_username
-#  password: !secret ring_password
+ring:
+  username: !secret ring_username
+  password: !secret ring_password
 
 climate:
   - platform: honeywell
@@ -115,27 +115,27 @@ climate:
 
 light: !include light.yaml
 
-#binary_sensor:
-#  - platform: ping
-#    host: 192.168.200.254
-#    name: HomeRouter
-#  - platform: ping
-#    host: 8.8.8.8
-#    name: GoogleDNS
-#  - platform: ping
-#    host: 1.1.1.1
-#    name: CloudFlareDNS
-#  - platform: ping
-#    host: 192.168.200.105
-#    name: FamilyRoomTV
+binary_sensor:
+  - platform: ping
+    host: 192.168.200.254
+    name: HomeRouter
+  - platform: ping
+    host: 8.8.8.8
+    name: GoogleDNS
+  - platform: ping
+    host: 1.1.1.1
+    name: CloudFlareDNS
+  - platform: ping
+    host: 192.168.200.105
+    name: FamilyRoomTV
 # - platform: rpi_gpio
 #   ports:
 #     23: Garage Man Door
 #     24: Garage Door
-#  - platform: threshold
-#    entity_id: sensor.softener_salt
-#    upper: 60
-#    name: Softener Salt OK
+  - platform: threshold
+    entity_id: sensor.softener_salt
+    upper: 60
+    name: Softener Salt OK
 #  - platform: bayesian
 #    prior: 0.5
 #    name: 'Luke Awake'
@@ -154,28 +154,28 @@ light: !include light.yaml
 
 
 
-#switch: !include switch.yaml
+switch: !include switch.yaml
   # - platform: rpi_gpio
   #   ports:
   #     18: Sprinkler Rain Mode
 
-#shell_command:
-#  github_pull: bash /home/homeassistant/.homeassistant/pullconfig.sh
+shell_command:
+  github_pull: bash /home/homeassistant/.homeassistant/pullconfig.sh
 
-#script:
-#  update_config:
-#    sequence:
-#      - service: shell_command.github_pull
-#      - service: homeassistant.restart
+script:
+  update_config:
+    sequence:
+      - service: shell_command.github_pull
+      - service: homeassistant.restart
 
-#input_boolean:
-#  lights_out:
-#    name: Lights Out
-#    initial: off
-#    icon: mdi:lighthouse
+input_boolean:
+  lights_out:
+    name: Lights Out
+    initial: off
+    icon: mdi:lighthouse
 
-#lovelace:
-#  mode: yaml
+lovelace:
+  mode: yaml
 
 camera:
   - platform: mjpeg
