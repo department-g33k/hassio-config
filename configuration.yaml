@@ -88,6 +88,7 @@ wemo:
     - 192.168.200.155
     - 192.168.200.168
 mqtt:
+  broker: 192.168.200.250
   password: !secret mqtt_password
 
 #group: !include groups.yaml
