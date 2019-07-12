@@ -109,16 +109,16 @@
     at: "04:00:00"
   action:
     service: switch.turn_off
-    entity_id: switch.christmas_lights
+    entity_id:  switch.entertainment_center
 
 - id: '58888675312'
   alias: Entertainment Center on at 0800
   trigger:
     platform: time
-    at: "08:00:00"
+    at: "06:00:00"
   action:
     service: switch.turn_on
-    entity_id: switch.christmas_lights
+    entity_id:  switch.entertainment_center
 - id: '00004721002'
   alias: Garage Man Door Announcement
   trigger:
