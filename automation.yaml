@@ -150,9 +150,9 @@
     platform: state
     from: 0
     to: 1
-  condition: time
-      after: '20:30:00'
-      before: '06:30:00'
+  #condition: time
+  #    after: '20:30:00'
+  #    before: '06:30:00'
   action:
     service: tts.google_translate_say
     #entity_id: media_player.googlehomehub7838
