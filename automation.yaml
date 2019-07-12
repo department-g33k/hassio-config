@@ -148,8 +148,8 @@
   trigger:
     platform: state
     entity_id: sensor.luke_s_room_motion
-    from: 0
-    to: 1
+    from: 'off'
+    to: 'on'
 #  condition: time
 #      after: '20:30:00'
 #      before: '06:30:00'
