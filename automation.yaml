@@ -143,3 +143,22 @@
       data_template:
         message: "Attention!  This is your two Minute Warning!"
         cache: false
+- id: '00004721004'
+  alias: Luke Motion Announcement
+  trigger:
+    entity_id: sensor.luke_s_room_motion
+    platform: state
+    from: 0
+    to: 1
+  condition: time
+    after: '20:30:00'
+    before: '06:30:00'
+  action:
+    service: tts.google_translate_say
+    #entity_id: media_player.googlehomehub7838
+      entity_id: media_player.whole_house_speakers
+      data_template:
+        message: "Motion Detected in Luke's Room"
+        cache: false
+    service: light.turn_on
+      entity_id: light.monitor_leds
