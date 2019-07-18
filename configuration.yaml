@@ -97,11 +97,11 @@ automation: !include automation.yaml
 
 #device_tracker: !include device_tracker.yaml
 
-#insteon:
-#  host: 192.168.200.169
-#  ip_port: 9761
-#  username: admin
-#  password: !secret insteon_password
+insteon:
+  host: 192.168.200.173
+  ip_port: 25105
+  username: Ulster88
+  password: !secret insteon_password
 
 ring:
   username: !secret ring_username
