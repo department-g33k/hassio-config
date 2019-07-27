@@ -1,11 +1,8 @@
 sensor.28_0215030ffaff_temperature:
-#sensor.280215030ffaff_temperature:
   friendly_name: HVAC Temp
 sensor.28_0315043b90ff_temperature:
-#sensor.280315043b90ff_temperature:
   friendly_name: Porch Temp
 sensor.28_0315050445ff_temperature:
-#sensor.280315050445ff_temperature:
   friendly_name: Rack Temp
 switch.switchlinc_relay_dual_band_30_cd_2c:
   friendly_name: Side Yard Light

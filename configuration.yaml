@@ -14,50 +14,36 @@ homeassistant:
 
   # Customization file
   customize: !include customize.yaml
-
 # Show links to resources in log and  frontend
-#introduction:
-
+# introduction:
 # Enables the frontend
 frontend:
   javascript_version: latest
-
 # Enables configuration UI
 config:
-
 http:
   # Secrets are defined in the file secrets.yaml
   # api_password: !secret http_password
   # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
   # base_url: example.duckdns.org:8123
-
 # Checks for available updates
 updater:
-
 # Discover some devices automatically
 discovery:
   enable:
 #    - homekit
-
-
 # Allows you to issue voice commands from the frontend in enabled browsers
 conversation:
-
 # Enables support for tracking state changes over time
 history:
-
 # View all events in a logbook
 logbook:
-
 # Enables a map showing the location of tracked devices
 map:
-
 # Track the sun
 sun:
-
 # Weather prediction
 sensor: !include sensors.yaml
-
 # Text to speech
 tts:
   - platform: google_translate
@@ -80,19 +66,17 @@ cloud:
         name: Outdoor Lights
         aliases:
           - Christmas Lights
-
 wemo:
-  static:
-    - 192.186.200.135
-    - 192.168.200.147
-    - 192.168.200.155
-    - 192.168.200.168
+#  static:
+#    - 192.186.200.135
+#    - 192.168.200.147
+#    - 192.168.200.155
+#    - 192.168.200.168
 mqtt:
   broker: 192.168.200.250
   password: !secret mqtt_password
 
 #group: !include groups.yaml
-
 automation: !include automation.yaml
 
 #device_tracker: !include device_tracker.yaml
@@ -156,9 +140,6 @@ binary_sensor:
 
 
 switch: !include switch.yaml
-  # - platform: rpi_gpio
-  #   ports:
-  #     18: Sprinkler Rain Mode
 
 shell_command:
   github_pull: bash /home/homeassistant/.homeassistant/pullconfig.sh
