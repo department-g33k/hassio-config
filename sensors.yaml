@@ -52,16 +52,16 @@
   qos: 0
 
 - platform: mqtt
-  state_topic: "masterbath/humidity"
-  name: "Bathroom Humidity"
-  icon: mdi:water-percent
+  state_topic: "fridge/Environmental/Humidity"
+  name: "Fridge Humidity"
+  icon: mdi:fridge-outline
   unit_of_measurement: "%"
   qos: 0
 
 - platform: mqtt
-  state_topic: "masaterbath/temp"
-  name: "Bathroom Ambient Temperature"
-  icon: mdi:oil-temperature
+  state_topic: "fridge/Environmental/Temperature"
+  name: "Fridge Temperature"
+  icon: mdi:fridge-outline
   unit_of_measurement: "°F"
   qos: 0
 
