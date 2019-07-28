@@ -175,6 +175,6 @@ camera:
 #    password: !secret driveway_password
 
 tplink:
-  discovery: false
-  switch:
-    - host: 192.168.200.200
+  discovery: true
+  #switch:
+  #  - host: 192.168.200.200
