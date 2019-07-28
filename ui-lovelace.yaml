@@ -7,7 +7,7 @@ resources:
     type: css
 
 views:
-  #- !include /config/lovelace/dexter.yaml
+  - !include /config/lovelace/dexter.yaml
   - title: Lights
     icon: mdi:lightbulb-on
     path: lights
