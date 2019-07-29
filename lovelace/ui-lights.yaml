@@ -8,32 +8,32 @@ cards:
   entities:
     - type: section
       label: Outdoor
-    - entity: switch.22cdf9_2
+    - entity: switch.keypadlinc_on_off_22_cd_f9_main
       name: Porch Lights
       #type: custom:slider-entity-row
       toggle: true
-    - entity: switch.30cd2c_2
+    - entity: switch.switchlinc_relay_dual_band_30_cd_2c
       name: Sideyard Lights
     - type: section
       label: Front Area
-    - entity: light.16266e
+    - entity: light.switchlinc_dimmer_16_26_6e
       name: Living Room Lights
       toggle: true
-    - entity: light.2be2ca
+    - entity: light.switchlinc_dimmer_2b_e2_ca
       label: Kitchen Lights
     - type: section
       label: Hallway
-    - entity: light.167ccf
+    - entity: light.keypadlinc_dimmer_16_7c_cf_main
       label: Hallway Lights
-    - entity: light.1bbfe2
+    - entity: light.switchlinc_dimmer_1b_bf_e2
       label: Kid's Bathroom lights
     - type: section
       label: Master Bedroom
-    - entity: light.3ab32f_2
+    - entity: light.lamplinc_dimmer_3a_b3_2f
       label: Nightstand Light
     - type: section
       label: Office
-    - entity: light.3ab1e7
+    - entity: light.lamplinc_dimmer_3a_b1_e7
       label: Desk Lamp
     - entity: light.monitor_leds
       label: Monitor Light
