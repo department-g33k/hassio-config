@@ -8,7 +8,7 @@ resources:
 
 views:
   - !include /config/lovelace/dexter.yaml
-  - !include /config/lovelace/kitchen_wall.yaml
+  #- !include /config/lovelace/kitchen_wall.yaml
   - title: Lights
     icon: mdi:lightbulb-on
     path: lights
