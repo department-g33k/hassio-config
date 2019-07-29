@@ -178,3 +178,9 @@ tplink:
   discovery: true
   #switch:
   #  - host: 192.168.200.200
+  # Example configuration.yaml entry
+binary_sensor:
+  - platform: threshold
+    entity_id: sensor.fridge_door_light
+    name: Fridge Door Binary
+    upper: 8
