@@ -184,9 +184,10 @@
   trigger:
     platform: time
     at: "00:38:00"
-  condition: state
-    entity_id: light.monitor_leds
-    state: 'on'
+  condition:
+  - condition: state
+      entity_id: light.monitor_leds
+      state: 'on'
   action:
   - service: light.turn_on
     data:
