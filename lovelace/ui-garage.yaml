@@ -1,0 +1,9 @@
+title: Garage
+ icon: mdi:garage
+ path: garage
+ cards:
+   - type: picture-glance
+     title: Front Door
+     entities:
+       - binary_sensor.ring_front_door_motion
+     camera_image: camera.front_door

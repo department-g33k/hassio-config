@@ -8,51 +8,7 @@ resources:
 
 views:
   - !include /config/lovelace/dexter.yaml
-  - !include /config/lovelace/lights.yaml
-  #- !include /config/lovelace/kitchen_wall.yaml
-  
-  - title: Sensors
-    icon: mdi:gauge
-    path: sensors
-    cards:
-      - type: sensor
-        entity: sensor.luke_s_room_light_level
-        name: Luke's Room Light Level
-        graph: line
-      - type: sensor
-        entity: sensor.kitchen_plant_soil_dryness
-        name: Kitchen Plant Soil Dryness
-        graph: line
-      - type: sensor
-        entity: sensor.softener_salt
-        name: Water Softener Salt Level
-        graph: line
-  -  title: Garage
-     icon: mdi:garage
-     path: garage
-     cards:
-       - type: picture-glance
-         title: Front Door
-         entities:
-           - binary_sensor.ring_front_door_motion
-         camera_image: camera.front_door
-  -  title: Temperatures
-     icon: mdi:thermometer-lines
-     path: thermo
-     cards:
-       - type: sensor
-         name: Indoor Temperature
-         entity: climate.thermostat.current_temperature
-       - type: sensor
-         name: HVAC Duct Temperature
-         entity: sensor.28_0215030ffaff_temperature
-       - type: sensor
-         name: Rack Temperature
-         entity: sensor.28_0315050445ff_temperature
-       - type: sensor
-         name: Front Temperature
-         entity: sensor.28_0315050445ff_temperature
-       - type: sensor
-         name: Outdoor Temperature
-         entity: sensor.local_temperature
-         #
+  - !include /config/lovelace/ui-lights.yaml
+  - !include /config/lovelace/ui-sensors.yaml
+  - !include /config/lovelace/ui-garage.yaml
+  - !include /config/lovelace/ui-temperatures.yaml

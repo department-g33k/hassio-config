@@ -1,0 +1,19 @@
+title: Temperatures
+icon: mdi:thermometer-lines
+path: thermo
+cards:
+ - type: sensor
+   name: Indoor Temperature
+   entity: climate.thermostat.current_temperature
+ - type: sensor
+   name: HVAC Duct Temperature
+   entity: sensor.28_0215030ffaff_temperature
+ - type: sensor
+   name: Rack Temperature
+   entity: sensor.28_0315050445ff_temperature
+ - type: sensor
+   name: Front Temperature
+   entity: sensor.28_0315050445ff_temperature
+ - type: sensor
+   name: Outdoor Temperature
+   entity: sensor.local_temperature

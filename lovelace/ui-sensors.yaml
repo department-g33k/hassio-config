@@ -1,0 +1,16 @@
+title: Sensors
+icon: mdi:gauge
+path: sensors
+cards:
+  - type: sensor
+    entity: sensor.luke_s_room_light_level
+    name: Luke's Room Light Level
+    graph: line
+  - type: sensor
+    entity: sensor.kitchen_plant_soil_dryness
+    name: Kitchen Plant Soil Dryness
+    graph: line
+  - type: sensor
+    entity: sensor.softener_salt
+    name: Water Softener Salt Level
+    graph: line
