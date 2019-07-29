@@ -17,14 +17,14 @@ cards:
   entity: binary_sensor.fridge_door_binary
   name: Fridge Door Switch
 #    - type: entities
-
-- type: entities
-  title: Fridge Status
-  show_header_toggle: true
-  entities:
-    - entity: switch.outdoor_christmas_lights
-      name: Fridge
-      - switch.outdoor_christmas_lights.current_power_w
-      - switch.outdoor_christmas_lights.total_energy_kwh
-      - switch.outdoor_christmas_lights.voltage
-      - switch.outdoor_christmas_lights.current_a
+#
+# - type: entities
+#   title: Fridge Status
+#   show_header_toggle: true
+#   entities:
+#     - entity: switch.outdoor_christmas_lights
+#       name: Fridge
+#       - switch.outdoor_christmas_lights.current_power_w
+#       - switch.outdoor_christmas_lights.total_energy_kwh
+#       - switch.outdoor_christmas_lights.voltage
+#       - switch.outdoor_christmas_lights.current_a
