@@ -156,10 +156,10 @@
   action:
     - service: light.turn_on
       data:
-      entity_id: light.monitor_leds
-      color_name: orange
-      brightness: 255
-      flash: long
+        entity_id: light.monitor_leds
+        color_name: orange
+        brightness: 255
+        flash: long
     - service: tts.google_translate_say
       entity_id: media_player.whole_house_speakers
       data_template:
