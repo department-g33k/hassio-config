@@ -51,6 +51,13 @@
   unit_of_measurement: ""
   qos: 0
 
+  # Example configuration.yaml entry
+binary_sensor:
+  - platform: threshold
+    entity_id: sensor.fridge_door_light
+    name: Fridge Door Binary
+    upper: 8
+
 - platform: mqtt
   state_topic: "fridge/Environmental/Humidity"
   name: "Fridge Humidity"
