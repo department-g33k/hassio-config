@@ -28,6 +28,10 @@ cards:
     - entity: light.switchlinc_dimmer_1b_bf_e2
       label: Kid's Bathroom lights
     - type: section
+      label: Bedrooms
+    - entity: switch.christmas_lights
+      label: Luke's Night Light
+    - type: section
       label: Master Bedroom
     - entity: light.lamplinc_dimmer_3a_b3_2f
       label: Nightstand Light
