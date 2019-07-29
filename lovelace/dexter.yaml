@@ -1,18 +1,18 @@
 title: Lab
 icon: mdi:flask-empty-outline
-#path: label
-#cards:
-#- type: sensor
-#  entity:  sensor.fridge_temperature
-#  name: Fridge Temperature
-#  graph: line
-#- type: sensor
-# entity:  sensor.fridge_humidity
-#  name: Fridge Humidity
-#  graph: line
-#- type: sensor
-#  entity:  sensor.fridge_door_light
-#  name: Fridge Door
+path: label
+cards:
+- type: sensor
+ entity:  sensor.fridge_temperature
+ name: Fridge Temperature
+ graph: line
+- type: sensor
+entity:  sensor.fridge_humidity
+ name: Fridge Humidity
+ graph: line
+- type: sensor
+ entity:  sensor.fridge_door_light
+ name: Fridge Door
 #    - type: entities
 #      entities:
 #      entity: binary_sensor.wemo_motion
