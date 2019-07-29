@@ -1,41 +1,43 @@
-- id: '1532816012846'
-  alias: Kitchen Lights Motion
-  trigger:
-  - entity_id: binary_sensor.wemo_motion
-    from: 'off'
-    platform: state
-    to: 'on'
-  condition:
-  - condition: state
-    entity_id: light.2be2ca
-    state: 'off'
-# - condition: time
-#        after: '23:00:00'
-#        before: '05:00:00'
-  action:
-  - data:
-      brightness: 128
-      entity_id: light.2be2ca
-      transition: 3
-    service: light.turn_on
-  - delay: '45'
-  - alias: ''
-    data:
-      entity_id: light.2be2ca
-      transition: 3
-    service: light.turn_off
+# - id: '1532816012846'
+#   alias: Kitchen Lights Motion
+#   trigger:
+#   - entity_id: binary_sensor.wemo_motion
+#     from: 'off'
+#     platform: state
+#     to: 'on'
+#   condition:
+#     condition: and
+#        conditions:
+#          - condition: state
+#             entity_id: light.living_room
+#             state: 'off'
+#          - condition: time
+#             after: '23:00:00'
+#             before: '05:00:00'
+#   action:
+#   - data:
+#       brightness: 128
+#       entity_id: light.2be2ca
+#       transition: 3
+#     service: light.turn_on
+#   - delay: '45'
+#   - alias: ''
+#     data:
+#       entity_id: light.2be2ca
+#       transition: 3
+#     service: light.turn_off
 
-- id: '1545178911234'
-  alias: 'Update config if travis build is successful'
-  trigger:
-    platform: state
-    entity_id: sensor.department_g33k_hassio_config_state
-    #entity_id: sensor.departmentg33khassioconfig_last_build_state
-    from: 'started'
-    to: 'passed'
-  action:
-    - service: shell_command.github_pull
-    - service: homeassistant.restart
+# - id: '1545178911234'
+#   alias: 'Update config if travis build is successful'
+#   trigger:
+#     platform: state
+#     entity_id: sensor.department_g33k_hassio_config_state
+#     #entity_id: sensor.departmentg33khassioconfig_last_build_state
+#     from: 'started'
+#     to: 'passed'
+#   action:
+#     - service: shell_command.github_pull
+#     - service: homeassistant.restart
 
 #- id: '1532018612846'
 #  alias: Outdoor Lights Button Link On
@@ -178,14 +180,17 @@
     entity_id:  switch.christmas_lights
 
 - id: '00004711006'
-  alias: LED Color Test
+  alias: Bedtime Reminder
   trigger:
     platform: time
-    at: "23:00:00"
+    at: "00:35:00"
+  condition: state
+    entity_id: light.monitor_leds
+    state: 'on'
   action:
   - service: light.turn_on
     data:
       entity_id: light.monitor_leds
       color_name: green
-      brightness: 127
-      flash: short
+      brightness: 255
+      flash: long
