@@ -204,6 +204,10 @@
   action:
   - service: light.turn_off
     data:
-      - entity_id: light.monitor_leds
-        entity_id: light.lamplinc_dimmer_3a_b1_e7
-        transition: 45
+      entity_id: light.monitor_leds
+      transition: 45
+  action:
+  - service: light.turn_off
+    data:
+      entity_id: light.lamplinc_dimmer_3a_b1_e7
+      transition: 45
