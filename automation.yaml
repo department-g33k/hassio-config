@@ -186,8 +186,8 @@
     at: "00:41:00"
   condition:
     condition: state
-      entity_id: light.monitor_leds
-      state: 'on'
+    entity_id: light.monitor_leds
+    state: 'on'
   action:
   - service: light.turn_on
     data:
