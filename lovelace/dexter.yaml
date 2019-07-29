@@ -13,7 +13,7 @@ cards:
 - type: sensor
   entity:  sensor.fridge_door_light
   name: Fridge Door
-- type: binary_sensor
+- type: sensor
   entity: binary_sensor.fridge_door_binary
   name: Fridge Door Switch
 #    - type: entities
