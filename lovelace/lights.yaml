@@ -1,0 +1,39 @@
+- title: Lights
+  icon: mdi:lightbulb-on
+  path: lights
+  cards:
+  - type: entities
+    title: Lighting Control
+    show_header_toggle: false
+    entities:
+      - type: section
+        label: Outdoor
+      - entity: switch.22cdf9_2
+        name: Porch Lights
+        #type: custom:slider-entity-row
+        toggle: true
+      - entity: switch.30cd2c_2
+        name: Sideyard Lights
+      - type: section
+        label: Front Area
+      - entity: light.16266e
+        name: Living Room Lights
+        toggle: true
+      - entity: light.2be2ca
+        label: Kitchen Lights
+      - type: section
+        label: Hallway
+      - entity: light.167ccf
+        label: Hallway Lights
+      - entity: light.1bbfe2
+        label: Kid's Bathroom lights
+      - type: section
+        label: Master Bedroom
+      - entity: light.3ab32f_2
+        label: Nightstand Light
+      - type: section
+        label: Office
+      - entity: light.3ab1e7
+        label: Desk Lamp
+      - entity: light.monitor_leds
+        label: Monitor Light
