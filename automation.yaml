@@ -183,9 +183,9 @@
   alias: Bedtime Reminder
   trigger:
     platform: time
-    at: "00:38:00"
+    at: "00:41:00"
   condition:
-  - condition: state
+    condition: state
       entity_id: light.monitor_leds
       state: 'on'
   action:
