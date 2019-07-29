@@ -1,14 +1,14 @@
-  title: Laboratory
-    icon: mdi:flask-empty-outline
-    path: lab
-    cards:
-      - type: entities
-        entities:
-        entity: binary_sensor.wemo_motion
-        name: Family Room Motion
-      - type: sensor
-        entity: binary_sensor.garage_door
-        name: Garage Overhead Door
-      - type: sensor
-        entity: binary_sensor.garage_man_door
-        name: Garage Man Door
+title: Laboratory
+  icon: mdi:flask-empty-outline
+  path: lab
+  cards:
+    - type: entities
+      entities:
+      entity: binary_sensor.wemo_motion
+      name: Family Room Motion
+    - type: sensor
+      entity: binary_sensor.garage_door
+      name: Garage Overhead Door
+    - type: sensor
+      entity: binary_sensor.garage_man_door
+      name: Garage Man Door
