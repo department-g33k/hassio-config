@@ -45,10 +45,10 @@
   qos: 0
 
 - platform: mqtt
-  state_topic: "multi/ambient_temp"
-  name: "Shed Ambient Temperature"
-  icon: mdi:oil-temperature
-  unit_of_measurement: "°F"
+  state_topic: "fridge/Light/Light"
+  name: "Fridge Door Light"
+  icon: mdi:fridge-bottom
+  unit_of_measurement: ""
   qos: 0
 
 - platform: mqtt

@@ -80,4 +80,4 @@ switch.christmas_lights_2:
   friendly_name: Garage Intake Fan
   icon: mdi:fan
 switch.outdoor_christmas_lights:
-  icon: mdi:led-on
+  icon: mdi:fridge
