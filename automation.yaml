@@ -93,15 +93,15 @@
     offset: "-00:05:00"
   action:
     service: switch.turn_on
-    entity_id: switch.22cdf9_2
+    entity_id: switch.keypadlinc_on_off_22_cd_f9_main
 - id: '58888675310'
-  alias: Porch Lights off at 22:30
+  alias: Porch Lights off at 22:15
   trigger:
     platform: time
     at: "22:30:00"
   action:
     service: switch.turn_off
-    entity_id: switch.22cdf9_2
+    entity_id: switch.keypadlinc_on_off_22_cd_f9_main
 - id: '58888675311'
   alias: Entertainment Center off at 0430
   trigger:
@@ -112,7 +112,7 @@
     entity_id:  switch.entertainment_center
 
 - id: '58888675312'
-  alias: Entertainment Center on at 0800
+  alias: Entertainment Center on at 0600
   trigger:
     platform: time
     at: "06:00:00"
@@ -163,7 +163,7 @@
   alias: Luke Night Light off at 1030
   trigger:
     platform: time
-    at: "00:12:00"
+    at: "22:30:00"
   action:
     service: switch.turn_off
     entity_id:  switch.christmas_lights
@@ -176,3 +176,13 @@
   action:
     service: switch.turn_on
     entity_id:  switch.christmas_lights
+
+- id: '00004711006'
+  alias: LED Color Test
+  action:
+  - service: light.turn_on
+    data:
+      entity_id: light.monitor_leds
+      color_name: green
+      brightness: 127
+      flash: short
