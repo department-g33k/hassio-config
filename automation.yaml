@@ -195,3 +195,15 @@
       color_name: green
       brightness: 255
       flash: long
+
+- id: '00004711007'
+  alias: Office Lights Off
+  trigger:
+    platform: time
+    at: "03:41:00"
+  action:
+  - service: light.turn_off
+    data:
+      - entity_id: light.monitor_leds
+        entity_id: light.lamplinc_dimmer_3a_b1_e7
+        transition: 45
