@@ -2,11 +2,13 @@ office_lights_out:
   sequence:
     # This is written using the Script Syntax
     - service: light.turn_off
-      entity_id: light.monitor_leds
-      transition: 45
+      data:
+        entity_id: light.monitor_leds
+        transition: 45
     - service: light.turn_off
-      entity_id: light.lamplinc_dimmer_3a_b1_e7
-      transition: 45
+      data:
+        entity_id: light.lamplinc_dimmer_3a_b1_e7
+        transition: 45
     - service: notify.notify
       data:
       message: 'Turned off the office lights!'
