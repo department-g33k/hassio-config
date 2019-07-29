@@ -4,11 +4,11 @@ office_lights_out:
     - service: light.turn_off
       data:
         entity_id: light.monitor_leds
-        transition: 45
+        transition: 60
     - service: light.turn_off
       data:
         entity_id: light.lamplinc_dimmer_3a_b1_e7
-        transition: 45
+        transition: 60
 
 update_config:
   sequence:
