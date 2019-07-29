@@ -159,16 +159,16 @@
     data_template:
       message: "Motion Detected in Luke's Room"
       cache: false
- id: '00004711005'
+- id: '00004711005'
   alias: Luke Night Light off at 1030
   trigger:
     platform: time
-    at: "00:10:00"
+    at: "00:12:00"
   action:
     service: switch.turn_off
     entity_id:  switch.christmas_lights
 
-id: '00004711006'
+- id: '00004711006'
   alias: Luke Night Light on at 1800
   trigger:
     platform: time
