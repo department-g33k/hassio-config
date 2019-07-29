@@ -179,6 +179,9 @@
 
 - id: '00004711006'
   alias: LED Color Test
+  trigger:
+    platform: time
+    at: "23:00:00"
   action:
   - service: light.turn_on
     data:
