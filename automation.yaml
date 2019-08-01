@@ -200,6 +200,31 @@
       brightness: 255
       flash: long
 
+- alias: Office Speaker Volume 6
+  id: 'set_office_speaker_volume'
+  initial_state: false
+  trigger:
+    platform: time
+    at: "18:00:00"
+  action:
+    service: media_player.volume_set
+    data:
+      entity_id: media_player.office_speaker
+      volume_level: '0.6'
+
+- alias: Office Speaker Volume 6
+  id: 'set_office_speaker_volume'
+  initial_state: false
+  trigger:
+    platform: time
+    at: "18:00:00"
+  action:
+    service: media_player.volume_set
+    data:
+      entity_id: media_player.office_speaker
+      volume_level: '0.6'
+
+
 # Motion detector - study lights
 - alias: Motion Alarm
   id: 'living_motion_alarm'
@@ -213,13 +238,23 @@
   #  entity_id: group.all_devices
   #  state: 'home'
   action:
-    service: tts.google_translate_say
-    #entity_id: media_player.googlehomehub7838
-    #entity_id: media_player.whole_house_speakers
-    entity_id: media_player.kitchen_display
-    data_template:
-      message: "Motion Event Logged!"
-      cache: false
+    - service: media_player.volume_set
+      data:
+        entity_id: media_player.office_speaker
+        volume_level: '0.6'
+    # - service: tts.google_translate_say
+    #   entity_id: media_player.office_speaker
+    #   data_template:
+    #     message: "Motion detected in Living Room!  I repeat, Motion detected in Living Room!"
+    #     cache: false
+    - service: light.turn_on
+      data:
+        entity_id: light.monitor_leds
+        color_name: blue
+        brightness: 255
+        flash: long
+
+
 
 # Motion detector - study lights
 - alias: Living Room Lights Motion
@@ -229,17 +264,20 @@
     platform: state
     entity_id: binary_sensor.family_room_motion
     to: 'on'
-  #condition:
-  #  condition: state
-  #  entity_id: group.all_devices
-  #  state: 'home'
+  condition:
+    condition: and
+    conditions:
+      - condition: time
+        after: '23:00:00'
+      - condition: time
+        before: '07:00:00'
   action:
     service: light.turn_on
     entity_id: light.switchlinc_dimmer_16_26_6e
 
 - alias: Living Room Lights No Motion
   id: 'living_nomotion'
-  initial_state: true
+  initial_state: false
   trigger:
     platform: state
     entity_id: binary_sensor.family_room_motion
