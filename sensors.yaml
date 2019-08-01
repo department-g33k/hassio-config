@@ -175,3 +175,51 @@
 #       friendly_name_template: "{{ states.switch.outdoor_christmas_lights.name}} Today's Consuption"
 #       value_template: '{{ states.switch.outdoor_christmas_lights.attributes["today_energy_kwh"] | float }}'
 #       unit_of_measurement: 'kWh'
+- platform: mqtt
+  state_topic: "acura/system/rssi"
+  name: "Acura Sensor RSSI"
+  unit_of_measurement: "dB"
+  icon: mdi:signal-cellular-2
+  qos: 0
+
+- platform: mqtt
+  state_topic: "acura/system/uptime"
+  name: "Acura Sensor Uptime"
+  unit_of_measurement: "min"
+  icon: mdi:av-timer
+  qos: 0
+
+- platform: mqtt
+  state_topic: "acura/system/vcc"
+  name: "Acura Sensor Uptime"
+  unit_of_measurement: "volts"
+  icon: mdi:battery-50
+  qos: 0
+
+- platform: mqtt
+  state_topic: "acura/network/a"
+  name: "1st Octet"
+  unit_of_measurement: ""
+  icon: mdi:ip-nework
+  qos: 0
+
+- platform: mqtt
+  state_topic: "acura/network/b"
+  name: "2nd Octet"
+  unit_of_measurement: ""
+  icon: mdi:ip-nework
+  qos: 0
+
+- platform: mqtt
+  state_topic: "acura/network/c"
+  name: "3rd Octet"
+  unit_of_measurement: ""
+  icon: mdi:ip-nework
+  qos: 0
+
+- platform: mqtt
+  state_topic: "acura/network/d"
+  name: "4th Octet"
+  unit_of_measurement: ""
+  icon: mdi:ip-nework
+  qos: 0
