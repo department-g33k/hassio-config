@@ -65,6 +65,13 @@
   unit_of_measurement: "°F"
   qos: 0
 
+- platform: mqtt
+  state_topic: "fridge/Probe/Temperature"
+  name: "Fridge Probe Temperature"
+  icon: mdi:fridge
+  unit_of_measurement: "°F"
+  qos: 0
+
 - platform: min_max
   name: Local Temperature
   round_digits: 1
