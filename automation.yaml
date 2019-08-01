@@ -264,13 +264,13 @@
     platform: state
     entity_id: binary_sensor.family_room_motion
     to: 'on'
-  condition:
-    condition: and
-    conditions:
-      - condition: time
-        after: '23:00:00'
-      - condition: time
-        before: '07:00:00'
+  # condition:
+  #   condition: and
+  #   conditions:
+  #     - condition: time
+  #       after: '23:00:00'
+  #     - condition: time
+  #       before: '07:00:00'
   action:
     service: light.turn_on
     entity_id: light.switchlinc_dimmer_16_26_6e
