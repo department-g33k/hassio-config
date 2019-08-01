@@ -201,6 +201,27 @@
       flash: long
 
 # Motion detector - study lights
+- alias: Motion Alarm
+  id: 'living_motion_alarm'
+  initial_state: true
+  trigger:
+    platform: state
+    entity_id: binary_sensor.family_room_motion
+    to: 'on'
+  #condition:
+  #  condition: state
+  #  entity_id: group.all_devices
+  #  state: 'home'
+  action:
+    service: tts.google_translate_say
+    #entity_id: media_player.googlehomehub7838
+    #entity_id: media_player.whole_house_speakers
+    entity_id: media_player.kitchen_display
+    data_template:
+      message: "Motion Event Logged!"
+      cache: false
+
+# Motion detector - study lights
 - alias: Living Room Lights Motion
   id: 'living_motion'
   initial_state: true
