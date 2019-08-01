@@ -200,7 +200,7 @@
       brightness: 255
       flash: long
 
-- alias: Office Speaker Volume 6
+- alias: Office Speaker Volume 8
   id: 'set_office_speaker_volume'
   initial_state: false
   trigger:
@@ -210,9 +210,9 @@
     service: media_player.volume_set
     data:
       entity_id: media_player.office_speaker
-      volume_level: '0.6'
+      volume_level: '0.8'
 
-- alias: Office Speaker Volume 6
+- alias: Office Speaker Volume 2
   id: 'set_office_speaker_volume'
   initial_state: false
   trigger:
@@ -222,7 +222,7 @@
     service: media_player.volume_set
     data:
       entity_id: media_player.office_speaker
-      volume_level: '0.6'
+      volume_level: '0.2'
 
 
 # Motion detector - study lights
