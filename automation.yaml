@@ -241,7 +241,7 @@
     - service: media_player.volume_set
       data:
         entity_id: media_player.office_speaker
-        volume_level: '0.6'
+        volume_level: '0.1'
     # - service: tts.google_translate_say
     #   entity_id: media_player.office_speaker
     #   data_template:
