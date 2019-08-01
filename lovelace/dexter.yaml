@@ -14,8 +14,9 @@ cards:
   entity:  sensor.fridge_door_light
   name: Fridge Door
 - type: sensor
-  entity: binary_sensor.fridge_door_binary
-  name: Fridge Door Switch
+  entity: sensor.fridge_probe_temperature
+  name: Fridge Probe temperature
+  graph: line
 #    - type: entities
 #
 # - type: entities
