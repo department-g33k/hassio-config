@@ -97,10 +97,10 @@
     service: switch.turn_on
     entity_id: switch.keypadlinc_on_off_22_cd_f9_main
 - id: '58888675310'
-  alias: Porch Lights off at 22:15
+  alias: Porch Lights off at 9:30 PM
   trigger:
     platform: time
-    at: "22:30:00"
+    at: "21:30:00"
   action:
     service: switch.turn_off
     entity_id: switch.keypadlinc_on_off_22_cd_f9_main
@@ -114,10 +114,10 @@
     entity_id:  switch.entertainment_center
 
 - id: '58888675312'
-  alias: Entertainment Center on at 0600
+  alias: Entertainment Center on at 8AM
   trigger:
     platform: time
-    at: "06:00:00"
+    at: "08:00:00"
   action:
     service: switch.turn_on
     entity_id:  switch.entertainment_center

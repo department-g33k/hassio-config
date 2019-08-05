@@ -1,7 +1,5 @@
 - platform: yr
 
-#- platform: onewire
-
 - platform: openweathermap
   api_key: 612d4b28cc2c7d7b40030569b3adf10e
   monitored_conditions:
@@ -17,8 +15,8 @@
       - temperature
 
 - platform: mqtt
-  state_topic: "multi/probe_temp"
-  name: "Shed Temperature"
+  state_topic: "garage/rack/temperature"
+  name: "Server Rack Temperature"
   icon: mdi:thermometer
   unit_of_measurement: "°F"
   qos: 0
@@ -31,17 +29,17 @@
 #  qos: 0
 
 - platform: mqtt
-  state_topic: "dist/salt_tank"
+  state_topic: "garage/salt/level"
   name: "Softener Salt"
   icon: mdi:flask-outline
-  unit_of_measurement: "cm"
+  unit_of_measurement: "in"
   qos: 0
 
 - platform: mqtt
-  state_topic: "multi/humidity"
-  name: "Shed Humidity"
-  icon: mdi:water-percent
-  unit_of_measurement: "%"
+  state_topic: "garage/porch/temperature"
+  name: "Porch Temperature"
+  icon: mdi:thermometer
+  unit_of_measurement: "°F"
   qos: 0
 
 - platform: mqtt
@@ -130,10 +128,10 @@
   qos: 0
 #
 - platform: mqtt
-  state_topic: "batteryplants/moisture"
-  name: "Backyard Plant Dryness"
-  unit_of_measurement: "%"
-  icon: mdi:flower-poppy
+  state_topic: "garage/hvac/temperature"
+  name: "HVAC Duct Temperature"
+  unit_of_measurement: "°F"
+  icon: mdi:air-conditioner
   qos: 0
 
 - platform: mqtt
