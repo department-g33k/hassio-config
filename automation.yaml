@@ -299,8 +299,3 @@
       data:
         entity_id: media_player.office_speaker
         volume_level: '0.9'
-   - service: tts.google_translate_say
-     entity_id: media_player.office_speaker
-     data_template:
-       message: "May I have your attention please.  May I have your attention Please.  Its time to put on socks and shoes and head to school.  I repeat,  its time to put on socks and shoes and head to school."
-       cache: false
