@@ -302,5 +302,5 @@
    - service: tts.google_translate_say
      entity_id: media_player.office_speaker
      data_template:
-       message: "May I have your attention please.  May I have your attention Please.  It is now time to put on socks and shoes and prepare to leave.  I repeat, It is now time to put on socks and shoes and prepare to leave."
+       message: "May I have your attention please.  May I have your attention Please.  It's time to put on socks and shoes and head to school.  I repeat,  it's time to put on socks and shoes and head to school."
        cache: false
