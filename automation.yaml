@@ -288,7 +288,6 @@
     service: light.turn_off
     entity_id: light.switchlinc_dimmer_16_26_6e
 
-
 - alias: Morning Routine Reminder
   id: 'kids_shoes_on_reminder'
   initial_state: false
