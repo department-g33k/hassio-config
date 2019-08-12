@@ -1,0 +1,11 @@
+title: Health
+icon: mdi:doctor
+path: health
+cards:
+- type: sensor
+  entity:  sensor.sick_kid_temperature
+  name: Patient Temperature
+  graph: line
+- type: sensor
+  entity:  sensor.sick_kid_meds
+  name: Patient Medicine
