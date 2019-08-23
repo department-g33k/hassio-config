@@ -182,9 +182,8 @@ binary_sensor:
     name: Fridge Door Binary
     upper: 100
 
-binary_sensor:
-  - platform: template
+- platform: template
     sensors:
-      temp_diff:
-        friendly_name: Indoor Outdoor Difference
-        value_template: {{(states('sensor.local_temperature') | float ) - (states('sensor.current_temperature') | float)}}
+      outside_vs_inside_temp:
+        value_template: "{% if states.sensor.local_temperature.state < states.sensor.current_temperature.state %}Run Fan{% else %}Run HVAC{%endif %}"
+        friendly_name: "Indoor Vs Outdoor"
