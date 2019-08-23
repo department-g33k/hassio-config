@@ -1,0 +1,12 @@
+title: Environmental
+icon: mdi:home-thermometer
+path: env
+cards:
+- type: sensor
+  entity: sensor.local_temperature
+  name: Local Temperature
+  graph: line
+- type: sensor
+  entity: climate.thermostat.temperature
+  name: Indoor Temperature
+  graph: line
