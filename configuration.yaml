@@ -181,3 +181,10 @@ binary_sensor:
     entity_id: sensor.fridge_door_light
     name: Fridge Door Binary
     upper: 100
+
+binary_sensor:
+  - platform: template
+    sensors:
+      temp_diff:
+        friendly_name: Indoor Outdoor Difference
+        value_template: {{(states.sensor.local_temperature.state | float ) - (states.sensor.current_temperature.state | float)}}
