@@ -187,4 +187,4 @@ binary_sensor:
     sensors:
       temp_diff:
         friendly_name: Indoor Outdoor Difference
-        value_template: {{(states.sensor.local_temperature.state | float ) - (states.sensor.current_temperature.state | float)}}
+        value_template: {{(states('sensor.local_temperature') | float ) - (states('sensor.current_temperature') | float)}}
