@@ -24,4 +24,29 @@
   rgb: true
   optimistic: false
   qos: 0
-#
+- platform: mqtt
+  schema: json
+  name: "Monitor LEDs"
+  state_topic: "lab/MonLED"
+  command_topic: "deptg33k/MonLED/set"
+  effect: true
+  effect_list:
+
+    - candy cane
+    - confetti
+    - cyclon rainbow
+    - dots
+    - fire
+    - lightning
+    - noise
+    - police all
+    - police one
+    - rainbow
+    - rainbow with glitter
+    - ripple
+    - solid
+    - twinkle
+  brightness: true
+  rgb: true
+  optimistic: false
+  qos: 0
