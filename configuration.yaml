@@ -181,9 +181,3 @@ binary_sensor:
     entity_id: sensor.fridge_door_light
     name: Fridge Door Binary
     upper: 100
-
-- platform: template
-    sensors:
-      outside_vs_inside_temp:
-        value_template: "{% if states.sensor.local_temperature.state < states.sensor.current_temperature.state %}Run Fan{% else %}Run HVAC{%endif %}"
-        friendly_name: "Indoor Vs Outdoor"
