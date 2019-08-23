@@ -1,5 +1,5 @@
 title: Environmental
-icon: mdi:home-thermometer
+icon: mdi:thermometer-low
 path: env
 cards:
 - type: sensor
@@ -7,6 +7,18 @@ cards:
   name: Local Temperature
   graph: line
 - type: sensor
-  entity: climate.thermostat.temperature
+  entity: sensor.current_temperature
   name: Indoor Temperature
+  graph: line
+- type: sensor
+  entity: sensor.luke_s_room_temperature
+  name: Luke's Room Temperature
+  graph: line
+- type: sensor
+  entity: sensor.hvac_duct_temperature
+  name: HVAC Output
+  graph: line
+- type: sensor
+  entity: sensor.porch_temperature
+  name: Porch Temperature
   graph: line
