@@ -1,0 +1,12 @@
+title: Automations
+icon: mdi:auto-fix
+path: auto
+cards:
+  - type: custom:monster-card
+    show_empty: false
+    card:
+      type: entities
+      title: 'On'
+    filter:
+      include:
+        - entity_id: "automation.*"
