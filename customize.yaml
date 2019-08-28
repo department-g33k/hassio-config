@@ -61,6 +61,12 @@ binary_sensor.garage_door:
   device_class: garage_door
 binary_sensor.garage_man_door:
   device_class: door
+sensor.luke_s_bedroom_door:
+  device_class: door
+sensor.luke_s_room_motion:
+  device_class: motion
+sensor.family_room_motion:
+  device_class: motion
 sensor.department_g33k_hassio_config_state:
   friendly_name: Configuration
   icon: mdi:test-tube
