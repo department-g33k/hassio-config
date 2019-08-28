@@ -5,6 +5,8 @@ resources:
     type: js
   - url: /local/my-webfont.css
     type: css
+  - url: /local/monster-card.js?v=1
+    type: js
 
 views:
   - !include /config/lovelace/dexter.yaml
@@ -14,3 +16,4 @@ views:
   - !include /config/lovelace/ui-health.yaml
   - !include /config/lovelace/ui-garage.yaml
   - !include /config/lovelace/ui-temperatures.yaml
+  - !include /config/lovelace/ui-automation.yaml
