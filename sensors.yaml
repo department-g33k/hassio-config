@@ -126,7 +126,12 @@
   icon: mdi:water-percent
   unit_of_measurement: "%"
   qos: 0
-#
+
+- platform: mqtt
+  state_topic: "lrs/door"
+  name: "Luke's Bedroom Door"
+  qos: 0
+
 - platform: mqtt
   state_topic: "garage/hvac/temperature"
   name: "HVAC Duct Temperature"
@@ -162,11 +167,11 @@
       value_template: "{{ state_attr('climate.THERMOSTAT', 'current_temperature') }}"
       unit_of_measurement: "°F"
 
-#- platform: template
-#  sensors:
-#    outside_vs_inside_temp:
-#    value_template: "{% if states.sensor.local_temperature.state < states.sensor.current_temperature.state %}Run Fan{% else %}Run HVAC{%endif %}"
-#    friendly_name: "Indoor Vs Outdoor"
+- platform: template
+  sensors:
+    outside_vs_inside_temp:
+    value_template: "{% if states.sensor.local_temperature.state < states.sensor.current_temperature.state %}Run Fan{% else %}Run HVAC{%endif %}"
+    friendly_name: "Indoor Vs Outdoor"
 
 #group:
 #  sensor_node_1_card:

@@ -50,3 +50,29 @@
   rgb: true
   optimistic: false
   qos: 0
+- platform: mqtt
+  schema: json
+  name: "Luke Sensor"
+  state_topic: "lrs/led/state"
+  command_topic: "lrs/led"
+  effect: true
+  effect_list:
+
+    - candy cane
+    - confetti
+    - cyclon rainbow
+    - dots
+    - fire
+    - lightning
+    - noise
+    - police all
+    - police one
+    - rainbow
+    - rainbow with glitter
+    - ripple
+    - solid
+    - twinkle
+  brightness: true
+  rgb: true
+  optimistic: false
+  qos: 0
