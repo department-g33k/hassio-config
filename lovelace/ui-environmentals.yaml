@@ -24,4 +24,4 @@ cards:
   name: Porch Temperature
   graph: line
 - type: gauge
- entity: sensor.cpu_usage
+  entity: sensor.cpu_usage
