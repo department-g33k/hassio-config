@@ -52,6 +52,7 @@
   qos: 0
 
 - platform: mqtt_template
+  schema: json
   name: "Luke Sensor Light"
   command_topic: "lrs/cmd"
   command_off_template: 'Neopixel,1,0,0,0'
