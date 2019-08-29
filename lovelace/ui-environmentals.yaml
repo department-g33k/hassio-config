@@ -1,6 +1,7 @@
 title: Environmental
-icon: mdi:thermometer-low
+icon: mdi:thermometer.low
 path: env
+type: horizontal-stack
 cards:
 - type: sensor
   entity: sensor.local_temperature
@@ -22,3 +23,5 @@ cards:
   entity: sensor.porch_temperature
   name: Porch Temperature
   graph: line
+- type: gauge
+ entity: sensor.cpu_usage

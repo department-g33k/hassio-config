@@ -100,6 +100,13 @@ climate:
 
 light: !include light.yaml
 
+weblink:
+  entities:
+    - name: States
+      url: http://192.168.200.250:8123/states
+    - name: Server and Config
+      url: http://192.168.200.250:8123/config/server_control
+      
 binary_sensor:
   - platform: ping
     host: 192.168.200.254
