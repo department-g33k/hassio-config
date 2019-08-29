@@ -55,6 +55,7 @@
   schema: template
   name: "Luke Sensor Light"
   command_topic: "lrs/cmd"
+  state_topic: "/lrs/led"
   command_off_template: 'Neopixel,1,0,0,0'
   command_on_template: 'Neopixel,1,{{ red|d }},{{ green|d }},{{ blue|d }}'
   red_template: "{{ value.split(',')[2].split(',')[0] }}"
