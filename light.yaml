@@ -54,7 +54,7 @@
   schema: json
   name: "Luke Sensor"
   state_topic: "lrs/led/state"
-  command_topic: "lrs/led"
+  command_topic: "lrs/cmd"
   effect: true
   effect_list:
 
