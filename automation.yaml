@@ -41,32 +41,32 @@
     service: switch.turn_off
     entity_id:  switch.christmas_lights
 
-# - id: '00004711006'
-#   alias: Luke Night Light on at 1800
-#   trigger:
-#     platform: time
-#     at: "18:00:00"
-#   action:
-#     service: switch.turn_on
-#     entity_id:  switch.christmas_lights
-#
-# - id: '00004711006'
-#   alias: Bedtime Reminder
-#   trigger:
-#     platform: time
-#     at: "23:00:00"
-#   condition:
-#     condition: state
-#     entity_id: light.monitor_leds
-#     state: 'on'
-#   action:
-#   - service: light.turn_on
-#     data:
-#       entity_id: light.monitor_leds
-#       color_name: green
-#       brightness: 255
-#       flash: long
-#
+- id: '00004711006'
+  alias: Luke Night Light on at 1800
+  trigger:
+    platform: time
+    at: "18:00:00"
+  action:
+    service: switch.turn_on
+    entity_id:  switch.christmas_lights
+
+- id: '00004711006'
+  alias: Bedtime Reminder
+  trigger:
+    platform: time
+    at: "23:00:00"
+  condition:
+    condition: state
+    entity_id: light.monitor_leds
+    state: 'on'
+  action:
+  - service: light.turn_on
+    data:
+      entity_id: light.monitor_leds
+      color_name: green
+      brightness: 255
+      flash: long
+
 # - alias: Office Speaker Volume 8
 #   id: 'set_office_speaker_volume'
 #   initial_state: false
