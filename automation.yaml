@@ -132,7 +132,7 @@
   trigger:
     platform: time
     at: "08:00:00"
-  condition:
+
     - condition: time
       weekday:
         - mon
@@ -179,7 +179,7 @@
   action:
     - service: light.turn_on
       data:
-        entity_id: light.monitor_leds
+        entity_id: light.indicator_a
         color_name: orange
         brightness: 255
         flash: long
@@ -264,18 +264,18 @@
     - service: media_player.volume_set
       data:
         entity_id: media_player.office_speaker
-        volume_level: '0.1'
-    # - service: tts.google_translate_say
-    #   entity_id: media_player.office_speaker
-    #   data_template:
-    #     message: "Motion detected in Living Room!  I repeat, Motion detected in Living Room!"
-    #     cache: false
-    - service: light.turn_on
-      data:
-        entity_id: light.monitor_leds
-        color_name: blue
-        brightness: 255
-        flash: long
+        volume_level: '0.3'
+     - service: tts.google_translate_say
+       entity_id: media_player.office_speaker
+       data_template:
+         message: "Motion detected in Living Room!"
+         cache: false
+    #- service: light.turn_on
+    #  data:
+    #    entity_id: light.monitor_leds
+    #    color_name: blue
+    #    brightness: 255
+    #    flash: long
 
 
 
