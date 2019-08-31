@@ -1,18 +1,5 @@
-- !include auto-timers.yaml
+#- !include auto-timers.yaml
 
-
-- id: '00004721002'
-  alias: Garage Man Door Announcement
-  trigger:
-      platform: state
-      entity_id: binary_sensor.garage_man_door
-  action:
-      service: tts.google_translate_say
-      #entity_id: media_player.googlehomehub7838
-      entity_id: media_player.googlehome7008
-      data_template:
-        message: "Garage Man Door"
-        cache: false
 - id: '00004721003'
   alias: Two Minute Warning Spiel
   trigger:
