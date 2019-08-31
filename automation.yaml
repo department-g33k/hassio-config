@@ -41,178 +41,178 @@
     service: switch.turn_off
     entity_id:  switch.christmas_lights
 
-- id: '00004711006'
-  alias: Luke Night Light on at 1800
-  trigger:
-    platform: time
-    at: "18:00:00"
-  action:
-    service: switch.turn_on
-    entity_id:  switch.christmas_lights
-
-- id: '00004711006'
-  alias: Bedtime Reminder
-  trigger:
-    platform: time
-    at: "23:00:00"
-  condition:
-    condition: state
-    entity_id: light.monitor_leds
-    state: 'on'
-  action:
-  - service: light.turn_on
-    data:
-      entity_id: light.monitor_leds
-      color_name: green
-      brightness: 255
-      flash: long
-
-- alias: Office Speaker Volume 8
-  id: 'set_office_speaker_volume'
-  initial_state: false
-  trigger:
-    platform: time
-    at: "18:00:00"
-  action:
-    service: media_player.volume_set
-    data:
-      entity_id: media_player.office_speaker
-      volume_level: '0.8'
-
-- alias: Office Speaker Volume 2
-  id: 'set_office_speaker_volume'
-  initial_state: false
-  trigger:
-    platform: time
-    at: "18:00:00"
-  action:
-    service: media_player.volume_set
-    data:
-      entity_id: media_player.office_speaker
-      volume_level: '0.2'
-
-
-# Motion detector - study lights
-- alias: Motion Alarm
-  id: 'living_motion_alarm'
-  initial_state: true
-  trigger:
-    platform: stated
-    entity_id: binary_sensor.family_room_motion
-    to: 'on'
-  #condition:
-  #  condition: state
-  #  entity_id: group.all_devices
-  #  state: 'home'
-  action:
-    - service: media_player.volume_set
-      data:
-        entity_id: media_player.office_speaker
-        volume_level: '0.1'
-    # - service: tts.google_translate_say
-    #   entity_id: media_player.office_speaker
-    #   data_template:
-    #     message: "Motion detected in Living Room!  I repeat, Motion detected in Living Room!"
-    #     cache: false
-    - service: light.turn_on
-      data:
-        entity_id: light.monitor_leds
-        color_name: blue
-        brightness: 255
-        flash: long
-
-
-
-# Motion detector - study lights
-- alias: Living Room Lights Motion
-  id: 'living_motion'
-  initial_state: true
-  trigger:
-    platform: state
-    entity_id: binary_sensor.family_room_motion
-    to: 'on'
-  # condition:
-  #   condition: and
-  #   conditions:
-  #     - condition: time
-  #       after: '23:00:00'
-  #     - condition: time
-  #       before: '07:00:00'
-  action:
-    service: light.turn_on
-    entity_id: light.switchlinc_dimmer_16_26_6e
-
-- alias: Living Room Lights No Motion
-  id: 'living_nomotion'
-  initial_state: false
-  trigger:
-    platform: state
-    entity_id: binary_sensor.family_room_motion
-    to: 'off'
-    for:
-      minutes: 5
-  action:
-    service: light.turn_off
-    entity_id: light.switchlinc_dimmer_16_26_6e
-
-- alias: Morning Routine Reminder
-  id: 'kids_shoes_on_reminder'
-  initial_state: false
-  trigger:
-    platform: time
-    at: "07:40:00"
-  action:
-    - service: media_player.volume_set
-      data:
-        entity_id: media_player.whole_house_speakers
-        volume_level: '0.9'
-    - service: tts.google_translate_say
-      entity_id: media_player.whole_house_speakers
-      data_template:
-        message: "May I have your attention please.  May I have your attention Please.  Its time to put on socks and shoes and head to school.  I repeat,  its time to put on socks and shoes and head to school."
-        cache: false
-
-- alias: Morning Hi-5
-  id: 'kids_hi-five_reminder'
-  initial_state: false
-  trigger:
-    platform: time
-    at: "06:45:00"
-  action:
-    - service: media_player.volume_set
-      data:
-        entity_id: media_player.whole_house_speakers
-        volume_level: '0.9'
-    - service: tts.google_translate_say
-      entity_id: media_player.whole_house_speakers
-      data_template:
-        message: "May I have your attention please.  May I have your attention Please.  Its time to start your Morning High 5.  I repeat, its time to start your Morning High 5."
-        cache: false
-
-- alias: Keypad Linc Test - On
-  id: 'keypad_linc_test 1'
-  initial_state: false
-  trigger:
-    platform: state
-    entity_id: switch.keypadlinc_dimmer_16_7c_cf_button_g
-    to: 'on'
-  action:
-    service: tts.google_translate_say
-    entity_id: media_player.office_speaker
-    data_template:
-      message: "Button G turned on"
-      cache: false
-
-- alias: Keypad Linc Test - Off
-  id: 'keypad_linc_test 0'
-  initial_state: false
-  trigger:
-    platform: state
-    entity_id: switch.keypadlinc_dimmer_16_7c_cf_button_g
-    to: 'off'
-  action:
-    service: tts.google_translate_say
-    entity_id: media_player.office_speaker
-    data_template:
-      message: "Button G turned off"
-      cache: false
+# - id: '00004711006'
+#   alias: Luke Night Light on at 1800
+#   trigger:
+#     platform: time
+#     at: "18:00:00"
+#   action:
+#     service: switch.turn_on
+#     entity_id:  switch.christmas_lights
+#
+# - id: '00004711006'
+#   alias: Bedtime Reminder
+#   trigger:
+#     platform: time
+#     at: "23:00:00"
+#   condition:
+#     condition: state
+#     entity_id: light.monitor_leds
+#     state: 'on'
+#   action:
+#   - service: light.turn_on
+#     data:
+#       entity_id: light.monitor_leds
+#       color_name: green
+#       brightness: 255
+#       flash: long
+#
+# - alias: Office Speaker Volume 8
+#   id: 'set_office_speaker_volume'
+#   initial_state: false
+#   trigger:
+#     platform: time
+#     at: "18:00:00"
+#   action:
+#     service: media_player.volume_set
+#     data:
+#       entity_id: media_player.office_speaker
+#       volume_level: '0.8'
+#
+# - alias: Office Speaker Volume 2
+#   id: 'set_office_speaker_volume'
+#   initial_state: false
+#   trigger:
+#     platform: time
+#     at: "18:00:00"
+#   action:
+#     service: media_player.volume_set
+#     data:
+#       entity_id: media_player.office_speaker
+#       volume_level: '0.2'
+#
+#
+# # Motion detector - study lights
+# - alias: Motion Alarm
+#   id: 'living_motion_alarm'
+#   initial_state: true
+#   trigger:
+#     platform: stated
+#     entity_id: binary_sensor.family_room_motion
+#     to: 'on'
+#   #condition:
+#   #  condition: state
+#   #  entity_id: group.all_devices
+#   #  state: 'home'
+#   action:
+#     - service: media_player.volume_set
+#       data:
+#         entity_id: media_player.office_speaker
+#         volume_level: '0.1'
+#     # - service: tts.google_translate_say
+#     #   entity_id: media_player.office_speaker
+#     #   data_template:
+#     #     message: "Motion detected in Living Room!  I repeat, Motion detected in Living Room!"
+#     #     cache: false
+#     - service: light.turn_on
+#       data:
+#         entity_id: light.monitor_leds
+#         color_name: blue
+#         brightness: 255
+#         flash: long
+#
+#
+#
+# # Motion detector - study lights
+# - alias: Living Room Lights Motion
+#   id: 'living_motion'
+#   initial_state: true
+#   trigger:
+#     platform: state
+#     entity_id: binary_sensor.family_room_motion
+#     to: 'on'
+#   # condition:
+#   #   condition: and
+#   #   conditions:
+#   #     - condition: time
+#   #       after: '23:00:00'
+#   #     - condition: time
+#   #       before: '07:00:00'
+#   action:
+#     service: light.turn_on
+#     entity_id: light.switchlinc_dimmer_16_26_6e
+#
+# - alias: Living Room Lights No Motion
+#   id: 'living_nomotion'
+#   initial_state: false
+#   trigger:
+#     platform: state
+#     entity_id: binary_sensor.family_room_motion
+#     to: 'off'
+#     for:
+#       minutes: 5
+#   action:
+#     service: light.turn_off
+#     entity_id: light.switchlinc_dimmer_16_26_6e
+#
+# - alias: Morning Routine Reminder
+#   id: 'kids_shoes_on_reminder'
+#   initial_state: false
+#   trigger:
+#     platform: time
+#     at: "07:40:00"
+#   action:
+#     - service: media_player.volume_set
+#       data:
+#         entity_id: media_player.whole_house_speakers
+#         volume_level: '0.9'
+#     - service: tts.google_translate_say
+#       entity_id: media_player.whole_house_speakers
+#       data_template:
+#         message: "May I have your attention please.  May I have your attention Please.  Its time to put on socks and shoes and head to school.  I repeat,  its time to put on socks and shoes and head to school."
+#         cache: false
+#
+# - alias: Morning Hi-5
+#   id: 'kids_hi-five_reminder'
+#   initial_state: false
+#   trigger:
+#     platform: time
+#     at: "06:45:00"
+#   action:
+#     - service: media_player.volume_set
+#       data:
+#         entity_id: media_player.whole_house_speakers
+#         volume_level: '0.9'
+#     - service: tts.google_translate_say
+#       entity_id: media_player.whole_house_speakers
+#       data_template:
+#         message: "May I have your attention please.  May I have your attention Please.  Its time to start your Morning High 5.  I repeat, its time to start your Morning High 5."
+#         cache: false
+#
+# - alias: Keypad Linc Test - On
+#   id: 'keypad_linc_test 1'
+#   initial_state: false
+#   trigger:
+#     platform: state
+#     entity_id: switch.keypadlinc_dimmer_16_7c_cf_button_g
+#     to: 'on'
+#   action:
+#     service: tts.google_translate_say
+#     entity_id: media_player.office_speaker
+#     data_template:
+#       message: "Button G turned on"
+#       cache: false
+#
+# - alias: Keypad Linc Test - Off
+#   id: 'keypad_linc_test 0'
+#   initial_state: false
+#   trigger:
+#     platform: state
+#     entity_id: switch.keypadlinc_dimmer_16_7c_cf_button_g
+#     to: 'off'
+#   action:
+#     service: tts.google_translate_say
+#     entity_id: media_player.office_speaker
+#     data_template:
+#       message: "Button G turned off"
+#       cache: false
