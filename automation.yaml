@@ -132,13 +132,14 @@
   trigger:
     platform: time
     at: "08:00:00"
-  condition: time
-    weekday:
-      - mon
-      - tue
-      - wed
-      - thu
-      - fri
+  condition:
+    - condition: time
+      weekday:
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
   action:
     service: switch.turn_on
     entity_id:  switch.entertainment_center
