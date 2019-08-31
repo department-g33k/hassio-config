@@ -1,3 +1,92 @@
+# - id: '1532816012846'
+#   alias: Kitchen Lights Motion
+#   trigger:
+#   - entity_id: binary_sensor.wemo_motion
+#     from: 'off'
+#     platform: state
+#     to: 'on'
+#   condition:
+#     condition: and
+#        conditions:
+#          - condition: state
+#             entity_id: light.living_room
+#             state: 'off'
+#          - condition: time
+#             after: '23:00:00'
+#             before: '05:00:00'
+#   action:
+#   - data:
+#       brightness: 128
+#       entity_id: light.2be2ca
+#       transition: 3
+#     service: light.turn_on
+#   - delay: '45'
+#   - alias: ''
+#     data:
+#       entity_id: light.2be2ca
+#       transition: 3
+#     service: light.turn_off
+
+# - id: '1545178911234'
+#   alias: 'Update config if travis build is successful'
+#   trigger:
+#     platform: state
+#     entity_id: sensor.department_g33k_hassio_config_state
+#     #entity_id: sensor.departmentg33khassioconfig_last_build_state
+#     from: 'started'
+#     to: 'passed'
+#   action:
+#     - service: shell_command.github_pull
+#     - service: homeassistant.restart
+
+#- id: '1532018612846'
+#  alias: Outdoor Lights Button Link On
+#  trigger:
+#  - entity_id: switch.22cdf9_3
+#    from: 'off'
+#    platform: state
+#    to: 'on'
+#  action:
+#  - data:
+#      entity_id: switch.outdoor_christmas_lights
+#    service: switch.turn_on
+
+#- id: '1532018612847'
+#  alias: Outdoor Lights Button Link Off
+#  trigger:
+#  - entity_id: switch.22cdf9_3
+#    from: 'on'
+#    platform: state
+#    to: 'off'
+#  action:
+#  - data:
+#      entity_id: switch.outdoor_christmas_lights
+#    service: switch.turn_off
+
+#- id: '1532018712848'
+#  alias: Tree Lights Button Link On
+#  trigger:
+#  - entity_id: switch.22cdf9_4
+#    from: 'off'
+#    platform: state
+#    to: 'on'
+#  action:
+#  - data:
+#      entity_id: switch.christmas_lights_2
+#    service: switch.turn_on
+
+#- id: '1532018712849'
+#  alias: Tree Lights Button Link Off
+#  trigger:
+#  - entity_id: switch.22cdf9_4
+#    from: 'on'
+#    platform: state
+#    to: 'off'
+#  action:
+#  - data:
+#      entity_id: switch.christmas_lights_2
+#    service: switch.turn_on
+
 - id: '58888675309'
   alias: Porch Lights on at Sunset
   trigger:
@@ -164,7 +253,7 @@
   id: 'living_motion_alarm'
   initial_state: true
   trigger:
-    platform: state
+    platform: stated
     entity_id: binary_sensor.family_room_motion
     to: 'on'
   #condition:
@@ -175,18 +264,18 @@
     - service: media_player.volume_set
       data:
         entity_id: media_player.office_speaker
-        volume_level: '0.3'
-     - service: tts.google_translate_say
-       entity_id: media_player.office_speaker
-       data_template:
-         message: "Motion detected in Living Room!"
-         cache: false
-    #- service: light.turn_on
-    #  data:
-    #    entity_id: light.monitor_leds
-    #    color_name: blue
-    #    brightness: 255
-    #    flash: long
+        volume_level: '0.1'
+    # - service: tts.google_translate_say
+    #   entity_id: media_player.office_speaker
+    #   data_template:
+    #     message: "Motion detected in Living Room!  I repeat, Motion detected in Living Room!"
+    #     cache: false
+    - service: light.turn_on
+      data:
+        entity_id: light.monitor_leds
+        color_name: blue
+        brightness: 255
+        flash: long
 
 
 
