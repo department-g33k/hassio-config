@@ -186,17 +186,6 @@
         message: "May I have your attention please.  May I have your attention Please.  Its time to start your Morning High 5.  I repeat, its time to start your Morning High 5."
         cache: false
 
-- alias: Keypad Linc Test - On
-  id: 'keypad_linc_test 1'
-  initial_state: false
-  trigger:
-    platform: state
-    entity_id: switch.keypadlinc_dimmer_16_7c_cf_button_g
-    to: 'on'
-  action:
-    service: tts.google_translate_say
-    entity_id: media_player.office_speaker
-    data_template:
-      message: "Button G turned on"
-      cache: false
-
+- !include auto-sprinklers.yaml        
+- !include auto-timers.yaml
+- !include auto-test.yaml
