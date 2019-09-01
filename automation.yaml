@@ -200,4 +200,3 @@
       message: "Button G turned on"
       cache: false
 
-- !include automation-test.yaml
