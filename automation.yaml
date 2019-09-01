@@ -187,5 +187,5 @@
         cache: false
 
 #- !include /config/automations/auto-sprinklers.yaml
-- !include /config/automations/auto-timers.yaml
-- !include /config/automations/auto-test.yaml
+#- !include /config/automations/auto-timers.yaml
+#- !include /config/automations/auto-test.yaml
