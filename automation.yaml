@@ -200,16 +200,4 @@
       message: "Button G turned on"
       cache: false
 
-- alias: Keypad Linc Test - Off
-  id: 'keypad_linc_test 0'
-  initial_state: false
-  trigger:
-    platform: state
-    entity_id: switch.keypadlinc_dimmer_16_7c_cf_button_g
-    to: 'off'
-  action:
-    service: tts.google_translate_say
-    entity_id: media_player.office_speaker
-    data_template:
-      message: "Button G turned off"
-      cache: false
+- !include automation-test.yaml
