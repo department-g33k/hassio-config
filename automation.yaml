@@ -186,6 +186,6 @@
         message: "May I have your attention please.  May I have your attention Please.  Its time to start your Morning High 5.  I repeat, its time to start your Morning High 5."
         cache: false
 
-- !include /config/automations/auto-sprinklers.yaml
+#- !include /config/automations/auto-sprinklers.yaml
 - !include /config/automations/auto-timers.yaml
 - !include /config/automations/auto-test.yaml
