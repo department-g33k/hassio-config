@@ -13,7 +13,8 @@ views:
   - !include /config/lovelace/ui-environmentals.yaml
   - !include /config/lovelace/ui-lights.yaml
   - !include /config/lovelace/ui-sensors.yaml
-  - !include /config/lovelace/ui-health.yaml
+  - !include /config/lovelace/ui-luke.yaml
+  - !include /config/lovelace/ui-automation.yaml
   - !include /config/lovelace/ui-garage.yaml
   - !include /config/lovelace/ui-temperatures.yaml
-  - !include /config/lovelace/ui-automation.yaml
+  - !include /config/lovelace/ui-health.yaml
