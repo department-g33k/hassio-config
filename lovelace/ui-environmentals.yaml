@@ -1,5 +1,5 @@
 title: Environmental
-icon: mdi:pokeball
+icon: mdi:home-climate-outline
 path: env
 type: horizontal-stack
 cards:
