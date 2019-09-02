@@ -3,8 +3,9 @@ icon: mdi:pokeball
 path: env
 type: glance
 title: Luke Room Status
-  entities:
-    - sensor.luke_s_bedroom_door
-    - sensor.luke_s_room_motion
-    - sensor.luke_s_room_light_level
-    - sensor.luke_s_room_temperature
+entities:
+  - sensor.luke_s_bedroom_door
+  - sensor.luke_s_room_motion
+  - sensor.luke_s_room_light_level
+  - sensor.luke_s_room_temperature
+  - sensor.luke_s_room_humidity
