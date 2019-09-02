@@ -189,3 +189,8 @@ binary_sensor:
     entity_id: sensor.fridge_door_light
     name: Fridge Door Binary
     upper: 100
+
+notify:
+- name: simplepush
+  platform: simplepush
+  device_key: Yxdkjb
