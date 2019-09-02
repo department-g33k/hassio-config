@@ -1,4 +1,4 @@
-id: '58888675312'
+- id: '58888675312'
   alias: Entertainment Center on at 8AM
   trigger:
     platform: time

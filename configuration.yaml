@@ -77,7 +77,8 @@ mqtt:
   password: !secret mqtt_password
 
 #group: !include groups.yaml
-automation: !include automation.yaml
+#automation: !include automation.yaml
+automation: !include dir_merge_list automation/
 
 #device_tracker: !include device_tracker.yaml
 
@@ -106,7 +107,7 @@ weblink:
       url: http://192.168.200.250:8123/states
     - name: Server and Config
       url: http://192.168.200.250:8123/config/server_control
-      
+
 binary_sensor:
   - platform: ping
     host: 192.168.200.254
