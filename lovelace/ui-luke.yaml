@@ -1,6 +1,6 @@
 title: Luke
 icon: mdi:pokeball
-path: env
+path: luke
 type: glance
 title: Luke Room Status
 entities:
