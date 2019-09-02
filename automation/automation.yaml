@@ -155,8 +155,6 @@
         message: "May I have your attention please.  May I have your attention Please.  Its time to start your Morning High 5.  I repeat, its time to start your Morning High 5."
         cache: false
 
-#- !include auto-timers.yaml
-
 - id: '58888675309'
   alias: Porch Lights on at Sunset
   trigger:

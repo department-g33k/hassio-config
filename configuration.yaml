@@ -79,6 +79,8 @@ mqtt:
 #group: !include groups.yaml
 automation: !include /config/automation/automation.yaml
 automation: !include /config/automation/auto-timers.yaml
+automation: !include /config/automation/auto-alarm.yaml
+
 
 #device_tracker: !include device_tracker.yaml
 
