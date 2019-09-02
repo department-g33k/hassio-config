@@ -1,5 +1,5 @@
-- id: '58888675312'
-  alias: Entertainment Center on at 8AM
+#- id: '58888675312'
+- alias: Entertainment Center on at 8AM
   trigger:
     platform: time
     at: "08:00:00"
