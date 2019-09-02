@@ -1,4 +1,4 @@
-- alias: Zone 1
+ alias: Zone 1
   id: 'z1_a1'
   initial_state: false
   trigger:
