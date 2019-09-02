@@ -77,8 +77,8 @@ mqtt:
   password: !secret mqtt_password
 
 #group: !include groups.yaml
-#automation: !include automation.yaml
-automation: !include dir_list automation
+automation: !include /config/automation/automation.yaml
+automation: !include /config/automation/auto-timers.yaml
 
 #device_tracker: !include device_tracker.yaml
 
