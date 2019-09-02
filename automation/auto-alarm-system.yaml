@@ -20,9 +20,13 @@
     #   data_template:
     #     message: "Motion detected in Living Room!  I repeat, Motion detected in Living Room!"
     #     cache: false
-    - service: light.turn_on
+    # - service: light.turn_on
+    #   data:
+    #     entity_id: light.monitor_leds
+    #     color_name: blue
+    #     brightness: 255
+    #     flash: long
+    - service: notify.simplepush
       data:
-        entity_id: light.monitor_leds
-        color_name: blue
-        brightness: 255
-        flash: long
+        title: Security Alert
+        message: Motion Detected in Living Room!
