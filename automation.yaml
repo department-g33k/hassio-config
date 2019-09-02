@@ -185,5 +185,5 @@
         cache: false
 
 #- !include auto-sprinklers.yaml
-- !include auto-timers.yaml
-- !include auto-test.yaml
+#- !include auto-timers.yaml
+#- !include auto-test.yaml
