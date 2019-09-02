@@ -1,3 +1,5 @@
+!include dir_merge_list automation/
+
 - id: '00004721003'
   alias: Two Minute Warning Spiel
   trigger:
@@ -183,7 +185,3 @@
       data_template:
         message: "May I have your attention please.  May I have your attention Please.  Its time to start your Morning High 5.  I repeat, its time to start your Morning High 5."
         cache: false
-
-#- !include auto-sprinklers.yaml
-- !include auto-timers.yaml
-- !include auto-test.yaml
