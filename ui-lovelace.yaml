@@ -9,8 +9,8 @@ resources:
     type: js
 
 views:
-  - !include /config/lovelace/ui-environmentals.yaml
   - !include /config/lovelace/dexter.yaml
+  - !include /config/lovelace/ui-environmentals.yaml
   - !include /config/lovelace/ui-lights.yaml
   - !include /config/lovelace/ui-sensors.yaml
   - !include /config/lovelace/ui-luke.yaml
