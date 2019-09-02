@@ -8,4 +8,3 @@ title: Luke Room Status
     - sensor.luke_s_room_motion
     - sensor.luke_s_room_light_level
     - sensor.luke_s_room_temperature
-    - sensor.luke_s_room_humidity
