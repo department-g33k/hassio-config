@@ -1,0 +1,28 @@
+# Motion detector - study lights
+- alias: Motion Alarm
+  id: 'living_motion_alarm'
+  initial_state: true
+  trigger:
+    platform: state
+    entity_id: binary_sensor.family_room_motion
+    to: 'on'
+  #condition:
+  #  condition: state
+  #  entity_id: group.all_devices
+  #  state: 'home'
+  action:
+    - service: media_player.volume_set
+      data:
+        entity_id: media_player.office_speaker
+        volume_level: '0.1'
+    # - service: tts.google_translate_say
+    #   entity_id: media_player.office_speaker
+    #   data_template:
+    #     message: "Motion detected in Living Room!  I repeat, Motion detected in Living Room!"
+    #     cache: false
+    - service: light.turn_on
+      data:
+        entity_id: light.monitor_leds
+        color_name: blue
+        brightness: 255
+        flash: long
