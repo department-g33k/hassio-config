@@ -105,3 +105,33 @@
   red_template: "{{ value.split(',')[2].split(',')[0] }}"
   green_template: "{{ value.split(',')[2].split(',')[1] }}"
   blue_template: "{{ value.split(',')[2].split(',')[2] }}"
+
+- platform: mqtt_json
+  name: "Test LED"
+  state_topic: "lab/led/1"
+  command_topic: "lab/cmd"
+effect: true
+effect_list:
+- bpm
+- candy cane
+- confetti
+- cyclon rainbow
+- dots
+- fire
+- glitter
+- juggle
+- lightning
+- noise
+- police all
+- police one
+- rainbow
+- rainbow with glitter
+- ripple
+- sinelon
+- solid
+- twinkle
+brightness: true
+flash: true
+rgb: true
+optimistic: false
+qos: 0
