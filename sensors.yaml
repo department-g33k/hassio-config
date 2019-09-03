@@ -21,13 +21,6 @@
   unit_of_measurement: "°F"
   qos: 0
 
-#- platform: mqtt
-#  state_topic: "multi/wetness"
-#  name: "Kitchen Water Sensor"
-#  icon: mdi:water
-#  unit_of_measurement: "how dry"
-#  qos: 0
-
 - platform: mqtt
   state_topic: "garage/salt/level"
   name: "Softener Salt"
@@ -84,6 +77,7 @@
   repository: hassio-config
   monitored_conditions:
     - state
+    
 - platform: airvisual
   api_key: !secret airvisual_key
   monitored_conditions:
@@ -96,21 +90,11 @@
   display_options:
     - 'time'
 
-#- platform: mqtt
-#  state_topic: "home-assistant/kitchen/temperature"
-#  name: "Kitchen Temperature"
-#  unit_of_measurement: "°F"
-
 - platform: mqtt
   state_topic: "lrs/Light"
   name: "Luke's Room Light Level"
   icon: mdi:theme-light-dark
   unit_of_measurement: "LUX"
-  qos: 0
-
-- platform: mqtt
-  state_topic: "lrs/motion"
-  name: "Luke's Room Motion"
   qos: 0
 
 - platform: mqtt
@@ -128,27 +112,10 @@
   qos: 0
 
 - platform: mqtt
-  state_topic: "garage/garage-door/state"
-  name: "Garage Door"
-  qos: 0
-
-- platform: mqtt
-  state_topic: "garage/man-door/state"
-  name: "Garage Man Door"
-  qos: 0
-
-- platform: mqtt
   state_topic: "garage/hvac/temperature"
   name: "HVAC Duct Temperature"
   unit_of_measurement: "°F"
   icon: mdi:air-conditioner
-  qos: 0
-
-- platform: mqtt
-  state_topic: "kitchenplants/soilmoisture"
-  name: "Kitchen plant soil dryness"
-  unit_of_measurement: "%"
-  value_template: '{{ value | multiply(0.1) | float }}'
   qos: 0
 
 - platform: mqtt
@@ -211,51 +178,3 @@
 #       friendly_name_template: "{{ states.switch.outdoor_christmas_lights.name}} Today's Consuption"
 #       value_template: '{{ states.switch.outdoor_christmas_lights.attributes["today_energy_kwh"] | float }}'
 #       unit_of_measurement: 'kWh'
-- platform: mqtt
-  state_topic: "acura/system/rssi"
-  name: "Acura Sensor RSSI"
-  unit_of_measurement: "dB"
-  icon: mdi:signal-cellular-2
-  qos: 0
-
-- platform: mqtt
-  state_topic: "acura/system/uptime"
-  name: "Acura Sensor Uptime"
-  unit_of_measurement: "min"
-  icon: mdi:av-timer
-  qos: 0
-
-- platform: mqtt
-  state_topic: "acura/system/vcc"
-  name: "Acura Sensor Uptime"
-  unit_of_measurement: "volts"
-  icon: mdi:battery-50
-  qos: 0
-
-- platform: mqtt
-  state_topic: "acura/network/a"
-  name: "1st Octet"
-  unit_of_measurement: ""
-  icon: mdi:ip-nework
-  qos: 0
-
-- platform: mqtt
-  state_topic: "acura/network/b"
-  name: "2nd Octet"
-  unit_of_measurement: ""
-  icon: mdi:ip-nework
-  qos: 0
-
-- platform: mqtt
-  state_topic: "acura/network/c"
-  name: "3rd Octet"
-  unit_of_measurement: ""
-  icon: mdi:ip-nework
-  qos: 0
-
-- platform: mqtt
-  state_topic: "acura/network/d"
-  name: "4th Octet"
-  unit_of_measurement: ""
-  icon: mdi:ip-nework
-  qos: 0
