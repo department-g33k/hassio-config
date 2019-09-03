@@ -143,7 +143,11 @@
   state_topic: "garage/garage-door/state"
   name: "Garage Door"
   qos: 0
-  device_class: garage_door
+
+- platform: mqtt
+  state_topic: "lab/green-button/state"
+  name: "Green Button"
+  qos: 0
 
 #- platform: template
 #  sensors:
