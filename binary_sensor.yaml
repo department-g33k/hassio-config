@@ -1,0 +1,24 @@
+- platform: ping
+  host: 192.168.200.254
+  name: HomeRouter
+- platform: ping
+  host: 8.8.8.8
+  name: GoogleDNS
+- platform: ping
+  host: 1.1.1.1
+  name: CloudFlareDNS
+- platform: ping
+  host: 192.168.200.105
+  name: FamilyRoomTV
+#- platform: rpi_gpio
+#  ports:
+#    23: Garage Man Door
+#    24: Garage Door
+- platform: threshold
+  entity_id: sensor.softener_salt
+  upper: 60
+  name: Softener Salt OK
+- platform: threshold
+  entity_id: sensor.fridge_door_light
+  name: Fridge Door Binary
+  upper: 100
