@@ -139,15 +139,6 @@
       value_template: "{{ state_attr('climate.THERMOSTAT', 'current_temperature') }}"
       unit_of_measurement: "°F"
 
-- platform: mqtt
-  state_topic: "garage/garage-door/state"
-  name: "Garage Door"
-  qos: 0
-
-- platform: mqtt
-  state_topic: "lab/green-button/state"
-  name: "Green Button"
-  qos: 0
 
 #- platform: template
 #  sensors:
