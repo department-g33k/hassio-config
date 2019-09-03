@@ -77,7 +77,7 @@
   repository: hassio-config
   monitored_conditions:
     - state
-    
+
 - platform: airvisual
   api_key: !secret airvisual_key
   monitored_conditions:
@@ -138,6 +138,12 @@
       friendly_name: Indoor Temperature
       value_template: "{{ state_attr('climate.THERMOSTAT', 'current_temperature') }}"
       unit_of_measurement: "°F"
+
+- platform: mqtt
+  state_topic: "garage/garage-door/state"
+  name: "Garage Door"
+  qos: 0
+  device_class: garage_door
 
 #- platform: template
 #  sensors:
