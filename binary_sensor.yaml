@@ -40,11 +40,28 @@
 - platform: mqtt
   state_topic: "garage/man-door/state"
   name: "Garage Man Door"
-  qos: 0
+  qos: 1
   device_class: door
+  payload_on: "1"
+  payload_off: "0"
 
 - platform: mqtt
   state_topic: "lrs/motion"
   name: "Luke's Room Motion"
   device_class: motion
   qos: 0
+
+- platform: mqtt
+  state_topic: "garage/garage-door/state"
+  name: "Garage Door"
+  device_class: garage_door
+  qos: 1
+  payload_on: "1"
+  payload_off: "0"
+
+  - platform: mqtt
+    state_topic: "lab/green-button/state"
+    name: "Green Button"
+    qos: 0
+    payload_on: "1"
+    payload_off: "0"
