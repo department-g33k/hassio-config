@@ -111,8 +111,7 @@ weblink:
     - name: Server and Config
       url: http://192.168.200.250:8123/config/server_control
 
-binary_sensor:
-  - !include: binary_sensor.yaml
+binary_sensor: !include: binary_sensor.yaml
   # - platform: threshold
   #   entity_id: sensor.fridge_door_light
   #   name: Fridge Door Binary
