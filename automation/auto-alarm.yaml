@@ -30,3 +30,29 @@
       data:
         title: Security Alert
         message: Motion Detected in Living Room!
+
+- alias: Test-Alarm
+  initial_state: true
+  trigger:
+      platform: states
+      entity_id: binary_sensor.red_button
+      to: 'on'
+  action:
+    - service: light.turn_on
+      data:
+        entity_id: light.monitor_led
+        color_name: red
+        brightness: 255
+
+- alias: Test-Alarm 2
+  initial_state: true
+  trigger:
+      platform: states
+      entity_id: binary_sensor.green_button
+      to: 'on'
+  action:
+    - service: light.turn_on
+      data:
+        entity_id: light.monitor_led
+        color_name: green
+        brightness: 255
