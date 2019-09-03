@@ -32,6 +32,7 @@
         message: Motion Detected in Living Room!
 
 - alias: Test-Alarm
+  id: 'test alarm 1'
   initial_state: true
   trigger:
       platform: states
@@ -45,6 +46,7 @@
         brightness: 255
 
 - alias: Test-Alarm 2
+  id: 'test alarm 2'
   initial_state: true
   trigger:
       platform: states
