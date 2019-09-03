@@ -78,12 +78,22 @@ mqtt:
 
 #group: !include groups.yaml
 automation: !include_dir_merge_list automation/
-#automation: !include /config/automation/automation.yaml
-#automation: !include /config/automation/auto-timers.yaml
-#automation: !include /config/automation/auto-alarm.yaml
-
 
 #device_tracker: !include device_tracker.yaml
+
+panel_iframe:
+  router:
+    title: 'States'
+    url: 'http://192.168.200.250:8123/states'
+  server:
+    title: 'Server Control'
+    url: 'http://192.168.200.250:8123/config/server_control'
+  fridge:
+    title: 'Fridge'
+    url: 'http://192.168.200.221'
+  luke:
+    title: 'Luke'
+    url: 'http://192.168.200.251'
 
 insteon:
   host: 192.168.200.173
