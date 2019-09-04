@@ -12,28 +12,28 @@
         title: Security Alert
         message: Motion Detected in Living Room!
 
-- alias: Garage Man Door Alarm
-  id: 'garage_man_alarm'
-  initial_state: false
-  trigger:
-    platform: states
-    entity_id: binary_sensor.garage_man_door
-    to: 'on'
-  action:
-    - service: notify.simplepush
-      data:
-        title: Security Alert
-        message: Garage Man Door Opened!
-
-- alias: Luke Door Door Alarm
-  id: 'luke_door_alarm'
-  initial_state: false
-  trigger:
-    platform: states
-    entity_id: binary_sensor.luke_s_bedroom_door
-    to: 'on'
-  action:
-    - service: notify.simplepush
-      data:
-        title: Security Alert
-        message: Luke's Bedroom Door Opened!
+# - alias: Garage Man Door Alarm
+#   id: 'garage_man_alarm'
+#   initial_state: false
+#   trigger:
+#     platform: states
+#     entity_id: binary_sensor.garage_man_door
+#     to: 'on'
+#   action:
+#     - service: notify.simplepush
+#       data:
+#         title: Security Alert
+#         message: Garage Man Door Opened!
+#
+# - alias: Luke Door Door Alarm
+#   id: 'luke_door_alarm'
+#   initial_state: false
+#   trigger:
+#     platform: states
+#     entity_id: binary_sensor.luke_s_bedroom_door
+#     to: 'on'
+#   action:
+#     - service: notify.simplepush
+#       data:
+#         title: Security Alert
+#         message: Luke's Bedroom Door Opened!
