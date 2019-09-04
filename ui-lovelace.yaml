@@ -18,3 +18,4 @@ views:
   - !include /config/lovelace/ui-garage.yaml
   - !include /config/lovelace/ui-temperatures.yaml
   - !include /config/lovelace/ui-health.yaml
+  - !include /config/lovelace/ui-security.yaml
