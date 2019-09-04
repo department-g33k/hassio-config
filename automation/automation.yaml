@@ -11,6 +11,19 @@
         message: "Attention!  This is your two Minute Warning!"
         cache: false
 
+- id: '00004721004'
+  alias: Time up
+  trigger:
+      platform: state
+      entity_id: binary_sensor.red_button
+  action:
+      service: tts.google_translate_say
+      #entity_id: media_player.googlehomehub7838
+      entity_id: media_player.whole_house_speakers
+      data_template:
+        message: "Attention!  Time is up, I repeat time is up."
+        cache: false
+
 #Automations to handle the PIR sensor to control the Room light.
 - alias: Luke's Room Motion Alarm
   id: '00004721004'
