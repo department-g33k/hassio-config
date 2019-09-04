@@ -1,0 +1,31 @@
+- alias: Monitor LED OFF
+  id: 'mon-led-off'
+  initial_state: true
+  trigger:
+    platform: state
+    entity_id: binary_sensor.red_button
+    to: 'on'
+  #condition:
+  #  condition: state
+  #  entity_id: group.all_devices
+  #  state: 'home'
+  action:
+    - service: light.turn_off
+      data:
+        entity_id: light.monitor_leds
+
+- alias: Monitor LED ON
+  id: 'mon-led-on'
+  initial_state: true
+  trigger:
+    platform: state
+    entity_id: binary_sensor.green_button
+    to: 'on'
+  #condition:
+  #  condition: state
+  #  entity_id: group.all_devices
+  #  state: 'home'
+  action:
+    - service: light.turn_on
+      data:
+        entity_id: light.monitor_leds
