@@ -1,60 +1,39 @@
 # Motion detector - study lights
-- alias: Motion Alarm
+- alias: Living Room Motion Alarm
   id: 'living_motion_alarm'
-  initial_state: true
+  initial_state: false
   trigger:
     platform: state
     entity_id: binary_sensor.family_room_motion
     to: 'on'
-  #condition:
-  #  condition: state
-  #  entity_id: group.all_devices
-  #  state: 'home'
   action:
-    - service: media_player.volume_set
-      data:
-        entity_id: media_player.office_speaker
-        volume_level: '0.1'
-    # - service: tts.google_translate_say
-    #   entity_id: media_player.office_speaker
-    #   data_template:
-    #     message: "Motion detected in Living Room!  I repeat, Motion detected in Living Room!"
-    #     cache: false
-    # - service: light.turn_on
-    #   data:
-    #     entity_id: light.monitor_leds
-    #     color_name: blue
-    #     brightness: 255
-    #     flash: long
     - service: notify.simplepush
       data:
         title: Security Alert
         message: Motion Detected in Living Room!
 
-# - alias: Test-Alarm
-#   id: 'test alarm 1'
-#   initial_state: true
-#   trigger:
-#       platform: states
-#       entity_id: binary_sensor.red_button
-#       to: 'on'
-#   action:
-#     - service: light.turn_on
-#       data:
-#         entity_id: light.monitor_led
-#         color_name: red
-#         brightness: 255
-#
-# - alias: Test-Alarm 2
-#   id: 'test alarm 2'
-#   initial_state: true
-#   trigger:
-#       platform: states
-#       entity_id: binary_sensor.green_button
-#       to: 'on'
-#   action:
-#     - service: light.turn_on
-#       data:
-#         entity_id: light.monitor_led
-#         color_name: green
-#         brightness: 255
+- alias: Garage Man Door Alarm
+  id: 'garage_man_alarm'
+  initial_state: false
+  trigger:
+    platform: states
+    entity_id: binary_sensor.garage_man_door
+    to: 'on'
+  action:
+    - service: notify.simplepush
+      data:
+        title: Security Alert
+        message: Garage Man Door Opened!
+
+- alias: Luke Door Door Alarm
+  id: 'luke_door_alarm'
+  initial_state: false
+  trigger:
+    platform: states
+    entity_id: binary_sensor.luke_s_bedroom_door
+    to: 'on'
+  action:
+    - service: notify.simplepush
+      data:
+        title: Security Alert
+        message: Luke's Bedroom Door Opened!
