@@ -25,7 +25,7 @@
         title: Security Alert
         message: Garage Man Door Opened!
 
-- alias: Luke Door Door Alarm
+- alias: Luke Door Alarm
   id: 'luke_door_alarm'
   initial_state: false
   trigger:
