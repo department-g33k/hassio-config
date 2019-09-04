@@ -7,12 +7,13 @@
     to: 'on'
   action:
     - service: automation.turn_off
-      data:
-        entity_id:
-          - entity_id: automation.garage_man_door_alarm
-          - entity_id: automation.living_motion_alarm
-          - entity_id: automation.living_room_motion_alarm
-          - entity_id: automation.luke_door_alarm
+      entity_id: automation.garage_man_door_alarm
+    - service: automation.turn_off
+      entity_id: automation.living_motion_alarm
+    - service: automation.turn_off
+      entity_id: automation.living_room_motion_alarm
+    - service: automation.turn_off
+      entity_id: automation.luke_door_alarm
 
 - alias: Alarm On
   id: 'alarm-on'
@@ -27,9 +28,10 @@
   #  state: 'home'
   action:
     - service: automation.turn_on
-      data:
-        entity_id:
-          - entity_id: automation.garage_man_door_alarm
-          - entity_id: automation.living_motion_alarm
-          - entity_id: automation.living_room_motion_alarm
-          - entity_id: automation.luke_door_alarm
+      entity_id: automation.garage_man_door_alarm
+    - service: automation.turn_on
+      entity_id: automation.living_motion_alarm
+    - service: automation.turn_on
+      entity_id: automation.living_room_motion_alarm
+    - service: automation.turn_on
+      entity_id: automation.luke_door_alarm
