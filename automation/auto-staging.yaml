@@ -5,10 +5,10 @@
     platform: state
     entity_id: binary_sensor.red_button
     to: 'on'
-  #condition:
-  #  condition: state
-  #  entity_id: group.all_devices
-  #  state: 'home'
+  condition:
+    condition: time
+    before: '22:20:00'
+    after: '22:22:00'
   action:
     - service: switch.turn_off
       data:
