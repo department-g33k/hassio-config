@@ -10,9 +10,9 @@
   #  entity_id: group.all_devices
   #  state: 'home'
   action:
-    - service: light.turn_off
+    - service: switch.turn_off
       data:
-        entity_id: light.monitor_leds
+        entity_id: switch.spare
 
 - alias: Monitor LED ON
   id: 'mon-led-on'
@@ -26,6 +26,6 @@
   #  entity_id: group.all_devices
   #  state: 'home'
   action:
-    - service: light.turn_on
+    - service: switch.turn_on
       data:
-        entity_id: light.monitor_leds
+        entity_id: switch.spare
