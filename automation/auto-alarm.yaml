@@ -16,7 +16,7 @@
   id: 'garage_man_alarm'
   initial_state: false
   trigger:
-    platform: states
+    platform: state
     entity_id: binary_sensor.garage_man_door
     to: 'on'
   action:
@@ -25,15 +25,15 @@
         title: Security Alert
         message: Garage Man Door Opened!
 
-# - alias: Luke Door Door Alarm
-#   id: 'luke_door_alarm'
-#   initial_state: false
-#   trigger:
-#     platform: states
-#     entity_id: binary_sensor.luke_s_bedroom_door
-#     to: 'on'
-#   action:
-#     - service: notify.simplepush
-#       data:
-#         title: Security Alert
-#         message: Luke's Bedroom Door Opened!
+- alias: Luke Door Door Alarm
+  id: 'luke_door_alarm'
+  initial_state: false
+  trigger:
+    platform: state
+    entity_id: binary_sensor.luke_s_bedroom_door
+    to: 'on'
+  action:
+    - service: notify.simplepush
+      data:
+        title: Security Alert
+        message: Luke's Bedroom Door Opened!
