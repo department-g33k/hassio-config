@@ -1,21 +1,21 @@
-- alias: Monitor LED OFF
-  id: 'mon-led-off'
+- alias: Alarm Off
+  id: 'alarm-off'
   initial_state: true
   trigger:
     platform: state
     entity_id: binary_sensor.red_button
     to: 'on'
-  condition:
-    condition: time
-    before: '22:20:00'
-    after: '22:22:00'
   action:
-    - service: switch.turn_off
+    - service: automation.turn_off
       data:
-        entity_id: switch.spare
+        entity_id:
+          - entity_id: automation.garage_man_door_alarm
+          - entity_id: automation.living_motion_alarm
+          - entity_id: automation.living_room_motion_alarm
+          - entity_id: automation.luke_door_alarm
 
-- alias: Monitor LED ON
-  id: 'mon-led-on'
+- alias: Alarm On
+  id: 'alarm-on'
   initial_state: true
   trigger:
     platform: state
@@ -26,6 +26,10 @@
   #  entity_id: group.all_devices
   #  state: 'home'
   action:
-    - service: switch.turn_on
+    - service: automation.turn_on
       data:
-        entity_id: switch.spare
+        entity_id:
+          - entity_id: automation.garage_man_door_alarm
+          - entity_id: automation.living_motion_alarm
+          - entity_id: automation.living_room_motion_alarm
+          - entity_id: automation.luke_door_alarm
