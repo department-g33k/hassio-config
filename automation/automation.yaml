@@ -89,38 +89,6 @@
       entity_id: media_player.office_speaker
       volume_level: '0.2'
 
-# Motion detector - study lights
-- alias: Living Room Lights Motion
-  id: 'living_motion'
-  initial_state: true
-  trigger:
-    platform: state
-    entity_id: binary_sensor.family_room_motion
-    to: 'on'
-  # condition:
-  #   condition: and
-  #   conditions:
-  #     - condition: time
-  #       after: '23:00:00'
-  #     - condition: time
-  #       before: '07:00:00'
-  action:
-    service: light.turn_on
-    entity_id: light.switchlinc_dimmer_16_26_6e
-
-- alias: Living Room Lights No Motion
-  id: 'living_nomotion'
-  initial_state: false
-  trigger:
-    platform: state
-    entity_id: binary_sensor.family_room_motion
-    to: 'off'
-    for:
-      minutes: 5
-  action:
-    service: light.turn_off
-    entity_id: light.switchlinc_dimmer_16_26_6e
-
 - alias: Morning Routine Reminder
   id: 'kids_shoes_on_reminder'
   initial_state: false
