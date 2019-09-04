@@ -1,0 +1,6 @@
+alarm_system:
+    name: Alarm System
+    entities:
+      - garage_man_alarm
+      - living_motion_alarm
+      - automation.luke_door_alarm
