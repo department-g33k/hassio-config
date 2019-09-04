@@ -5,4 +5,4 @@ cards:
   - type: entities
     title: Alarm System
     entities:
-      - entity: automation.turn_on
+      - entity: group.alarm_system
