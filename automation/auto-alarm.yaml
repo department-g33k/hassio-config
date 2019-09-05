@@ -31,7 +31,7 @@
   trigger:
     platform: state
     entity_id: binary_sensor.luke_s_bedroom_door
-    to: 'on'
+    #to: 'on'
   action:
     - service: notify.simplepush
       data:
