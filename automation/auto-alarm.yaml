@@ -37,3 +37,9 @@
       data:
         title: Security Alert
         message: Luke's Bedroom Door Opened!
+    - service: light.turn_on
+      data:
+        entity_id: light.monitor_leds
+        color_name: orange
+        brightness: 255
+        flash: short
