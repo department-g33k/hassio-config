@@ -118,19 +118,19 @@
   icon: mdi:air-conditioner
   qos: 0
 
-- platform: mqtt
-  state_topic: "sickkid/temp"
-  name: "Sick Kid Temperature"
-  icon: mdi:thermometer-alert
-  unit_of_measurement: "°F"
-  qos: 0
-
-- platform: mqtt
-  state_topic: "sickkid/meds"
-  name: "Sick Kid Meds"
-  icon: mdi:pill
-  unit_of_measurement: "dose"
-  qos: 0
+# - platform: mqtt
+#   state_topic: "sickkid/temp"
+#   name: "Sick Kid Temperature"
+#   icon: mdi:thermometer-alert
+#   unit_of_measurement: "°F"
+#   qos: 0
+#
+# - platform: mqtt
+#   state_topic: "sickkid/meds"
+#   name: "Sick Kid Meds"
+#   icon: mdi:pill
+#   unit_of_measurement: "dose"
+#   qos: 0
 
 - platform: template
   sensors:
@@ -143,7 +143,7 @@
   sensors:
     salt_percent:
       friendly_name: Salt Tank
-      value_template: "{{ ((33.8 - (states('sensor.softener_salt') | float ))/ 26.48) * 100}}"
+      value_template: "{{ (((33.8 - (states('sensor.softener_salt') | float ))/ 26.48) * 100) | round(2) }}"
       unit_of_measurement: "%"
 
 #- platform: template
