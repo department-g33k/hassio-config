@@ -143,7 +143,7 @@
   sensors:
     salt_percent:
       friendly_name: Salt Tank
-      value_template: "{{ ((33.8 - (states('sensor.softener_salt') | float ))/ 26.48) * 100 | round(2) }}"
+      value_template: "{{ ((33.8 - (states('sensor.softener_salt') | float ))/ 26.48) * 100}}"
       unit_of_measurement: "%"
 
 #- platform: template
