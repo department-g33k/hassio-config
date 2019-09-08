@@ -1,6 +1,7 @@
 title: Temperatures
 icon: mdi:shield-lock
 path: security
+theme: nord
 cards:
   - type: entities
     title: Alarm System
