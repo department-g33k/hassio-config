@@ -139,6 +139,12 @@
       value_template: "{{ state_attr('climate.THERMOSTAT', 'current_temperature') }}"
       unit_of_measurement: "°F"
 
+- platform: template
+  sensors:
+    salt_percent:
+      friendly_name: Salt Tank
+      value_template: "{{ 33.8 - states('sensor.softener_salt') | float / 26.48 | round(2) }}"
+      unit_of_measurement: %
 
 #- platform: template
 #  sensors:
