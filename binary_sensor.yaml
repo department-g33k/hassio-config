@@ -69,3 +69,16 @@
   qos: 1
   payload_on: "1"
   payload_off: "0"
+
+- platform: mqtt
+  state_topic: "wallpanel/mywallpanel/sensor/motion"
+  name: "Wall Panel Motion"
+  payload_on: '{"value":true}'
+  payload_off: '{"value":false}'
+  device_class: motion
+
+- platform: mqtt
+  state_topic: "wallpanel/mywallpanel/state"
+  name: "Wall Panel Screen"
+  payload_on: '{"screenOn":true}'
+  payload_off: '{"screenOn":false}'
