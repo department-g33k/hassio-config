@@ -157,7 +157,7 @@ tplink:
 notify:
 - name: simplepush
   platform: simplepush
-  device_key: !simplepush_key
+  device_key: !secret simplepush_key
 
 - name: pushbullet
   platform: pushbullet
