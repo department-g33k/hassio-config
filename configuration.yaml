@@ -167,3 +167,4 @@ notify:
   platform: pushetta
   api_key: !secret pushetta_key
   channel_name: !secret pushetta_channel
+  send_test_message: true
