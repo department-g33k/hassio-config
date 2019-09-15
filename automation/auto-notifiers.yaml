@@ -1,9 +1,10 @@
-- alias: house_fan_nptify
+- alias: Cooling Method
+  id: automation_cooling_method_advice
   trigger:
     platform: state
-    entity_id: sensor.where_cooler
+    entity_id: sensor.cooler_location
   action:
     - service: notify.pushbullet
       data:
         title: Indoor/Outdoor Temperature
-        message: State changed to {{ states('sensor.where_cooler') }}.
+        message: State changed to {{ states('sensor.cooler_location') }}.
