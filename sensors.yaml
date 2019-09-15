@@ -163,9 +163,9 @@
           {% endif %}
       value_template: >-
         {% if (((states('sensor.current_temperature')) | float - (states('sensor.local_temperature')) | float) > 0) %}
-        It's {{ ((states('sensor.current_temperature')) | float - (states('sensor.local_temperature')) | float) }} degrees cooler outside.
+        It's {{ ((states('sensor.current_temperature')) | float - (states('sensor.local_temperature')) | float | round(1)) }} degrees cooler outside.
         {% else %}
-        It's {{ ((states('sensor.local_temperature')) | float - (states('sensor.current_temperature')) | float) }} degrees cooler inside.
+        It's {{ ((states('sensor.local_temperature')) | float - (states('sensor.current_temperature')) | float | round(1)) }} degrees cooler inside.
         {% endif %}
 
 #State changed to {{ states('sensor.where_cooler') }}.
