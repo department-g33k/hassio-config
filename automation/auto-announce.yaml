@@ -86,5 +86,5 @@
     - service: media_player.play_media
       data:
         entity_id: media_player.whole_house_speakers
-        media_content_id: '/local/audio/test.mp3'
+        media_content_id: 'http://hq.s1ns.net:8123/local/audio/test.mp3'
         media_content_type: 'audio/mp3'
