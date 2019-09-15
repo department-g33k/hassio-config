@@ -152,12 +152,52 @@
   unit_of_measurement: "%"
   value_template: ''
 
+- platform: template
+  sensors:
+    where_cooler:
+      friendly_name: Cooler
+      value_template: >-
+        {% if is_state((states('sensor.current_temperature')) | float - (states('sensor.local_temperature'))), > 0) %}
+        cooler-outside
+        {% else %}
+        cooler-inside
+        {% endif %}
+
+# -------------------------------------------------------------------------------
+# sensor:
+#   - platform: template
+#     sensors:
+#       net_power:
+#         friendly_name_template: >-
+#           {% if states('sensor.power_consumption')|float < 0 %}
+#             Power Consumption
+#           {% else %}
+#             Power Production
+#           {% endif %}
+#         value_template: "{{ states('sensor.power_consumption') }}"
+#         unit_of_measurement: 'kW'
+#
+# sensor:
+#   - platform: template
+#     sensors:
+#       sun_state:
+#         friendly_name: "Sun State"
+#         value_template: >-
+#           {% if is_state('sun.sun', 'above_horizon') %}
+#             up
+#           {% else %}
+#             down
+#           {% endif %}
+
+# sensor.current_temperature
+# sensor.local_temperature
+
 #- platform: template
 #  sensors:
 #    outside_vs_inside_temp:
 #    value_template: "{% if states.sensor.local_temperature.state < states.sensor.current_temperature.state %}Run Fan{% else %}Run HVAC{%endif %}"
 #    friendly_name: "Indoor Vs Outdoor"
-
+# ---------------------------------------------------------------------------------
 #group:
 #  sensor_node_1_card:
 #    name: Sensor Node 1
