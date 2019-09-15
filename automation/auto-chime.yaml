@@ -1,0 +1,13 @@
+- alias: Garage Man Door Chime
+  id: 'g_man_chime'
+  initial_state: false
+  trigger:
+    platform: state
+    entity_id: binary_sensor.garage_man_door
+    to: 'on'
+  action:
+    - service: media_player.play_media
+      data:
+        entity_id: media_player.whole_house_speakers
+        media_content_id: 'http://s1ns.net/test.mp3'
+        media_content_type: 'audio/mp3'
