@@ -3,6 +3,12 @@ icon: mdi:home-thermometer
 path: env
 type: horizontal-stack
 cards:
+- type: entities
+  title: Environmental
+  show_header_toggle: false
+  entities:
+    - entity: sensor.where_cooler
+      name: Whole house fan effective
 - type: sensor
   entity: sensor.local_temperature
   name: Local Temperature
