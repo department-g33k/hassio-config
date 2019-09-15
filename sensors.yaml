@@ -157,7 +157,7 @@
     where_cooler:
       friendly_name: Cooler
       value_template: >-
-        {% if ((states('sensor.current_temperature')) | float - (states('sensor.local_temperature'))), > 0) %}
+        {% if ((states('sensor.current_temperature')) | float - (states('sensor.local_temperature'))) > 0) %}
         cooler-outside
         {% else %}
         cooler-inside
