@@ -1,0 +1,9 @@
+- alias: house_fan_nptify
+  trigger:
+    platform: state
+    entity_id: sensor.where_cooler
+  action:
+    - service: notify.pushbullet
+      data:
+        title: Indoor/Outdoor Temperature
+        message: State changed to {{ states('sensor.where_cooler') }}.
