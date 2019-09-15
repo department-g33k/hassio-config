@@ -7,9 +7,9 @@ cards:
   title: Environmental
   show_header_toggle: false
   entities:
-    - entity: sensor.where_cooler
-      name: .
-      icon: mdi-weather-windy
+    - entity: sensor.cooler_location
+      name:
+      icon: mdi:weather-windy
 - type: sensor
   entity: sensor.local_temperature
   name: Local Temperature
