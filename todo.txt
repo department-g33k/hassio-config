@@ -2,4 +2,4 @@
 
 - AndroidIP Webcam integration (back yard)
 - Fix TravisCI automation
-- Fix Notification tone for doors
+X Fix Notification tone for doors
