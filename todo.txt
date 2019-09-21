@@ -3,3 +3,5 @@
 - AndroidIP Webcam integration (back yard)
 - Fix TravisCI automation
 X Fix Notification tone for doors
+- Add Bayesian to sense "is BEST here" to change rules
+- How can I sense if Joel's awake?
