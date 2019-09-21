@@ -8,14 +8,15 @@ resources:
   - url: /local/monster-card.js?v=1
     type: js
 
-views: !include_dir_merge_list lovelace/
-  # - !include /config/lovelace/ui-environmentals.yaml
-  # - !include /config/lovelace/dexter.yaml
-  # - !include /config/lovelace/ui-lights.yaml
-  # - !include /config/lovelace/ui-sensors.yaml
-  # - !include /config/lovelace/ui-luke.yaml
-  # - !include /config/lovelace/ui-automation.yaml
-  # - !include /config/lovelace/ui-garage.yaml
-  # - !include /config/lovelace/ui-temperatures.yaml
-  # - !include /config/lovelace/ui-health.yaml
-  # - !include /config/lovelace/ui-security.yaml
+views:
+  - !include /config/lovelace/ui-environmentals.yaml
+  - !include /config/lovelace/dexter.yaml
+  - !include /config/lovelace/ui-lights.yaml
+  - !include /config/lovelace/ui-sensors.yaml
+  - !include /config/lovelace/ui-luke.yaml
+  - !include /config/lovelace/ui-automation.yaml
+  - !include /config/lovelace/ui-wifi.yaml
+  #- !include /config/lovelace/ui-garage.yaml
+  - !include /config/lovelace/ui-temperatures.yaml
+  - !include /config/lovelace/ui-health.yaml
+  - !include /config/lovelace/ui-security.yaml
