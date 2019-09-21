@@ -7,7 +7,6 @@ controllers:
   detection_time: 150
   ssid_filter:
     - 'listen-node.ea32b1af.NSA.GOV'
-#  new_device_defaults:
-#  track_new_devices: False
-#  hide_if_away: False
-  #- platform: bluetooth_tracker
+  dont_track_wired_clients: true
+  block_client:
+    - a0-cc-2b-07-62-b4
