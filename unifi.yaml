@@ -1,8 +1,8 @@
 controllers:
 - host: 192.168.200.250
   site: Default
-  username: hassio
-  password: !secret unifi_password
+  #username: hassio
+  #password: !secret unifi_password
   verify_ssl: False
   detection_time: 150
   ssid_filter:
