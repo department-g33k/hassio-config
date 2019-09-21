@@ -7,3 +7,6 @@ cards:
     title: WiFi Control
     entities:
       - entity: switch.departmentg33k
+      - entity: switch.ipad
+      - entity: switch.nintendo_3ds
+      - entity: switch.luke_s_computer
