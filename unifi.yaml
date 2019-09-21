@@ -7,6 +7,9 @@ controllers:
   detection_time: 150
   ssid_filter:
     - 'listen-node.ea32b1af.NSA.GOV'
+    - 'Pokemon, Crafs and Hotwheels'
+    - 'BeOurGuest'
+    - 'HauntedMansion'
   dont_track_wired_clients: true
   block_client:
-    - a0cc2b0762b4
+    - 'a0:cc:2b:07:62:b4'
