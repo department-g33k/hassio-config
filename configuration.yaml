@@ -105,6 +105,7 @@ insteon:
   ip_port: 25105
   username: Ulster88
   password: !secret insteon_password
+  hub_version: 2
 
 ring:
   username: !secret ring_username
