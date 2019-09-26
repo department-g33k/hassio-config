@@ -1,7 +1,6 @@
 title: Temperatures
 icon: mdi:wifi-off
 path: wifi
-theme: nord
 cards:
   - type: entities
     title: WiFi Control
