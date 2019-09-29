@@ -1,7 +1,6 @@
 title: Temperatures
 icon: mdi:shield-lock
 path: security
-theme: nord
 cards:
   - type: entities
     title: Alarm System
@@ -14,4 +13,4 @@ cards:
       - entity: automation.living_motion_alarm
       - entity: automation.living_room_motion_alarm
       - entity: automation.luke_door_alarm
-      - entity: automation.tablet_cabinet
+      - entity: automation.tablet_cabinet_alarm

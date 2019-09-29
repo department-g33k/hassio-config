@@ -2,7 +2,6 @@ alarm_system:
     name: Alarm System
     entities:
       - automation.garage_man_door_alarm
-      - automation.living_motion_alarm
       - automation.living_room_motion_alarm
       - automation.luke_door_alarm
-      - automation.tablet_cabinet
+      - automation.tablet_cabinet_alarm
