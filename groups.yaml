@@ -5,3 +5,4 @@ alarm_system:
       - automation.living_motion_alarm
       - automation.living_room_motion_alarm
       - automation.luke_door_alarm
+      - automation.tablet_cabinet

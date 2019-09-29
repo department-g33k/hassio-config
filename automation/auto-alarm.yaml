@@ -37,3 +37,16 @@
       data:
         title: Security Alert
         message: Luke's Bedroom Door Opened!
+
+- alias: Tablet Cabinet Alarm
+  id: 'tab_cab_alarm'
+  initial_state: false
+  trigger:
+    platform: state
+    entity_id: binary_sensor.tablet_cabinet
+    to: 'on'
+  action:
+    - service: notify.simplepush
+      data:
+        title: Security Alert
+        message: Tablet Cabinet Opened!

@@ -82,3 +82,11 @@
   name: "Wall Panel Screen"
   payload_on: '{"screenOn":true}'
   payload_off: '{"screenOn":false}'
+
+- platform: mqtt
+  state_topic: "livingroom/door"
+  name: "Tablet Cabinet"
+  qos: 0
+  device_class: door
+  payload_on: "1"
+  payload_off: "0"
