@@ -7,3 +7,11 @@ cards:
     title: Alarm System
     entities:
       - entity: group.alarm_system
+  - type: entities
+    title: Alarm Sensors
+    entities:
+      - entity: automation.garage_man_door_alarm
+      - entity: automation.living_motion_alarm
+      - entity: automation.living_room_motion_alarm
+      - entity: automation.luke_door_alarm
+      - entity: automation.tablet_cabinet
