@@ -10,7 +10,6 @@ cards:
     title: Alarm Sensors
     entities:
       - entity: automation.garage_man_door_alarm
-      - entity: automation.living_motion_alarm
       - entity: automation.living_room_motion_alarm
       - entity: automation.luke_door_alarm
       - entity: automation.tablet_cabinet_alarm
