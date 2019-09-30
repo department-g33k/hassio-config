@@ -4,10 +4,12 @@ path: security
 cards:
   - type: entities
     title: Alarm System
+    show_header_toggle: false
     entities:
       - entity: group.alarm_system
   - type: entities
     title: Alarm Sensors
+    show_header_toggle: false
     entities:
       - entity: binary_sensor.garage_man_door
       - entity: binary_sensor.garage_door
