@@ -106,7 +106,8 @@
   green_template: "{{ value.split(',')[2].split(',')[1] }}"
   blue_template: "{{ value.split(',')[2].split(',')[2] }}"
 
-- platform: mqtt_json
+- platform: mqtt
+  schema: json
   name: "Test LED Strip"
   state_topic: "lab/led"
   command_topic: "lab/cmd"
