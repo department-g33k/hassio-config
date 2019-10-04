@@ -100,6 +100,8 @@ panel_iframe:
     title: 'Luke'
     url: 'http://192.168.200.251'
 
+alarm_control_panel: !include alarm_system.yaml
+
 insteon:
   host: 192.168.200.173
   ip_port: 25105
