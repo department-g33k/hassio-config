@@ -20,3 +20,4 @@ views:
   #- !include /config/lovelace/ui-temperatures.yaml
   - !include /config/lovelace/ui-health.yaml
   - !include /config/lovelace/ui-security.yaml
+  - !include /config/lovelace/ui-media.yaml

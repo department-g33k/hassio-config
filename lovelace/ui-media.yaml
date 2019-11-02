@@ -1,0 +1,14 @@
+title: Media
+icon: mdi:television-classic
+path: media
+cards:
+  - type: media-control
+    entity: media_player.mommy_and_daddy_s_tv
+  - type: media-control
+    entity: media_player.living_room_tv
+  - type: media-control
+    entity: media_player.kitchen_display
+  - type: media-control
+    entity: media_player.office_speaker
+  - type: media-control
+    entity: media_player.whole_house_speakers
