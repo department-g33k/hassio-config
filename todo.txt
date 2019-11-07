@@ -5,3 +5,12 @@
 X Fix Notification tone for doors
 - Add Bayesian to sense "is BEST here" to change rules
 - How can I sense if Joel's awake?
+
+- Automation to warn Luke, then turn off WiFi to devices.
+
+Google Home Hub/Home Mini as BLE Tracker "sources"
+"Kids Asleep - mute warnings" Button
+Timers for all the things
+AdGuard - like piHole but with content blocker
+OhmConnect
+Fix rooms where Google homes and lights are

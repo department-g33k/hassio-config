@@ -31,6 +31,13 @@
   action:
     - service: automation.turn_on
       entity_id: group.alarm_system
+    - service: light.turn_off
+      entity_id: light.lamplinc_dimmer_3a_b1_e7
+      transition: 60
+    - service: light.turn_off
+      entity_id: light.monitor_leds
+      transition: 10
+      flash: short
     #
     #   entity_id: automation.garage_man_door_alarm
     # - service: automation.turn_on
