@@ -14,6 +14,8 @@ cards:
       toggle: true
     - entity: switch.switchlinc_relay_dual_band_30_cd_2c
       name: Sideyard Lights
+    - entity: light.switchlinc_dimmer_1b_c1_13
+      name: Backyard Lights
     - type: section
       label: Front Area
     - entity: light.switchlinc_dimmer_16_26_6e
