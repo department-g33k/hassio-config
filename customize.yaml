@@ -87,6 +87,6 @@ switch.christmas_lights_2:
   icon: mdi:fan
 switch.outdoor_christmas_lights:
   icon: mdi:fridge
-#light.switchlinc_dimmer_1b.c1.13:
-#  friendly_name: Backyard Lights
-#  icon: mdi:outdoor-lamp
+light.switchlinc_dimmer_1b.c1.13:
+  friendly_name: Backyard Lights
+  icon: mdi:outdoor-lamp
