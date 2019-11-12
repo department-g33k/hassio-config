@@ -1,6 +1,6 @@
 title: Devices
-icon: mdi:auto-fix
-path: auto
+icon: mdi:human-male-female
+path: devs
 cards:
   - type: custom:monster-card
     show_empty: false
