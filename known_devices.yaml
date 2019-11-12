@@ -238,10 +238,3 @@ desktopgh3j1e8:
   name: DESKTOP-GH3J1E8
   picture:
   track: false
-
-AndrewiPad:
-  hide_if_away: true
-  icon: mdi:face
-  mac: f0:76:6f:74:ee:a8
-  name: Andrew's iPad
-  track: true
