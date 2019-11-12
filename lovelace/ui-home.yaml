@@ -10,4 +10,5 @@ cards:
     filter:
       include:
         - entity_id: "device_tracker.*"
-        - state: "home"
+    entity-filter:
+      - home
