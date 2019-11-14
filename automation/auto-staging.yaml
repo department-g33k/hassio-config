@@ -1,12 +1,12 @@
-- alias: Alarm Off
-  id: 'alarm-off'
+- alias: Alarm
+  id: 'alarm'
   initial_state: true
   trigger:
     platform: state
     entity_id: binary_sensor.red_button
     to: 'on'
   action:
-    - service: automation.turn_off
+    - service: automation.toggle
       entity_id: group.alarm_system
     #
     #   entity_id: automation.garage_man_door_alarm
@@ -17,8 +17,23 @@
     # - service: automation.turn_off
     #   entity_id: automation.luke_door_alarm
 
-- alias: Alarm On
-  id: 'alarm-on'
+- alias: NightstandButton
+  id: 'nightstandbutton'
+  initial_state: true
+  trigger:
+    platform: state
+    entity_id: binary_sensor.nightstand_button
+    to: 'on'
+  action:
+    - service: light.toggle
+      entity_id: light.lamplinc_dimmer_3a_b1_e7
+    - service: light.toggle
+      entity_id: light.monitor_leds
+    - service: light.toggle
+      entity_id: light.lamplinc_dimmer_3a_b3_2f
+
+- alias: Desk Lights
+  id: 'desk-lights'
   initial_state: true
   trigger:
     platform: state
@@ -29,12 +44,10 @@
   #  entity_id: group.all_devices
   #  state: 'home'
   action:
-    - service: automation.turn_on
-      entity_id: group.alarm_system
-    - service: light.turn_off
+    - service: light.toggle
       entity_id: light.lamplinc_dimmer_3a_b1_e7
       #transition: 60
-    - service: light.turn_off
+    - service: light.toggle
       entity_id: light.monitor_leds
       #transition: 10
       #flash: short
