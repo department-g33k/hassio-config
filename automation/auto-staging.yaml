@@ -26,10 +26,6 @@
     to: 'on'
   action:
     - service: light.toggle
-      entity_id: light.lamplinc_dimmer_3a_b1_e7
-    - service: light.toggle
-      entity_id: light.monitor_leds
-    - service: light.toggle
       entity_id: light.lamplinc_dimmer_3a_b3_2f
 
 - alias: Desk Lights
