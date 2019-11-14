@@ -39,6 +39,13 @@
   payload_off: "0"
 
 - platform: mqtt
+  state_topic: "nightstant/btn/state
+  name: "Nightstand Button"
+  qos: 1
+  payload_on: "1"
+  payload_off: "0"
+
+- platform: mqtt
   state_topic: "lrs/door"
   name: "Luke's Bedroom Door"
   qos: 0
