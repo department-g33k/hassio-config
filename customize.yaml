@@ -37,6 +37,8 @@ light.switchlinc_dimmer_16_26_6e:
   friendly_name: Living Room Lights
 switch.keypadlinc_on_off_22_cd_f9_main:
   friendly_name: Porch Lights
+switch.keypadlinc_dimmer_16_79_B8_main:
+  friendly_name: Christmas Lights
 switch.keypadlinc_on_off_22_cd_f9_button_a:
   friendly_name: Porch Lights A
   icon: mdi:alpha-a-box-outline
