@@ -46,6 +46,20 @@
   payload_off: "0"
 
 - platform: mqtt
+  state_topic: "box/btn/state"
+  name: "Remote Button 1"
+  qos: 1
+  payload_on: "1"
+  payload_off: "0"
+
+- platform: mqtt
+  state_topic: "box/btn2/state"
+  name: "Remote Button 2"
+  qos: 1
+  payload_on: "1"
+  payload_off: "0"
+
+- platform: mqtt
   state_topic: "lrs/door"
   name: "Luke's Bedroom Door"
   qos: 0
