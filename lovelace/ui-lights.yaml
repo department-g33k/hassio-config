@@ -12,7 +12,7 @@ cards:
       name: Porch Lights
       #type: custom:slider-entity-row
       toggle: true
-    - entity: switch.keypadlinc_dimmer_16_79_B8_main
+    - entity: light.keypadlinc_dimmer_16_79_B8_main
       name: Christmas Lights
     - entity: switch.switchlinc_relay_dual_band_30_cd_2c
       name: Sideyard Lights
