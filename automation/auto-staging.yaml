@@ -80,3 +80,5 @@
   action:
     - service: automation.toggle
       entity_id: group.alarm_system
+    - service: light.toggle
+      entity_id: light.nightstand_indicator
