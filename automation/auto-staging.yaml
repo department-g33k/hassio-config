@@ -45,7 +45,7 @@
       #transition: 60
     - service: light.toggle
       entity_id: light.monitor_leds
-        kelvin: 2700
+      color_temp: 2700
       #transition: 10
       #flash: short
     #
