@@ -70,13 +70,13 @@
     - service: light.toggle
       entity_id: light.lamplinc_dimmer_3a_b1_e7
 
-- alias: Nightstand Alarm
-  id: 'alarm'
+- alias: Nightstad Alarm
+  id: 'ns-alarm'
   initial_state: true
   trigger:
     platform: state
     entity_id: binary_sensor.remote_button_1
     to: 'on'
-    action:
-      - service: automation.toggle
-        entity_id: group.alarm_system
+  action:
+    - service: automation.toggle
+      entity_id: group.alarm_system
