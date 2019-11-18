@@ -73,7 +73,7 @@
   initial_state: true
   trigger:
     platform: state
-    entity_id: binary_sensor.remote_button_2
+    entity_id: binary_sensor.remote_button_1
     to: 'off'
   action:
     - service: light.turn_off
