@@ -56,3 +56,49 @@
     #   entity_id: automation.living_room_motion_alarm
     # - service: automation.turn_on
     #   entity_id: automation.luke_door_alarm
+
+- alias: Monitor Blue
+  id: 'leds-blue'
+  initial_state: true
+  trigger:
+    platform: state
+    entity_id: binary_sensor.remote_button_1
+    to: 'on'
+  action:
+    - service: light.turn_on
+      entity_id: light.monitor_leds
+      color_name: blue
+
+- alias: Monitor Red
+  id: 'leds-red'
+  initial_state: true
+  trigger:
+    platform: state
+    entity_id: binary_sensor.remote_button_2
+    to: 'on'
+  action:
+    - service: light.turn_on
+      entity_id: light.monitor_leds
+      color_name: red
+
+- alias: Monitor Blue
+  id: 'leds-blue'
+  initial_state: true
+  trigger:
+    platform: state
+    entity_id: binary_sensor.remote_button_1
+    to: 'off'
+  action:
+    - service: light.turn_off
+      entity_id: light.monitor_leds
+
+- alias: Monitor Red
+  id: 'leds-red'
+  initial_state: true
+  trigger:
+    platform: state
+    entity_id: binary_sensor.remote_button_2
+    to: 'off'
+  action:
+    - service: light.turn_off
+      entity_id: light.monitor_leds
