@@ -72,6 +72,18 @@
   red_template: "{{ value.split(',')[2].split(',')[0] }}"
   green_template: "{{ value.split(',')[2].split(',')[1] }}"
   blue_template: "{{ value.split(',')[2].split(',')[2] }}"
+
+- platform: mqtt
+  schema: template
+  name: "Nightsand Indicator"
+  command_topic: "box/cmd"
+  state_topic: "box/led"
+  command_off_template: 'Neopixel,1,0,0,0'
+  command_on_template: 'Neopixel,1,{{ red|d }},{{ green|d }},{{ blue|d }}'
+  red_template: "{{ value.split(',')[2].split(',')[0] }}"
+  green_template: "{{ value.split(',')[2].split(',')[1] }}"
+  blue_template: "{{ value.split(',')[2].split(',')[2] }}"
+
 #
 # - platform: mqtt
 #   schema: json
