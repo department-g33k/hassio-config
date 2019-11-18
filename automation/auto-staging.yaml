@@ -42,11 +42,11 @@
   action:
     - service: light.toggle
       entity_id: light.lamplinc_dimmer_3a_b1_e7
-      transition: 10
+      #transition: 10
     - service: light.toggle
       entity_id: light.monitor_leds
-      color_temp: 2700
-      transition: 10
+      #color_temp: 2700
+      #transition: 10
       #flash: short
     #
     #   entity_id: automation.garage_man_door_alarm
