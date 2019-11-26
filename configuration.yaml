@@ -51,6 +51,11 @@ sensor: !include sensors.yaml
 tts:
   - platform: google_translate
 
+google:
+  client_id: !secret gclient_id
+  client_secret: !secret gclient_secret
+  track_new_calendar: true
+
 cloud:
   google_actions:
     filter:
