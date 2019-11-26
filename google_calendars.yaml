@@ -1,0 +1,56 @@
+
+- cal_id: calvarymanteca.org_nutggattnbikhl42lc0sqh4fpo@group.calendar.google.com
+  entities:
+  - device_id: lions_n_lambs_preschool_kindergarten
+    ignore_availability: true
+    name: Lions N' Lambs Preschool/Kindergarten
+    track: true
+
+- cal_id: brannon.dan@gmail.com
+  entities:
+  - device_id: brannon_dan_gmail_com
+    ignore_availability: true
+    name: brannon.dan@gmail.com
+    track: true
+
+- cal_id: a1rda5gbq679721lmdneplpcc3fjo575@import.calendar.google.com
+  entities:
+  - device_id: calvary_community_church_dan_brannon
+    ignore_availability: true
+    name: 'Calvary Community Church: Dan Brannon'
+    track: true
+
+- cal_id: brannon.deanna@gmail.com
+  entities:
+  - device_id: brannon_deanna_gmail_com
+    ignore_availability: true
+    name: brannon.deanna@gmail.com
+    track: true
+
+- cal_id: cdlp6stvk3pjvrl2qe22b12je0@group.calendar.google.com
+  entities:
+  - device_id: dan_de
+    ignore_availability: true
+    name: Dan.De
+    track: true
+
+- cal_id: en.usa#holiday@group.v.calendar.google.com
+  entities:
+  - device_id: holidays_in_united_states
+    ignore_availability: true
+    name: Holidays in United States
+    track: true
+
+- cal_id: qkikafr0g8k82irrad5f58ana4@group.calendar.google.com
+  entities:
+  - device_id: madi_and_joey_activities
+    ignore_availability: true
+    name: Madi and Joey Activities
+    track: true
+
+- cal_id: family07086490922637398786@group.calendar.google.com
+  entities:
+  - device_id: family
+    ignore_availability: true
+    name: Family
+    track: true
