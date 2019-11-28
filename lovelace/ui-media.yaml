@@ -5,7 +5,7 @@ cards:
   - type: media-control
     entity: media_player.mommy_and_daddy_s_tv
   - type: media-control
-    entity: media_player.living_room_tv
+    entity: media_player.livingroom_tv
   - type: media-control
     entity: media_player.kitchen_display
   - type: media-control
