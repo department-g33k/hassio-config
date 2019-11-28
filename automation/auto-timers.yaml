@@ -33,7 +33,7 @@
     at: "06:00:00"
   condition:
     - condition: state
-      entity_id: no_school_days
+      entity_id: calendar.no_school_days
       state: 'off'
   action:
     service: switch.turn_on
