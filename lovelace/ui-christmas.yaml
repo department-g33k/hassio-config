@@ -2,9 +2,9 @@ title: Christmas
 icon: mdi:pine-tree
 path: christmas
 cards:
- - type: entity-button
-   title: Outdoor Lights
-   entity: light.keypadlinc_dimmer_16_79_b8_main
+  - type: entity-button
+    title: Outdoor Lights
+    entity: light.keypadlinc_dimmer_16_79_b8_main
   - type: entity-button
     title: Christmas Tree Lights
     entity: switch.christmas_lights_2
