@@ -27,6 +27,18 @@
     service: switch.turn_on
     entity_id:  switch.entertainment_center
 
+- alias: Entertainment Center on at 6AM for No School Days
+  trigger:
+    platform: time
+    at: "06:00:00"
+  condition:
+    - condition: state
+      entity_id: no_school_days
+      state: 'off'
+  action:
+    service: switch.turn_on
+    entity_id:  switch.entertainment_center
+
 - alias: Porch Lights on at Sunset
   trigger:
     platform: sun
