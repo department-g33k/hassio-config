@@ -33,6 +33,11 @@
     ignore_availability: true
     name: Dan.De
     track: true
+  - device_id: no_school_days
+    name: No School Days
+    track: true
+    search: "No School"
+    offset: "!!"
 
 - cal_id: en.usa#holiday@group.v.calendar.google.com
   entities:
