@@ -4,9 +4,11 @@ path: christmas
 cards:
   - type: entity-button
     title: Outdoor Lights
+    name: Outdoor Lights
     entity: light.keypadlinc_dimmer_16_79_b8_main
   - type: entity-button
     title: Christmas Tree Lights
+    name: Christmas Tree Lights
     entity: switch.christmas_lights_2
   - type: entities
     title: Christmas Light Timers
