@@ -34,7 +34,7 @@
   condition:
     - condition: state
       entity_id: calendar.no_school_days
-      state: 'off'
+      state: 'on'
   action:
     service: switch.turn_on
     entity_id:  switch.entertainment_center
