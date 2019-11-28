@@ -8,3 +8,19 @@ cards:
   - type: entity-button
     title: Christmas Tree Lights
     entity: switch.christmas_lights_2
+  - type: entities
+    title: Christmas Light Timers
+    show_header_toggle: true
+    entities:
+      - entity: automation.christmas_tree_lights_on
+        name: Christmas Tree Lights On
+        icon: mdi:pine-tree
+      - entity: automation.christmas_lights_on
+        name: Christmas Lights On
+        icon: mdi:lightbulb-on
+      - entity: automation.christmas_tree_lights_off
+        name: Christmast Tree Lights Off
+        icon: mdi:pine-tree-box
+      - entity: automation.christmas_lights_off
+        name: Christmast Lights Off
+        icon: mdi:lightbulb-outline
