@@ -8,7 +8,8 @@ cards:
       "on": /local/img/christmaslights_on.png
       "off": /local/img/christmaslights_off.png
     name: Christmas Lights
-    action: toggle
+    tap_action:
+      action: toggle
   - type: entity-button
     title: Christmas Tree Lights
     name: Christmas Tree Lights
