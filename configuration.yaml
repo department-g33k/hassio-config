@@ -101,9 +101,6 @@ panel_iframe:
   fridge:
     title: 'Fridge'
     url: 'http://192.168.200.221'
-  luke:
-    title: 'Luke'
-    url: 'http://192.168.200.251'
 
 alarm_control_panel: !include alarm_system.yaml
 
@@ -113,9 +110,9 @@ insteon:
   username: Ulster88
   password: !secret insteon_password
 
-ring:
-  username: !secret ring_username
-  password: !secret ring_password
+#ring:
+#  username: !secret ring_username
+#  password: !secret ring_password
 
 climate:
   - platform: honeywell
@@ -131,7 +128,7 @@ binary_sensor: !include binary_sensor.yaml
 switch: !include switch.yaml
 
 shell_command:
-  github_pull: bash /home/homeassistant/.homeassistant/pullconfig.sh
+  github_pull: bash /var/snap/docker/common/var-lib-docker/volumes/58f3283090e6f82058c64b2e8ab991d7a6d6952191f5febb8463485190dd2296/_data/pullconfig.sh
 
 script: !include scripts.yaml
 
