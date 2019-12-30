@@ -26,7 +26,7 @@
     to: 'on'
   action:
     - service: light.toggle
-      entity_id: light.lamplinc_dimmer_3a_b3_2f
+      entity_id: light.keypadlinc_dimmer_16_79_b8_main
 
 - alias: Desk Lights
   id: 'desk-lights'
