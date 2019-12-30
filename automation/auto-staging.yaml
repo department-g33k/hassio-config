@@ -17,8 +17,8 @@
     # - service: automation.turn_off
     #   entity_id: automation.luke_door_alarm
 
-- alias: NightstandButton
-  id: 'nightstandbutton'
+- alias: Portable Button
+  id: 'portablebutton'
   initial_state: true
   trigger:
     platform: state
