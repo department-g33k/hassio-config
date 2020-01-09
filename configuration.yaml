@@ -123,6 +123,8 @@ climate:
 
 light: !include light.yaml
 
+cover: !include cover.yaml
+
 binary_sensor: !include binary_sensor.yaml
 
 switch: !include switch.yaml

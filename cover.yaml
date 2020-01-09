@@ -1,0 +1,8 @@
+- platform: mqtt
+  command_topic: "lrs/cmd"
+  name: Garage Door
+  payload_open: "pulse,15,1,250"
+  payload_close:  "pulse,15,1,250"
+  state_topic: "garage/garage-door/state"
+  state_open: "1"
+  state_closed: "0"
