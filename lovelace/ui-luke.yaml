@@ -10,6 +10,3 @@ cards:
       - sensor.luke_s_room_light_level
       - sensor.luke_s_room_temperature
       - sensor.luke_s_room_humidity
-  - type: entities
-      entities:
-      entity: cover.garage_door
