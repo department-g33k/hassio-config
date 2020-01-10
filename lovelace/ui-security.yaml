@@ -1,9 +1,9 @@
-title: Temperatures
+title: Access Control
 icon: mdi:shield-lock
 path: security
 cards:
   - type: entities
-    title: Alarm System
+    title: Alarm Master Control
     show_header_toggle: false
     entities:
       - entity: group.alarm_system
@@ -24,3 +24,5 @@ cards:
       - entity: automation.living_room_motion_alarm
       - entity: automation.luke_door_alarm
       - entity: automation.tablet_cabinet_alarm
+  - type: entity-button
+    entity: cover.garage_door

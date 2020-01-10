@@ -13,7 +13,7 @@ views:
   - !include /config/lovelace/dexter.yaml
   - !include /config/lovelace/ui-lights.yaml
   #- !include /config/lovelace/ui-sensors.yaml
-  - !include /config/lovelace/ui-luke.yaml
+  - !include /config/lovelace/ui-garage.yaml
   - !include /config/lovelace/ui-automation.yaml
   - !include /config/lovelace/ui-wifi.yaml
   #- !include /config/lovelace/ui-garage.yaml
