@@ -55,11 +55,3 @@ cards:
 #     - entity: light.monitor_leds
 #       label: Monitor Light
 #     - type: section
-- type: entity-button
-  name: Office Lights Out
-  tap_action:
-    action: call-service
-    service: script.turn_on
-    service_data:
-      entity_id: script.office_lights_out
-  entity: script.office_lights_out
