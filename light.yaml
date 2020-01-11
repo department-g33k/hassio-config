@@ -85,7 +85,6 @@
   blue_template: "{{ value.split(',')[2].split(',')[2] }}"
 
 - platform: mqtt
-  schema: template
   name: "Garage Lights"
   command_topic: "lrs/cmd"
   state_topic: "lrs/garage_lights"
