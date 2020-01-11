@@ -2,50 +2,59 @@ title: Lights
 icon: mdi:lightbulb-on
 path: lights
 cards:
-- type: entities
-  title: Lighting Control
-  show_header_toggle: false
-  entities:
-    - type: section
-      label: Outdoor
-    - entity: switch.keypadlinc_on_off_22_cd_f9_main
-      name: Porch Lights
-      #type: custom:slider-entity-row
-      toggle: true
-    - entity: light.keypadlinc_dimmer_16_79_b8_main
-      name: Christmas Lights
-    - entity: switch.switchlinc_relay_dual_band_30_cd_2c
-      name: Sideyard Lights
-    - entity: light.switchlinc_dimmer_1b_c1_13
-      name: Backyard Lights
-    - type: section
-      label: Front Area
-    - entity: light.switchlinc_dimmer_16_26_6e
-      name: Living Room Lights
-      toggle: true
-    - entity: light.switchlinc_dimmer_2b_e2_ca
-      label: Kitchen Lights
-    - type: section
-      label: Hallway
-    - entity: light.keypadlinc_dimmer_16_7c_cf_main
-      label: Hallway Lights
-    - entity: light.switchlinc_dimmer_1b_bf_e2
-      label: Kid's Bathroom lights
-    - type: section
-      label: Bedrooms
-    - entity: switch.christmas_lights
-      label: Luke's Night Light
-    - type: section
-      label: Master Bedroom
-    - entity: light.lamplinc_dimmer_3a_b3_2f
-      label: Nightstand Light
-    - type: section
-      label: Office
-    - entity: light.lamplinc_dimmer_3a_b1_e7
-      label: Desk Lamp
-    - entity: light.monitor_leds
-      label: Monitor Light
-    - type: section
+  - type: custom:monster-card
+    show_empty: false
+    card:
+      type: entities
+      title: 'Lights'
+      show_header_toggle: false
+      filter:
+        include:
+          - entity_id: "light.*"
+# - type: entities
+#   title: Lighting Control
+#   show_header_toggle: false
+#   entities:
+#     - type: section
+#       label: Outdoor
+#     - entity: switch.keypadlinc_on_off_22_cd_f9_main
+#       name: Porch Lights
+#       #type: custom:slider-entity-row
+#       toggle: true
+#     - entity: light.keypadlinc_dimmer_16_79_b8_main
+#       name: Christmas Lights
+#     - entity: switch.switchlinc_relay_dual_band_30_cd_2c
+#       name: Sideyard Lights
+#     - entity: light.switchlinc_dimmer_1b_c1_13
+#       name: Backyard Lights
+#     - type: section
+#       label: Front Area
+#     - entity: light.switchlinc_dimmer_16_26_6e
+#       name: Living Room Lights
+#       toggle: true
+#     - entity: light.switchlinc_dimmer_2b_e2_ca
+#       label: Kitchen Lights
+#     - type: section
+#       label: Hallway
+#     - entity: light.keypadlinc_dimmer_16_7c_cf_main
+#       label: Hallway Lights
+#     - entity: light.switchlinc_dimmer_1b_bf_e2
+#       label: Kid's Bathroom lights
+#     - type: section
+#       label: Bedrooms
+#     - entity: switch.christmas_lights
+#       label: Luke's Night Light
+#     - type: section
+#       label: Master Bedroom
+#     - entity: light.lamplinc_dimmer_3a_b3_2f
+#       label: Nightstand Light
+#     - type: section
+#       label: Office
+#     - entity: light.lamplinc_dimmer_3a_b1_e7
+#       label: Desk Lamp
+#     - entity: light.monitor_leds
+#       label: Monitor Light
+#     - type: section
 - type: entity-button
   name: Office Lights Out
   tap_action:

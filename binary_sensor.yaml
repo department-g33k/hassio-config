@@ -60,14 +60,6 @@
   payload_off: "0"
 
 - platform: mqtt
-  state_topic: "lrs/door"
-  name: "Luke's Bedroom Door"
-  qos: 0
-  device_class: door
-  payload_on: "1"
-  payload_off: "0"
-
-- platform: mqtt
   state_topic: "garage/man-door/state"
   name: "Garage Man Door"
   qos: 1
