@@ -84,13 +84,13 @@
   green_template: "{{ value.split(',')[2].split(',')[1] }}"
   blue_template: "{{ value.split(',')[2].split(',')[2] }}"
 
-- platform: mqtt
-  name: "Garage Lights"
-  command_topic: "lrs/cmd"
-  state_topic: "lrs/garage_lights"
-  payload_on: "pulse,16,1,75"
-  payload_off: "pulse,16,1,75"
-  state_value_template: "{{ value_json.state }}"
+# - platform: mqtt
+#   name: "Garage Lights"
+#   command_topic: "lrs/cmd"
+#   state_topic: "lrs/garage_lights"
+#   payload_on: "pulse,16,1,75"
+#   payload_off: "pulse,16,1,75"
+#   state_value_template: "{{ value_json.state }}"
 #
 # - platform: mqtt
 #   schema: json
