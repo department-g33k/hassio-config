@@ -90,8 +90,7 @@
   state_topic: "lrs/garage_lights"
   payload_on: "pulse,16,1,75"
   payload_off: "pulse,16,1,75"
-  state_on: 1
-  state_off: 0
+  state_value_template: "{{ value_json.state }}"
 #
 # - platform: mqtt
 #   schema: json
