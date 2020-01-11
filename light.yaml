@@ -90,7 +90,6 @@
   state_topic: "lrs/garage_lights"
   payload_on: "pulse,16,1,75"
   payload_off: "pulse,16,1,75"
-  brightness: false
   rgb: false
 
 
