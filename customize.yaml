@@ -92,3 +92,5 @@ switch.outdoor_christmas_lights:
 light.switchlinc_dimmer_1b_c1_13:
   friendly_name: Backyard Lights
   icon: mdi:outdoor-lamp
+device_tracker.unifi_00_6b_9e_11_cd_16_default:
+  friendly_name: Mommy & Daddy's TV

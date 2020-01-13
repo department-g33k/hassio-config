@@ -1,4 +1,5 @@
 - alias: Entertainment Center on at 8AM
+  initial_state: "on"
   trigger:
     platform: time
     at: "08:00:00"
@@ -15,6 +16,7 @@
     entity_id:  switch.entertainment_center
 
 - alias: Entertainment Center on at 6AM
+  initial_state: "on"
   trigger:
     platform: time
     at: "06:00:00"
@@ -29,6 +31,7 @@
 
 - alias: Entertainment Center on at 6AM for No School Days
   trigger:
+  initial_state: "on"
     platform: time
     at: "06:00:00"
   condition:
@@ -40,6 +43,7 @@
     entity_id:  switch.entertainment_center
 
 - alias: Porch Lights on at Sunset
+  initial_state: "on"
   trigger:
     platform: sun
     event: sunset
@@ -49,6 +53,7 @@
     entity_id: switch.keypadlinc_on_off_22_cd_f9_main
 
 - alias: Porch Lights off at 9:30 PM
+  initial_state: "on"
   trigger:
     platform: time
     at: "21:30:00"
@@ -57,6 +62,7 @@
     entity_id: switch.keypadlinc_on_off_22_cd_f9_main
 
 - alias: Entertainment Center off at 0430
+  initial_state: "on"
   trigger:
     platform: time
     at: "04:00:00"
