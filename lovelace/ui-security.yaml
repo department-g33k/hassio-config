@@ -14,7 +14,7 @@ cards:
       - entity: binary_sensor.garage_man_door
       - entity: binary_sensor.garage_door
       - entity: binary_sensor.family_room_motion
-      - entity: binary_sensor.luke_s_bedroom_door
+#
       - entity: binary_sensor.tablet_cabinet
   - type: entities
     title: Alarms
@@ -22,7 +22,7 @@ cards:
     entities:
       - entity: automation.garage_man_door_alarm
       - entity: automation.living_room_motion_alarm
-      - entity: automation.luke_door_alarm
+#      - entity: automation.luke_door_alarm
       - entity: automation.tablet_cabinet_alarm
   - type: entity-button
     entity: cover.garage_door

@@ -1,21 +1,70 @@
-# Motion detector - study lights
-- alias: Living Room Lights Motion
-  id: 'living_motion'
-  initial_state: true
+# # Motion detector - study lights
+# - alias: Living Room Lights Motion
+#   id: 'living_motion'
+#   initial_state: true
+#   trigger:
+#     platform: state
+#     entity_id: binary_sensor.family_room_motion
+#     to: 'on'
+#   condition:
+#     condition: or
+#     conditions:
+#       - condition: sun
+#         after: sunset
+#       - condition: sun
+#         before: sunrise
+#   action:
+#     service: light.turn_on
+#     entity_id: light.switchlinc_dimmer_16_26_6e
+
+- alias: Livingroom Motion On
+  initial_state: "on"
   trigger:
-    platform: state
-    entity_id: binary_sensor.family_room_motion
-    to: 'on'
+    - platform: state
+      entity_id: binary_sensor.family_room_motion
+      to: 'on'
   condition:
-    condition: or
-    conditions:
-      - condition: sun
-        after: sunset
-      - condition: sun
-        before: sunrise
+    - condition: state
+      entity_id: light.switchlinc_dimmer_16_26_6e
+      state: 'off'
   action:
-    service: light.turn_on
-    entity_id: light.switchlinc_dimmer_16_26_6e
+    - service: light.turn_on
+      entity_id: light.switchlinc_dimmer_16_26_6e
+    - service: input_boolean.turn_on
+      entity_id: input_boolean.livingroom_auto_on
+
+- alias: Livingroom Motion Off
+  initial_state: "on"
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.family_room_motion
+      to: 'off'
+      for:
+        minutes: 5
+  condition:
+    - condition: state
+      entity_id: input_boolean.livingroom_auto_on
+      state: 'on'
+    - condition: state
+      entity_id: light.switchlinc_dimmer_16_26_6e
+      state: 'on'
+  action:
+    - service: light.turn_off
+      entity_id: light.switchlinc_dimmer_16_26_6e
+
+- alias: Living Room Turned Off
+  initial_state: "on"
+  trigger:
+    - platform: state
+      entity_id: light.switchlinc_dimmer_16_26_6e
+      to: 'off'
+  condition:
+    - condition: state
+      entity_id: input_boolean.livingroom_auto_on
+      state: 'on'
+  action:
+    - service: input_boolean.turn_off
+      entity_id: input_boolean.livingroom_auto_on
 
 - alias: Garage Lights Motion
   initial_state: "on"
