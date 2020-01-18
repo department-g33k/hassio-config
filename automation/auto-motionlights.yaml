@@ -27,6 +27,10 @@
     - condition: state
       entity_id: light.switchlinc_dimmer_16_26_6e
       state: 'off'
+    - condition: sun
+      after: sunset
+    - condition: sun
+      before: sunrise
   action:
     - service: light.turn_on
       entity_id: light.switchlinc_dimmer_16_26_6e
