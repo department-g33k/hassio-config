@@ -10,3 +10,5 @@
       track_new_devices: False
       hide_if_away: False
   #- platform: bluetooth_tracker
+ - platform: google_maps
+   username: !secret gmap_username

@@ -1,10 +1,10 @@
-title: Temperatures
+title: Wall
 icon: mdi:wifi-off
-path: wifi
+path: wall
 cards:
   - type: entities
     title: WiFi Control
     entities:
-      - entity: switch.ipad
+      - entity: light.backyard_lights
       - entity: switch.nintendo_3ds
       - entity: switch.luke_s_computer
