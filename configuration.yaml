@@ -74,6 +74,7 @@ cloud:
         aliases:
           - Christmas Lights
 wemo:
+  discovery: true
 #  static:
 #    - 192.186.200.135
 #    - 192.168.200.147
