@@ -32,7 +32,6 @@ updater:
 # Discover some devices automatically
 discovery:
   enable:
-    - homekit
   ignore:
     - igd
 # Allows you to issue voice commands from the frontend in enabled browsers
