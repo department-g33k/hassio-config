@@ -91,19 +91,6 @@ automation: !include_dir_merge_list automation/
 
 unifi: !include unifi.yaml
 
-panel_iframe:
-  router:
-    title: 'States'
-    url: 'http://192.168.200.250:8123/states'
-  server:
-    title: 'Server Control'
-    url: 'http://192.168.200.250:8123/config/server_control'
-  fridge:
-    title: 'Fridge'
-    url: 'http://192.168.200.221'
-
-alarm_control_panel: !include alarm_system.yaml
-
 insteon:
   host: 192.168.200.173
   ip_port: 25105
