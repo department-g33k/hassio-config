@@ -1,0 +1,4 @@
+# Example configuration.yaml entry
+timer:
+  laundry:
+    duration: '00:30:00'

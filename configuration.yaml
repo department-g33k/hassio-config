@@ -91,6 +91,8 @@ automation: !include_dir_merge_list automation/
 
 unifi: !include unifi.yaml
 
+timer: !include timers.yaml
+
 insteon:
   host: 192.168.200.173
   ip_port: 25105
