@@ -18,10 +18,10 @@ cards:
   entity: sensor.current_temperature
   name: Indoor Temperature
   graph: line
-- type: sensor
-  entity: sensor.luke_s_room_temperature
-  name: Luke's Room Temperature
-  graph: line
+#- type: sensor
+#  entity: sensor.luke_s_room_temperature
+#  name: Luke's Room Temperature
+#  graph: line
 - type: sensor
   entity: sensor.hvac_duct_temperature
   name: HVAC Output

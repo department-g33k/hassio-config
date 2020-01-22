@@ -1,0 +1,15 @@
+title: timers
+icon: mdi:clock-digital
+path: timers
+cards:
+  - type: entities
+    title: Switches
+    show_header_toggle: false
+    entities:
+      - entity: switch.entertainment_center
+      - type: divider
+      - entity: switch.luke_s_computer
+      - entity: switch.luke_s_computer_monitor
+      - type: divider
+      - entity: switch.ipad
+      - entity: switch.nintendo_3ds
