@@ -12,15 +12,18 @@ views:
   - !include /config/lovelace/ui-environmentals.yaml
   - !include /config/lovelace/dexter.yaml
   - !include /config/lovelace/ui-lights.yaml
+  - !include /config/lovelace/ui-switch.yaml
   #- !include /config/lovelace/ui-sensors.yaml
-  - !include /config/lovelace/ui-garage.yaml
+  #- !include /config/lovelace/ui-garage.yaml
   - !include /config/lovelace/ui-automation.yaml
   - !include /config/lovelace/ui-wifi.yaml
   - !include /config/lovelace/ui-wall.yaml
+  - !include /config/lovelace/ui-timers.yaml
   #- !include /config/lovelace/ui-garage.yaml
   #- !include /config/lovelace/ui-temperatures.yaml
   #- !include /config/lovelace/ui-health.yaml
-  - !include /config/lovelace/ui-christmas.yaml
+  #- !include /config/lovelace/ui-christmas.yaml
+  - !include /config/lovelace/ui-accesscontrol.yaml
   - !include /config/lovelace/ui-security.yaml
   - !include /config/lovelace/ui-media.yaml
   - !include /config/lovelace/ui-home.yaml

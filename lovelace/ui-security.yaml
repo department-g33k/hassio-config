@@ -3,10 +3,15 @@ icon: mdi:shield-lock
 path: security
 cards:
   - type: entities
-    title: Alarm Master Control
+    title: Alarm System
     show_header_toggle: false
     entities:
       - entity: group.alarm_system
+      - type: divider
+      - entity: automation.garage_man_door_alarm
+      - entity: automation.living_room_motion_alarm
+  #   - entity: automation.luke_door_alarm
+      - entity: automation.tablet_cabinet_alarm
   - type: entities
     title: Alarm Sensors
     show_header_toggle: false
@@ -20,9 +25,5 @@ cards:
     title: Alarms
     show_header_toggle: false
     entities:
-      - entity: automation.garage_man_door_alarm
-      - entity: automation.living_room_motion_alarm
-#      - entity: automation.luke_door_alarm
-      - entity: automation.tablet_cabinet_alarm
   - type: entity-button
     entity: cover.garage_door
