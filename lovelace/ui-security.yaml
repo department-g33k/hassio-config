@@ -21,10 +21,6 @@ cards:
       - entity: binary_sensor.garage_motion
       - entity: binary_sensor.family_room_motion
       - entity: binary_sensor.tablet_cabinet
-      
-  - type: entities
-    title: Alarms
-    show_header_toggle: false
-    entities:
   - type: entity-button
     entity: cover.garage_door
+    icon: mdi:garage-variant
