@@ -107,5 +107,4 @@
 - platform: mqtt
   state_topic: "livingroom/motion/state"
   name: "Livingroom Motion Sensor"
-  icon: mdi:motion-sensor
   quos: 0
