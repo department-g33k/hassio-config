@@ -118,6 +118,7 @@
   icon: mdi:air-conditioner
   qos: 0
 
+
 # - platform: mqtt
 #   state_topic: "sickkid/temp"
 #   name: "Sick Kid Temperature"
