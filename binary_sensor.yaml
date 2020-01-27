@@ -107,4 +107,4 @@
 - platform: mqtt
   state_topic: "livingroom/motion/state"
   name: "Livingroom Motion Sensor"
-  quos: 0
+  qos: 0
