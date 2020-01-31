@@ -1,0 +1,24 @@
+#
+- name: Work
+  latitude: 37.741371
+  longitude: -121.135953
+  radius: 90
+  icon: mdi:account-badge-horizontal
+
+- name: Church
+  latitude: 37.827536
+  longitude: -121.229108
+  radius: 200
+  icon: mdi:church
+
+- name: Parkview
+  latitude: 37.759958
+  longitude: -121.131737
+  radius: 195
+  icon: mdi:chair-school
+
+- name: Home
+  latitude: 37.747183
+  longitude: -121.118745
+  radius: 16
+  icon: mdi:home-circle-outline
