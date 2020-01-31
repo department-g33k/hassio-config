@@ -12,8 +12,6 @@ homeassistant:
   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: America/Los_Angeles
 
-zone: !include zone.yaml
-
   # Customization file
   customize: !include customize.yaml
 # Show links to resources in log and  frontend
@@ -172,3 +170,5 @@ notify:
   api_key: !secret pushetta_key
   channel_name: !secret pushetta_channel
   send_test_message: true
+
+zone: !include zone.yaml
