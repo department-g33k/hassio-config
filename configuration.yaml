@@ -55,6 +55,8 @@ google:
   client_secret: !secret gclient_secret
   track_new_calendar: true
 
+mobile_app:
+
 cloud:
   google_actions:
     filter:
