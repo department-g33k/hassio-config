@@ -111,3 +111,10 @@
   qos: 0
   payload_on: "1"
   payload_off: "0"
+
+- platform: mqtt
+  state_topic: "fridge/garagesidedoor/state"
+  name: "Garage Side Door"
+  device_class: door
+  playload_on: "1"
+  payload_off: "0"
