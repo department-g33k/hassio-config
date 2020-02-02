@@ -19,8 +19,8 @@ cards:
       - entity: binary_sensor.garage_man_door
       - entity: binary_sensor.garage_door
       - entity: binary_sensor.garage_motion
-      - entity: binary_sensor.family_room_motion
-      - entity: binary_sensor.tablet_cabinet
+      - entity: binary_sensor.livingroom_motion_sensor
+      - entity: binary_sensor.garage_side_door
   - type: entity-button
     entity: cover.garage_door
     icon: mdi:garage-variant

@@ -17,7 +17,7 @@ views:
   #- !include /config/lovelace/ui-garage.yaml
   - !include /config/lovelace/ui-automation.yaml
   - !include /config/lovelace/ui-wifi.yaml
-  - !include /config/lovelace/ui-wall.yaml
+  #- !include /config/lovelace/ui-wall.yaml
   - !include /config/lovelace/ui-timers.yaml
   #- !include /config/lovelace/ui-garage.yaml
   #- !include /config/lovelace/ui-temperatures.yaml
