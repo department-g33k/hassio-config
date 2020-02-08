@@ -1,4 +1,4 @@
-db_url: !secret db-connection-string
+#db_url: !secret db-connection-string
 
 purge_keep_days: 5
 purge_interval: 1
