@@ -1,0 +1,4 @@
+- name: Ada
+  id: ada6789
+  device_trackers:
+    - device_tracker.ada
