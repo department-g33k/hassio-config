@@ -1,31 +1,11 @@
-title: Lab
-icon: mdi:flask-empty-outline
-path: label
+title: office
+icon: mdi:office-building
+path: office
 cards:
-- type: sensor
-  entity:  sensor.fridge_temperature
-  name: Fridge Temperature
-  graph: line
-- type: sensor
-  entity:  sensor.fridge_humidity
-  name: Fridge Humidity
-  graph: line
-- type: sensor
-  entity:  sensor.fridge_door_light
-  name: Fridge Door
-- type: sensor
-  entity: sensor.fridge_probe_temperature
-  name: Fridge Probe temperature
-  graph: line
-#    - type: entities
-#
-# - type: entities
-#   title: Fridge Status
-#   show_header_toggle: true
-#   entities:
-#     - entity: switch.outdoor_christmas_lights
-#       name: Fridge
-#       - switch.outdoor_christmas_lights.current_power_w
-#       - switch.outdoor_christmas_lights.total_energy_kwh
-#       - switch.outdoor_christmas_lights.voltage
-#       - switch.outdoor_christmas_lights.current_a
+  - type: entities
+    title: Office Lighting
+    show_header_toggle: false
+    entities:
+      - entity: light.lamplinc_dimmer_3a_b1_e7
+      - entity: light.monitor_leds
+      - entity: switch.officeperipherals
