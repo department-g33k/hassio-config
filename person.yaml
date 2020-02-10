@@ -1,0 +1,11 @@
+- name: Dan
+  id: person-dan
+  device_trackers:
+    - device_tracker.sm_g950u
+    - device_tracker.iphone
+    - device_tracker.gears3_0c16
+    - device_tracker.departmentg33k_2
+- name: De
+  id: person-de
+  device_trackers:
+    - device_tracker.samsung_sm_g950u
