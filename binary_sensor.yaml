@@ -120,4 +120,4 @@
   payload_off: "0"
 
 - platform: wyzesense
-  device: auto
+  device: /dev/hidraw0
