@@ -136,6 +136,9 @@ input_boolean:
   garage_auto_on:
     name: Garage Lights Motion Track
     initial: off
+  office_auto_on:
+    name: Office Motion Track
+    initial: off
 
 lovelace:
   mode: yaml

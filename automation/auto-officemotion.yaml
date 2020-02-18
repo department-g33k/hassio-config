@@ -1,0 +1,52 @@
+- alias: Livingroom Motion On
+  initial_state: "on"
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.wyzesense_779d5d80
+      to: 'on'
+  condition:
+    - condition: state
+      entity_id: switch.outdoor_christmas_lights
+      state: 'off'
+    - condition: sun
+      after: sunset
+    - condition: sun
+      before: sunrise
+  action:
+    - service: switch.turn_on
+      entity_id: switch.outdoor_christmas_lights
+    - service: input_boolean.turn_on
+      entity_id: input_boolean.office_auto_on
+
+- alias: Livingroom Motion Off
+  initial_state: "off"
+  trigger:
+    - platform: state
+      entity_id: binabinary_sensor.wyzesense_779d5d80
+      to: 'off'
+      for:
+        minutes: 10
+  condition:
+    - condition: state
+      entity_id: input_boolean.office_auto_on
+      state: 'on'
+    - condition: state
+      entity_id: switch.outdoor_christmas_lights
+      state: 'on'
+  action:
+    - service: switch.turn_off
+      entity_id: switch.outdoor_christmas_lights
+
+- alias: Living Room Turned Off
+  initial_state: "on"
+  trigger:
+    - platform: state
+      entity_id: switch.outdoor_christmas_lights
+      to: 'off'
+  condition:
+    - condition: state
+      entity_id: input_boolean.office_auto_on
+      state: 'on'
+  action:
+    - service: input_boolean.turn_off
+      entity_id: input_boolean.office_auto_on

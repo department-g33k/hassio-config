@@ -1,22 +1,3 @@
-# # Motion detector - study lights
-# - alias: Living Room Lights Motion
-#   id: 'living_motion'
-#   initial_state: true
-#   trigger:
-#     platform: state
-#     entity_id: binabinary_sensor.livingroom_motion_sensor
-#     to: 'on'
-#   condition:
-#     condition: or
-#     conditions:
-#       - condition: sun
-#         after: sunset
-#       - condition: sun
-#         before: sunrise
-#   action:
-#     service: light.turn_on
-#     entity_id: light.switchlinc_dimmer_16_26_6e
-
 - alias: Livingroom Motion On
   initial_state: "on"
   trigger:
@@ -93,7 +74,7 @@
       entity_id: binary_sensor.garage_motion
       to: 'off'
       for:
-        minutes: 1
+        minutes: 3
   condition:
     - condition: state
       entity_id: input_boolean.garage_auto_on
@@ -104,6 +85,8 @@
   action:
     - service: switch.turn_off
       entity_id: switch.garage_lights
+    - service: input_boolean.turn_off
+      entity_id: input_boolean.garage_auto_on
 
 - alias: Garage Lights Turned Off
   initial_state: "on"
