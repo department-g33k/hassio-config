@@ -2,6 +2,9 @@ title: Access Control
 icon: mdi:shield-lock
 path: security
 cards:
+  - type: entity-button
+    entity: cover.garage_door
+    icon: mdi:garage-variant
   - type: entities
     title: Alarm System
     show_header_toggle: false
@@ -13,14 +16,19 @@ cards:
   #   - entity: automation.luke_door_alarm
       - entity: automation.tablet_cabinet_alarm
   - type: entities
-    title: Alarm Sensors
+    title: Motion Sensors
     show_header_toggle: false
     entities:
-      - entity: binary_sensor.garage_man_door
-      - entity: binary_sensor.garage_door
       - entity: binary_sensor.garage_motion
       - entity: binary_sensor.livingroom_motion_sensor
-      - entity: binary_sensor.garage_side_door
-  - type: entity-button
-    entity: cover.garage_door
-    icon: mdi:garage-variant
+      - entity: binary_sensor.wyzesense_7798e926
+      - entity: binary_sensor.wyzesense_779d5d80
+    - type: entities
+      title: Door Sensors
+      show_header_toggle: false
+      entities:
+        - entity: binary_sensor.garage_man_door
+        - entity: binary_sensor.garage_door
+        - entity: binary_sensor.garage_side_door
+        - entity: binary_sensor.wyzesense_779c28a0
+        - entity: binary_sensor.wyzesense_779c28b9
