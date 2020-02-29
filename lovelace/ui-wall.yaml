@@ -1,5 +1,5 @@
 title: Wall
-icon: mdi:wifi-off
+icon: mdi:tablet-dashboard
 path: wall
 cards:
   - type: entities

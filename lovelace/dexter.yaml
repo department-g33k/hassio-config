@@ -9,3 +9,4 @@ cards:
       - entity: light.lamplinc_dimmer_3a_b1_e7
       - entity: light.monitor_leds
       - entity: switch.outdoor_christmas_lights
+      - entity: switch.spare
