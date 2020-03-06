@@ -95,4 +95,6 @@ light.switchlinc_dimmer_1b_c1_13:
 device_tracker.unifi_00_6b_9e_11_cd_16_default:
   friendly_name: Mommy & Daddy's TV
 binary_sensor.wyzesense_779c28a0:
-  value_template: '{% if is_state("binary_sensor.wyzesense_779c28a0", "Open") %}Tripped{% else %}Set{% endif %}'
+  templates:
+    state: if (state === 'Open') return "Sprung"; return "Set";
+  
