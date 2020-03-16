@@ -3,6 +3,7 @@ icon: mdi:office-building
 path: office
 cards:
   - type: glance
+    entities:
       - entity: light.lamplinc_dimmer_3a_b1_e7
       - entity: light.monitor_leds
       - entity: switch.outdoor_christmas_lights
