@@ -1,0 +1,16 @@
+title: office
+icon: mdi:office-building
+path: office
+cards:
+  - type: button
+    entity: light.lamplinc_dimmer_3a_b1_e7
+  - type: button
+    entity: light.lamplinc_dimmer_3a_b1_e7
+  - type: button
+    entity: light.monitor_leds
+  - type: button
+    entity: switch.outdoor_christmas_lights
+  - type: button
+    entity: switch.spare
+  - type: button
+    entity: switch.christmas_lights
