@@ -6,6 +6,7 @@ cards:
     entity: light.lamplinc_dimmer_3a_b1_e7
     name: Desk Lamp
     icon: mdi:desk-lamp
+    icon_height: 30px
   - type: light
     entity: light.monitor_leds
     name: Monitor LEDs
