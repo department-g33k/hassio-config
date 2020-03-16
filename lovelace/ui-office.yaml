@@ -9,3 +9,4 @@ cards:
       - entity: switch.outdoor_christmas_lights
       - entity: switch.spare
       - entity: switch.christmas_lights
+    title: Office Stuff
