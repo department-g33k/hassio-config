@@ -10,7 +10,7 @@ resources:
 
 views:
   - !include /config/lovelace/ui-environmentals.yaml
-  - !include /config/lovelace/office.yaml
+  - !include /config/lovelace/ui-office.yaml
   - !include /config/lovelace/ui-lights.yaml
   - !include /config/lovelace/ui-switch.yaml
   #- !include /config/lovelace/ui-sensors.yaml
