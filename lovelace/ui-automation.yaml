@@ -2,11 +2,10 @@ title: Automations
 icon: mdi:auto-fix
 path: auto
 cards:
-  - type: custom:monster-card
-    show_empty: false
+  - type: custom:auto-entities
     card:
-      type: entities
-      title: 'On'
     filter:
       include:
-        - entity_id: "automation.*"
+        - domain: "automation"
+    show_empty: true
+    unique: true
