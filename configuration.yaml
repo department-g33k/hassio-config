@@ -142,6 +142,15 @@ input_boolean:
 
 lovelace:
   mode: yaml
+  resources:
+    - url: /local/my-custom-card.js
+      type: js
+    - url: /local/my-webfont.css
+      type: css
+    - url: /local/monster-card.js?v=1
+      type: js
+    - url: /local/auto-entities.js
+      type: module
 
 recorder: !include recorder.yaml
 
