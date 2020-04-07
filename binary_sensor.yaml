@@ -105,14 +105,6 @@
 #   payload_off: "0"
 
 - platform: mqtt
-  state_topic: "livingroom/motion/state"
-  name: "Livingroom Motion Sensor"
-  device_class: motion
-  qos: 0
-  payload_on: "1"
-  payload_off: "0"
-
-- platform: mqtt
   state_topic: "fridge/garagesidedoor/state"
   name: "Garage Side Door"
   device_class: door
