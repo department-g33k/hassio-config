@@ -2,7 +2,7 @@
   initial_state: "on"
   trigger:
     - platform: state
-      entity_id: binary_sensor.livingroom_motion_sensor
+      entity_id: binary_sensor.wyzesense_779d4464
       to: 'on'
   condition:
     - condition: state
@@ -22,7 +22,7 @@
   initial_state: "on"
   trigger:
     - platform: state
-      entity_id: binabinary_sensor.livingroom_motion_sensor
+      entity_id: binary_sensor.wyzesense_779d4464
       to: 'off'
       for:
         minutes: 5

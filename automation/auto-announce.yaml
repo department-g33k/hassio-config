@@ -54,7 +54,7 @@
 
 - alias: Morning Hi-5
   id: 'kids_hi-five_reminder'
-  initial_state: true
+  initial_state: false
   trigger:
     platform: time
     at: "06:45:00"
