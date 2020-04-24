@@ -127,9 +127,9 @@
 
 - platform: mqtt
   schema: json
-  name: "Test LED Strip"
+  name: "Video Lights"
   state_topic: "lab/led"
-  command_topic: "lab/cmd"
+  command_topic: "videolight/cmd"
   effect: true
   effect_list:
     - bpm
