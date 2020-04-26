@@ -73,6 +73,6 @@
     to: 'on'
   action:
     - service: notify.simplepush
-      date:
+      data:
         title: Security Alert
         message: Motion detected in Hallway
