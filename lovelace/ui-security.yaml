@@ -13,9 +13,9 @@ cards:
       - type: divider
       - entity: automation.garage_man_door_alarm
       - entity: automation.living_room_motion_alarm
-      - entity: automation.hallway_motion_alarm
+      - entity: automation.hallway_motion
       - entity: automation.luke_door_alarm
-      - entity: automation.joel_emily_door_alarm
+      - entity: automation.joel_emily_s_door_alarm
       - entity: automation.front_door_alarm
   - type: entities
     title: Motion Sensors
