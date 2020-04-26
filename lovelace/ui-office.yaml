@@ -10,6 +10,9 @@ cards:
       - entity: light.lamplinc_dimmer_3a_b1_e7
         name: Desk Lamp
         icon: mdi:desk-lamp
+      - entity: switch.garage_fan
+        name: Office Video Lights
+        icon: mdi:spotlight
       - entity: light.monitor_leds
         name: Monitor LEDs
         icon: mdi:monitor

@@ -128,7 +128,7 @@
 - platform: mqtt
   schema: json
   name: "Video Lights"
-  state_topic: "lab/led"
+  state_topic: "videolight/led"
   command_topic: "videolight/cmd"
   effect: true
   effect_list:

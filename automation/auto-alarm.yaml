@@ -4,7 +4,7 @@
   initial_state: false
   trigger:
     platform: state
-    entity_id: binary_sensor.family_room_motion
+    entity_id: binary_sensor.wyzesense_779d4464
     to: 'on'
   action:
     - service: notify.simplepush
@@ -30,23 +30,49 @@
   initial_state: false
   trigger:
     platform: state
-    entity_id: binary_sensor.luke_s_bedroom_door
-    #to: 'on'
+    entity_id: binary_sensor.wyzesense_779c28b9
+    to: 'on'
   action:
     - service: notify.simplepush
       data:
         title: Security Alert
         message: Luke's Bedroom Door Opened!
 
-- alias: Tablet Cabinet Alarm
-  id: 'tab_cab_alarm'
+- alias: Joel & Emily's Door Alarm
+  id: 'joel_emily_door_alarm'
   initial_state: false
   trigger:
     platform: state
-    entity_id: binary_sensor.tablet_cabinet
+    entity_id: binary_sensor.wyzesense_779be395
     to: 'on'
   action:
     - service: notify.simplepush
       data:
         title: Security Alert
-        message: Tablet Cabinet Opened!
+        message: Joel & Emily's Bedroom Door Opened!
+
+- alias: Front Door Alarm
+  id: 'front_door_alarm'
+  initial_state: false
+  trigger:
+    platform: state
+    entity_id: binary_sensor.wyzesense_779be342
+    to: 'on'
+  action:
+    - service: notify.simplepush
+      data:
+        title: Security Alert
+        message: Front Door Opened!
+
+- alias: Hallway Motion
+  id: 'hallway_motion_alarm'
+  initial_state: false
+  trigger:
+    platform: state
+    entity_id: binary_sensor.wyzesense_7798e926
+    to: 'on'
+  action:
+    - service: notify.simplepush
+      date:
+        title: Security Alert
+        message: Motion detected in Hallway

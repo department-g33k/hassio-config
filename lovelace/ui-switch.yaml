@@ -8,7 +8,7 @@ cards:
     entities:
       - entity: switch.entertainment_center
       - type: divider
-      #- entity: switch.luke_s_computer
+      - entity: switch.luke_s_computer
       - entity: switch.garage_fan
       - type: divider
       - entity: switch.ipad
