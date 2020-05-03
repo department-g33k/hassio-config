@@ -131,4 +131,5 @@
     - service: notify.simplepush
       data:
         title: Security Alert
-        message: 'Sensor {{ trigger.to_state.attributes.friendly_name }} activated!'
+        #message: 'Sensor {{ trigger.to_state.attributes.friendly_name }} activated!'
+        message: 'Motion sensor activated.'
