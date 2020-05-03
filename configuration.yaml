@@ -95,7 +95,7 @@ automation: !include_dir_merge_list automation/
 
 #device_tracker: !include device_tracker.yaml
 
-unifi: !include unifi.yaml
+#unifi: !include unifi.yaml
 
 timer: !include timers.yaml
 
