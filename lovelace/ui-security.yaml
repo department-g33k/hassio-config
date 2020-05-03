@@ -25,6 +25,7 @@ cards:
       - entity: binary_sensor.wyzesense_779d4464
       - entity: binary_sensor.wyzesense_7798e926
       - entity: binary_sensor.wyzesense_779d5d80
+      - entity: binary_sensor.wyzesense_77a5e9bd
   - type: entities
     title: Door Sensors
     show_header_toggle: false

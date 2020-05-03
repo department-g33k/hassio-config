@@ -51,18 +51,49 @@
         title: Security Alert
         message: Joel & Emily's Bedroom Door Opened!
 
-- alias: Front Door Alarm
-  id: 'front_door_alarm'
+#- alias: Front Door Alarm
+#  id: 'front_door_alarm'
+#  initial_state: false
+#  trigger:
+#    platform: state
+#    entity_id: binary_sensor.wyzesense_779be342
+#    to: 'on'
+#  action:
+#    - service: notify.simplepush
+#      data:
+#        title: Security Alert
+#        message: Front Door Opened!
+
+- alias: Door Alarm
+  id: 'door_alarm'
   initial_state: false
   trigger:
-    platform: state
-    entity_id: binary_sensor.wyzesense_779be342
-    to: 'on'
+    - platform: state
+      entity_id: binary_sensor.wyzesense_779be342
+      to: 'on'
+    - platform: state
+      entity_id: binary_sensor.wyzesense_779c28b9
+      to: 'on'
+    - platform: state
+      entity_id: binary_sensor.wyzesense_779c28a0
+      to: 'on'
+    - platform: state
+      entity_id: binary_sensor.wyzesense_779be395
+      to: 'on'
+    - platform: state
+      entity_id: binary_sensor.garage_side_door
+      to: 'on'
+    - platform: state
+      entity_id: binary_sensor.garage_door
+      to: 'on'
+    - platform: state
+      entity_id: binary_sensor.garage_man_door
+      to: 'on'
   action:
     - service: notify.simplepush
       data:
         title: Security Alert
-        message: Front Door Opened!
+        message: Sensor {{ trigger.to_state.attributes.friendly_name }} activated!
 
 - alias: Hallway Motion
   id: 'hallway_motion_alarm'
