@@ -7,16 +7,10 @@ cards:
     icon: mdi:garage-variant
   - type: entities
     title: Alarm System
-    show_header_toggle: false
+    show_header_toggle: true
     entities:
-      - entity: group.alarm_system
-      - type: divider
-      - entity: automation.garage_man_door_alarm
-      - entity: automation.living_room_motion_alarm
-      - entity: automation.hallway_motion
-      - entity: automation.luke_door_alarm
-      - entity: automation.joel_emily_s_door_alarm
-      - entity: automation.front_door_alarm
+      - entity: automation.motion_alarm
+      - entity: automation.door_alarm
   - type: entities
     title: Motion Sensors
     show_header_toggle: false

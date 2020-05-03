@@ -95,13 +95,38 @@
         title: Security Alert
         message: Sensor {{ trigger.to_state.attributes.friendly_name }} activated!
 
-- alias: Hallway Motion
-  id: 'hallway_motion_alarm'
+#- alias: Hallway Motion
+#  id: 'hallway_motion_alarm'
+#  initial_state: false
+#  trigger:
+#    platform: state
+#    entity_id: binary_sensor.wyzesense_7798e926
+#    to: 'on'
+#  action:
+#    - service: notify.simplepush
+#      data:
+#        title: Security Alert
+#        message: Motion detected in Hallway
+
+- alias: Motion Alarm
+  id: 'motion_alarm'
   initial_state: false
   trigger:
-    platform: state
-    entity_id: binary_sensor.wyzesense_7798e926
-    to: 'on'
+    - platform: state
+      entity_id: binary_sensor.wyzesense_7798e926
+      to: 'on'
+    - platform: state
+      entity_id: binary_sensor.garage_motion
+      to: 'on'
+    - platform: state
+      entity_id: binary_sensor.wyzesense_779d4464
+      to: 'on'
+    - platform: state
+      entity_id: binary_sensor.wyzesense_779d5d80
+      to: 'on'
+    - platform: state
+      entity_id: binary_sensor.wyzesense_77a5e9bd
+      to: 'on'
   action:
     - service: notify.simplepush
       data:
