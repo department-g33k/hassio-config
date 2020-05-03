@@ -131,4 +131,4 @@
     - service: notify.simplepush
       data:
         title: Security Alert
-        message: Motion detected in Hallway
+        message: Sensor {{ trigger.to_state.attributes.friendly_name }} activated!
