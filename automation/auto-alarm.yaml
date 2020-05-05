@@ -94,7 +94,8 @@
       data:
         title: Security Alert
         #message: Sensor {{ trigger.to_state.attributes.friendly_name }} activated!
-        message: "The {{ trigger.to_state.attributes.friendly_name }} sensor has TRIGGERED!!!"
+        #message: "The {{ trigger.to_state.attributes.friendly_name }} sensor has TRIGGERED!!!"
+        message: "Door sensor has been TRIGGERED!!!"
 
 #- alias: Hallway Motion
 #  id: 'hallway_motion_alarm'
@@ -133,5 +134,5 @@
       data:
         title: Security Alert
         #message: 'Sensor {{ trigger.to_state.attributes.friendly_name }} activated!'
-        #message: 'Motion sensor activated.'
-        message: "The {{ trigger.to_state.attributes.friendly_name }} sensor has TRIGGERED!!!"
+        message: 'Motion sensor has been TRIGGERED!!!'
+        #message: "The {{ trigger.to_state.attributes.friendly_name }} sensor has TRIGGERED!!!"
