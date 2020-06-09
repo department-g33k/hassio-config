@@ -33,7 +33,6 @@ updater:
 discovery:
   enable:
   ignore:
-    - igd
 # Person Platform
 person: !include person.yaml
 # Allows you to issue voice commands from the frontend in enabled browsers
