@@ -97,8 +97,9 @@
         #message: "The {{ trigger.to_state.attributes.friendly_name }} sensor has TRIGGERED!!!"
         message: "Door sensor has been TRIGGERED!!!"
     - service: light.turn_on
-        entity_id: light.desk_indicator_light
-        effect: 'Stage 1'
+        data:
+          entity_id: light.desk_indicator_light
+          effect: 'Stage 1'
     - delay:
         minutes: 1
     - service: light.turn_off
