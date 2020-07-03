@@ -151,3 +151,20 @@
         minutes: 1
     - service: light.turn_off
         entity_id: light.desk_indicator_light
+
+- alias: Notifier Test
+  id: 'notifier_test'
+  initial_state: false
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.wyzesense_7798e926
+      to: 'on'
+  action:
+    - service: light.turn_on
+      data:
+        entity_id: light.desk_indicator_light
+        #effect: 'Stage 2'
+    - delay:
+        minutes: 1
+    - service: light.turn_off
+        entity_id: light.desk_indicator_light
