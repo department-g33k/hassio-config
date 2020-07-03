@@ -96,6 +96,14 @@
         #message: Sensor {{ trigger.to_state.attributes.friendly_name }} activated!
         #message: "The {{ trigger.to_state.attributes.friendly_name }} sensor has TRIGGERED!!!"
         message: "Door sensor has been TRIGGERED!!!"
+    - service: light.turn_on
+      data:
+        entity_id: light.desk_indicator_light
+        effect: 'Stage 1'
+    - delay:
+        minutes: 1
+    - service: light.turn_off
+        entity_id: light.desk_indicator_light
 
 #- alias: Hallway Motion
 #  id: 'hallway_motion_alarm'
@@ -136,3 +144,11 @@
         #message: 'Sensor {{ trigger.to_state.attributes.friendly_name }} activated!'
         message: 'Motion sensor has been TRIGGERED!!!'
         #message: "The {{ trigger.to_state.attributes.friendly_name }} sensor has TRIGGERED!!!"
+    - service: light.turn_on
+      data:
+        entity_id: light.desk_indicator_light
+        effect: 'Stage 2'
+    - delay:
+        minutes: 1
+    - service: light.turn_off
+        entity_id: light.desk_indicator_light
