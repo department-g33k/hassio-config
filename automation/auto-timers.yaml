@@ -15,11 +15,11 @@
     service: switch.turn_on
     entity_id:  switch.entertainment_center
 
-- alias: Entertainment Center on at 6AM
+- alias: Entertainment Center on at 5AM
   initial_state: "on"
   trigger:
     platform: time
-    at: "06:00:00"
+    at: "05:00:00"
   condition:
     - condition: time
       weekday:
@@ -29,11 +29,11 @@
     service: switch.turn_on
     entity_id:  switch.entertainment_center
 
-- alias: Entertainment Center on at 6AM for No School Days
+- alias: Entertainment Center on at 5AM for No School Days
   initial_state: "on"
   trigger:
     platform: time
-    at: "06:00:00"
+    at: "05:00:00"
   condition:
     - condition: state
       entity_id: calendar.no_school_days
