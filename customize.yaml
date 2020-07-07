@@ -4,8 +4,6 @@ sensor.28_0315043b90ff_temperature:
   friendly_name: Porch Temp
 sensor.28_0315050445ff_temperature:
   friendly_name: Rack Temp
-switch.switchlinc_relay_dual_band_30_cd_2c:
-  friendly_name: Side Yard Light
 light.lamplinc_dimmer_3a_b3_2f:
   friendly_name: Nightstand Light
 light.switchlinc_dimmer_2b_e2_ca:
@@ -84,11 +82,6 @@ switch.22cdf9_5:
   friendly_name: Porch Light Button 5
 switch.22cdf9_6:
   friendly_name: Porch Light Button 6
-switch.christmas_lights_2:
-  friendly_name: Garage Intake Fan
-  icon: mdi:fan
-switch.outdoor_christmas_lights:
-  icon: mdi:fridge
 light.switchlinc_dimmer_1b_c1_13:
   friendly_name: Backyard Lights
   icon: mdi:outdoor-lamp
@@ -97,4 +90,3 @@ device_tracker.unifi_00_6b_9e_11_cd_16_default:
 binary_sensor.wyzesense_779c28a0:
   templates:
     state: if (state === 'Open') return "Sprung"; return "Set";
-  
