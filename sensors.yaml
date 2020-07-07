@@ -158,15 +158,15 @@
     where_cooler:
       friendly_name_template: >-
           {% if (((states('sensor.current_temperature')) | float - (states('sensor.local_temperature')) | float) > 0) %}
-            Outside is Cooler
+            Outside is ↓
           {% else %}
-            Inside is Cooler
+            Inside is ↓
           {% endif %}
       value_template: >-
         {% if (((states('sensor.current_temperature')) | float - (states('sensor.local_temperature')) | float) > 0) %}
-        {{ (((states('sensor.current_temperature')) | float - (states('sensor.local_temperature')) | float) | round(1)) }}°F cooler outside.
+        {{ (((states('sensor.current_temperature')) | float - (states('sensor.local_temperature')) | float) | round(1)) }}°F ↓ outside.
         {% else %}
-        {{ (((states('sensor.local_temperature')) | float - (states('sensor.current_temperature')) | float) | round(1)) }}°F cooler inside.
+        {{ (((states('sensor.local_temperature')) | float - (states('sensor.current_temperature')) | float) | round(1)) }}°F ↓ inside.
         {% endif %}
 
 - platform: template
