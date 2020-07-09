@@ -13,17 +13,18 @@
       entity_id: whfsleep
       duration: 00:01:30
 
-
-- alias: Turn off WHFan
-  id: 'turn_off_whole_house_fan'
-  initial_state: "on"
-  trigger:
-    - platform: event
-      event_type: timer.finished
-      event_data:
-        entity_id: timer.whfsleep
-  action:
-    - service: switch.turn_off
-      entity_id: switchlinc_relay_dual_band_30_cd_2c
-    - service: input_boolean.turn_off
-      entity_id: input_boolean.whfan_sleep_timer
+#
+#- alias: Turn off WHFan
+#  id: 'turn_off_whole_house_fan'
+#  initial_state: "on"
+#  trigger:
+#    - platform: event
+#      event_type: timer.finished
+#      event_data:
+#        entity_id: timer.whfsleep
+#  action:
+#    - service: switch.turn_off
+#      entity_id: switchlinc_relay_dual_band_30_cd_2c
+#    - service: input_boolean.turn_off
+#
+#      entity_id: input_boolean.whfan_sleep_timer
