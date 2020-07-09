@@ -1,4 +1,3 @@
-# Motion detector - study lights
 - alias: Activate WHF Sleep
   id: 'activate_whf_sleep'
   initial_state: "off"
