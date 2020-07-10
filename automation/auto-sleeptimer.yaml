@@ -8,7 +8,7 @@
   action:
     - service: timer.start
       data:
-        entity_id: whfsleep
+        entity_id: timer.whf_sleep
 
 - alias: Garage domainor Chime
   id: 'garage_daoor_chime'
