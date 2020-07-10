@@ -3,13 +3,16 @@
   initial_state: false
   trigger:
     platform: state
-    entity_id: input_boolean.wfh_sleep_timer
+    entity_id: input_boolean.whfan_sleep_timer
     to: 'on'
   action:
     - service: timer.start
       data:
         entity_id: timer.whf_sleep
-
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.whfan_sleep_timer
+        
 - alias: Garage domainor Chime
   id: 'garage_daoor_chime'
   initial_state: false
