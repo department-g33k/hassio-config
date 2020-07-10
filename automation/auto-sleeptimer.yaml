@@ -1,27 +1,32 @@
-- alias: Activate WHF Sleep
-  initial_state: "off"
+- alias: Garage Man aDoor Chime
+  id: 'g_man_chaime'
+  initial_state: false
   trigger:
-    - platform: state
-      entity_id: input_boolean.whfan_sleep_timer
-      to: 'on'
-  #condition:
-  #  - condition: state
-      #entity_id: switch.switchlinc_relay_dual_band_30_cd_2c
-      #state: 'on'
+    platform: state
+    entity_id: binary_sensor.garage_man_door
+    to: 'on'
   action:
-      service: timer.start
-      entity_id: whfsleep
+    - service: media_player.play_media
+      data:
+        entity_id: media_player.whole_house_speakers
+        media_content_id: 'http://s1ns.net/door-chime-2.mp3'
+        media_content_type: 'audio/mp3'
 
-#- alias: Turn off WHFan
-#  id: 'turn_off_whole_house_fan'
-#  initial_state: "on"
-#  trigger:
-#    - platform: event
-#      event_type: timer.finished
-#      event_data:
-#        entity_id: timer.whfsleep
-#  action:
-#    - service: switch.turn_off
-#      entity_id: switchlinc_relay_dual_band_30_cd_2c
-#    - service: input_boolean.turn_off
-#      entity_id: input_boolean.whfan_sleep_timer
+
+- alias: Garage domainor Chime
+  id: 'garage_daoor_chime'
+  initial_state: false
+  trigger:
+    platform: state
+    entity_id: binary_sensor.garage_door
+    to: 'on'
+  condition:
+    - condition: time
+      weekday:
+        - wed
+  action:
+    - service: media_player.play_media
+      data:
+        entity_id: media_player.office_speaker
+        media_content_id: 'http://s1ns.net/brass-monkey.mp3'
+        media_content_type: 'audio/mp3'
