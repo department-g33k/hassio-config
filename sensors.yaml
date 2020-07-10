@@ -187,7 +187,6 @@
         {% endif %}
 #State changed to {{ states('sensor.where_cooler') }}.
 
-sensor:
   - platform: template
     sensors:
       timer_remaining:
