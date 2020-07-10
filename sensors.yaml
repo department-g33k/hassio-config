@@ -187,19 +187,19 @@
         {% endif %}
 #State changed to {{ states('sensor.where_cooler') }}.
 
-  - platform: template
-    sensors:
-      timer_remaining:
-        entity_id: timer.wfh_sleep
-        value_template: "{{state_attr('timer.wfh_sleep', 'remaining')}}"
-      timer_display:
-        entity_id: timer.timer
-        value_template: >
-          {% if is_state('timer.wfh_sleep', 'active') %}
-            {{state_attr('timer.wfh_sleep', 'remaining')}}
-          {% else %}
-            Halted
-          {% endif %}
+- platform: template
+  sensors:
+    timer_remaining:
+      entity_id: timer.wfh_sleep
+      value_template: "{{state_attr('timer.wfh_sleep', 'remaining')}}"
+    timer_display:
+      entity_id: timer.timer
+      value_template: >
+        {% if is_state('timer.wfh_sleep', 'active') %}
+          {{state_attr('timer.wfh_sleep', 'remaining')}}
+        {% else %}
+          Halted
+        {% endif %}
 
 # -------------------------------------------------------------------------------
 # sensor:
