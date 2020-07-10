@@ -18,9 +18,9 @@
   initial_state: true
   trigger:
     platform: event
-      entity_type: timer.finished
-        entity_data:
-          entity_id: timer.wfh_sleep
+    entity_type: timer.finished
+    event_data:
+      entity_id: timer.wfh_sleep
   #condition:
   #  - condition: time
   action:
