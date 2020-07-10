@@ -1,35 +1,32 @@
 - alias:  Start WHF Sleep Timer
   id: 'wfh_sleep_start'
-  initial_state: false
+  initial_state: true
   trigger:
     platform: state
     entity_id: input_boolean.whfan_sleep_timer
     to: 'on'
   action:
-    - service: timer.start
-      data:
-        entity_id: timer.whf_sleep
     - service: input_boolean.turn_off
       data:
         entity_id: input_boolean.whfan_sleep_timer
-        
-- alias: Garage domainor Chime
-  id: 'garage_daoor_chime'
-  initial_state: false
-  trigger:
-    platform: state
-    entity_id: binary_sensor.garage_door
-    to: 'on'
-  condition:
-    - condition: time
-      weekday:
-        - wed
-  action:
-    - service: media_player.play_media
+    - service: timer.start
       data:
-        entity_id: media_player.office_speaker
-        media_content_id: 'http://s1ns.net/brass-monkey.mp3'
-        media_content_type: 'audio/mp3'
+        entity_id: timer.whf_sleep
+
+- alias: Turn off Fan
+  id: 'turn_off_fan'
+  initial_state: true
+  trigger:
+    platform: event
+      entity_type: timer.finished
+      entity_data:
+        entity_id: timer.wfh_sleep
+  #condition:
+  #  - condition: time
+  action:
+    - service: switch.turn_off
+      data:
+        entity_id: switchlinc_relay_dual_band_30_cd_2c
 
 
 #- alias: Turn off WHFan
