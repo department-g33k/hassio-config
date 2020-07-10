@@ -9,7 +9,7 @@
       #entity_id: switch.switchlinc_relay_dual_band_30_cd_2c
       #state: 'on'
   action:
-    - service: timer.start
+      service: timer.start
       entity_id: whfsleep
 
 #- alias: Turn off WHFan
