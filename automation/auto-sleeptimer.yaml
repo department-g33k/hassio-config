@@ -1,16 +1,16 @@
-#- alias: Activate WHF Sleep
-#  initial_state: "off"
-#  trigger:
-#    - platform: state
-#      entity_id: input_boolean.whfan_sleep_timer
-#      to: 'on'
-#  condition:
-#    - condition: state
-#      entity_id: switch.switchlinc_relay_dual_band_30_cd_2c
-#      state: 'on'
-#  action:
-#    - service: timer.start
-#      entity_id: whfsleep
+- alias: Activate WHF Sleep
+  initial_state: "off"
+  trigger:
+    - platform: state
+      entity_id: input_boolean.whfan_sleep_timer
+      to: 'on'
+  #condition:
+  #  - condition: state
+      #entity_id: switch.switchlinc_relay_dual_band_30_cd_2c
+      #state: 'on'
+  action:
+    - service: timer.start
+      entity_id: whfsleep
 
 #- alias: Turn off WHFan
 #  id: 'turn_off_whole_house_fan'
