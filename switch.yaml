@@ -10,3 +10,8 @@
   payload_off: "pulse,16,1,75"
   state_on: 1
   state_off: 0
+
+- platform: wake_on_lan
+  mac: 00:50:B6:BD:6B:C1
+  name: "Turn on Office Computer"
+  host: 192.168.200.226
