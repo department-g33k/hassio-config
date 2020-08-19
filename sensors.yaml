@@ -205,7 +205,6 @@
 - platform: template
   sensors:
     ups_runtime_format:
-      icon: hass:timer
       entity_id:
         - sensor.ups_runtime_format
       value_template: >
