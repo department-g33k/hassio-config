@@ -205,6 +205,7 @@
 - platform: template
   sensors:
     ups_runtime_format:
+      icon: hass:timer
       entity_id:
         - sensor.ups_runtime_format
       value_template: >
@@ -216,7 +217,7 @@
         {%- set days = (time // 86400) %}
         {%- set days = '{}d '.format(days) if days > 0 else '' %}
         {{ 'Less than 1 min' if time < 60 else days + hours + minutes }}
-  icon: hass:timer
+
 
 # -------------------------------------------------------------------------------
 # sensor:
