@@ -14,3 +14,19 @@ update_config:
   sequence:
     - service: shell_command.github_pull
     - service: homeassistant.restart
+
+office_computer_wake:
+  # To enable see https://www.home-assistant.io/components/wake_on_lan/
+  alias: "Office Computer - Wake"
+  sequence:
+    - service: wake_on_lan.send_magic_packet
+      data:
+        mac: "00:50:B6:BD:6B:C1"
+
+  office_computer_hibernate:
+  alias: "Office Computer - Hibernate"
+  sequence:
+    - service: mqtt.publish
+      data:
+        topic: "iotlink/workgroup/desktop-gh3j1e8/commands/hibernate"
+        payload: ""
