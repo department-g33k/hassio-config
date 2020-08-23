@@ -26,9 +26,6 @@
       turn_off:
         service: script.office_computer_hibernate
       icon_template: mdi:laptop
-
-- platform: template
-  switches:
     AQImode:
       value_template: "{{ is_state('climate.thermostat.fan_mode', 'on') }}"
       turn_on:
