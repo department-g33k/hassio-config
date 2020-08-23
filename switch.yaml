@@ -39,4 +39,4 @@
         data:
           fan_mode: auto
           entity_id: climate.thermostat
-      icon_template: hass:biohazard
+      icon_template: hass:radioactive
