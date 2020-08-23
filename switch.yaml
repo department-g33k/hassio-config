@@ -39,3 +39,4 @@
         service: climate.set_fan_mode
         data: auto
           entity_id: switch.AQImode_off
+      icon_template: hass:biohazard
