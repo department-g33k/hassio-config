@@ -28,7 +28,7 @@
       icon_template: mdi:laptop
     airquality_mode:
       friendly_name: Air Quality Mode
-      value_template: "{{ is_state('climate.thermostat.fan_mode', 'on') }}"
+      value_template: "{{ is_state('climate.thermostat', 'on') }}"
       turn_on:
         service: climate.set_fan_mode
         fan_mode: on
