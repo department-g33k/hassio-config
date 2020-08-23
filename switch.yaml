@@ -26,7 +26,8 @@
       turn_off:
         service: script.office_computer_hibernate
       icon_template: mdi:laptop
-    AQImode:
+    airquality_mode:
+      friendly_name: Air Quality Mode
       value_template: "{{ is_state('climate.thermostat.fan_mode', 'on') }}"
       turn_on:
         service: climate.set_fan_mode
