@@ -31,9 +31,9 @@
       turn_on:
         service: climate.set_fan_mode
         data: on
-          entity_id: switch.AQImode_on
+        entity_id: switch.AQImode_on
       turn_off:
         service: climate.set_fan_mode
         data: auto
-          entity_id: switch.AQImode_off
+        entity_id: switch.AQImode_off
       icon_template: hass:biohazard
