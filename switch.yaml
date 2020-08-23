@@ -31,10 +31,12 @@
       value_template: "{{ is_state_attr('climate.thermostat', 'fan_mode', 'on') }}"
       turn_on:
         service: climate.set_fan_mode
-        fan_mode: on
-        entity_id: climate.thermostat
+        data:
+          fan_mode: on
+          entity_id: climate.thermostat
       turn_off:
         service: climate.set_fan_mode
-        fan_mode: auto
-        entity_id: climate.thermostat
+        data:
+          fan_mode: auto
+          entity_id: climate.thermostat
       icon_template: hass:biohazard
