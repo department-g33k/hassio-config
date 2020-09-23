@@ -4,8 +4,6 @@ sensor.28_0315043b90ff_temperature:
   friendly_name: Porch Temp
 sensor.28_0315050445ff_temperature:
   friendly_name: Rack Temp
-light.lamplinc_dimmer_3a_b3_2f:
-  friendly_name: Nightstand Light
 light.switchlinc_dimmer_2b_e2_ca:
   friendly_name: Kitchen Lights
 light.keypadlinc_dimmer_16_7c_cf_main:
