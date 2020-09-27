@@ -154,3 +154,9 @@
   rgb: true
   optimistic: false
   qos: 0
+
+- platform: flux_led
+  devices:
+    192.168.200.166:
+      name: desk_backlight
+      mode: "rgbw"
