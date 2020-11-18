@@ -181,11 +181,11 @@ notify:
 - name: simplepush_dg
   platform: simplepush
   device_key: !secret simplepush_key
-  event: "Door Guard"
+  event: "Doorguard"
 - name: simplepush_sa
   platform: simplepush
   device_key: !secret simplepush_key
-  event: "Security Alarm"
+  event: "Security"
 - name: simplepush_low
   platform: simplepush
   device_key: !secret simplepush_key
