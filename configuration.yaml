@@ -178,6 +178,26 @@ notify:
 - name: simplepush
   platform: simplepush
   device_key: !secret simplepush_key
+- name: simplepush_dg
+  platform: simplepush
+  device_key: !secret simplepush_key
+  event: "Door Guard"
+- name: simplepush_sa
+  platform: simplepush
+  device_key: !secret simplepush_key
+  event: "Security Alarm"
+- name: simplepush_low
+  platform: simplepush
+  device_key: !secret simplepush_key
+  event: "Low Priority"
+- name: simplepush_med
+  platform: simplepush
+  device_key: !secret simplepush_key
+  event: "Med Priority"
+- name: simplepush_hi
+  platform: simplepush
+  device_key: !secret simplepush_key
+  event: "Hi Priority"
 
 - name: pushbullet
   platform: pushbullet
