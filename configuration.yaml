@@ -140,6 +140,16 @@ input_boolean:
     name: Office Motion Track
     initial: off
 
+input_text:
+
+input_number:
+
+input_datetime:
+
+input_select:
+
+counter:
+
 lovelace:
   mode: yaml
 #  resources:
