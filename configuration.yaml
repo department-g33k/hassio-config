@@ -147,6 +147,20 @@ input_number:
 input_datetime:
 
 input_select:
+  washing_machine_status:
+    name: Washing Machine Status
+    options:
+      - Off
+      - Running
+      - Finished
+    initial: Off
+ dryer_status:
+   name: Dryer Status
+   options:
+     - Off
+     - Running
+     - Finished
+   initial: Off
 
 counter:
 
