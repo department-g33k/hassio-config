@@ -154,13 +154,13 @@ input_select:
       - Running
       - Finished
     initial: Off
- dryer_status:
-   name: Dryer Status
-   options:
+  dryer_status:
+    name: Dryer Status
+    options:
      - Off
      - Running
      - Finished
-   initial: Off
+    initial: Off
 
 counter:
 
