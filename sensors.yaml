@@ -214,71 +214,23 @@
         {%- set days = (time // 86400) %}
         {%- set days = '{}d '.format(days) if days > 0 else '' %}
         {{ 'Less than 1 min' if time < 60 else days + hours + minutes }}
-
-
-# -------------------------------------------------------------------------------
-# sensor:
-#   - platform: template
-#     sensors:
-#       net_power:
-#         friendly_name_template: >-
-#           {% if states('sensor.power_consumption')|float < 0 %}
-#             Power Consumption
-#           {% else %}
-#             Power Production
-#           {% endif %}
-#         value_template: "{{ states('sensor.power_consumption') }}"
-#         unit_of_measurement: 'kW'
-#
-# sensor:
-#   - platform: template
-#     sensors:
-#       sun_state:
-#         friendly_name: "Sun State"
-#         value_template: >-
-#           {% if is_state('sun.sun', 'above_horizon') %}
-#             up
-#           {% else %}
-#             down
-#           {% endif %}
-
-# sensor.current_temperature
-# sensor.local_temperature
-
-#- platform: template
-#  sensors:
-#    outside_vs_inside_temp:
-#    value_template: "{% if states.sensor.local_temperature.state < states.sensor.current_temperature.state %}Run Fan{% else %}Run HVAC{%endif %}"
-#    friendly_name: "Indoor Vs Outdoor"
-# ---------------------------------------------------------------------------------
-#group:
-#  sensor_node_1_card:
-#    name: Sensor Node 1
-#    entities:
-#      - sensor.sn1_temperature
-#      - sensor.sn1_humidity
-#      - sensor.sn1_ldr
-#      - sensor.sn1_pir
-
-#
-
     switch.kasa1_amps:
-     friendly_name_template: "{{ states.switch.kasa1.name}} Current"
-     value_template: '{{ states.switch.kasa1.attributes["current_a"] | float }}'
-     unit_of_measurement: 'A'
+      friendly_name_template: "{{ states.switch.kasa1.name}} Current"
+      value_template: '{{ states.switch.kasa1.attributes["current_a"] | float }}'
+      unit_of_measurement: 'A'
    switch.kasa1_watts:
-     friendly_name_template: "{{ states.switch.kasa1.name}} Current Consumption"
-     value_template: '{{ states.switch.kasa1.attributes["current_power_w"] | float }}'
-     unit_of_measurement: 'W'
+      friendly_name_template: "{{ states.switch.kasa1.name}} Current Consumption"
+      value_template: '{{ states.switch.kasa1.attributes["current_power_w"] | float }}'
+      unit_of_measurement: 'W'
    switch.kasa1_total_kwh:
-     friendly_name_template: "{{ states.switch.kasa1.name}} Total Consumption"
-     value_template: '{{ states.switch.kasa1.attributes["total_energy_kwh"] | float }}'
-     unit_of_measurement: 'kWh'
+      friendly_name_template: "{{ states.switch.kasa1.name}} Total Consumption"
+      value_template: '{{ states.switch.kasa1.attributes["total_energy_kwh"] | float }}'
+      unit_of_measurement: 'kWh'
    switch.kasa1_volts:
-     friendly_name_template: "{{ states.switch.kasa1.name}} Voltage"
-     value_template: '{{ states.switch.kasa1.attributes["voltage"] | float }}'
-     unit_of_measurement: 'V'
+      friendly_name_template: "{{ states.switch.kasa1.name}} Voltage"
+      value_template: '{{ states.switch.kasa1.attributes["voltage"] | float }}'
+      unit_of_measurement: 'V'
    switch.kasa1_today_kwh:
-     friendly_name_template: "{{ states.switch.kasa1.name}} Today's Consuption"
-     value_template: '{{ states.switch.kasa1.attributes["today_energy_kwh"] | float }}'
-     unit_of_measurement: 'kWh'
+      friendly_name_template: "{{ states.switch.kasa1.name}} Today's Consuption"
+      value_template: '{{ states.switch.kasa1.attributes["today_energy_kwh"] | float }}'
+      unit_of_measurement: 'kWh'
