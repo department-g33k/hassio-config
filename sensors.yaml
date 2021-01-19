@@ -262,8 +262,6 @@
 
 #
 
-- platform: template
-  sensors:
     switch.kasa1_amps:
      friendly_name_template: "{{ states.switch.kasa1.name}} Current"
      value_template: '{{ states.switch.kasa1.attributes["current_a"] | float }}'
