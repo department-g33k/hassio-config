@@ -217,7 +217,7 @@
 
 - platform: template
   sensors:
-    switch.kasa1_amps:
+    washer_amps:
       friendly_name_template: "{{ states.switch.kasa1.name}} Current"
       value_template: '{{ states.switch.kasa1.attributes["current_a"] | float }}'
       unit_of_measurement: 'A'
@@ -236,4 +236,28 @@
     switch.kasa1_today_kwh:
       friendly_name_template: "{{ states.switch.kasa1.name}} Today's Consuption"
       value_template: '{{ states.switch.kasa1.attributes["today_energy_kwh"] | float }}'
+      unit_of_measurement: 'kWh'
+
+
+- platform: template
+  sensors:
+    washer_amps:
+      friendly_name_template: "{{ state_attr('switch.kasa1','friendly_name') }} Current"
+      value_template: "{{ state_attr('switch.kasa1','current_a') | float }}"
+      unit_of_measurement: 'A'
+    washer_watts:
+      friendly_name_template: "{{ state_attr('switch.kasa1','friendly_name') }} Current Consumption"
+      value_template: "{{ state_attr('switch.kasa1','current_power_w') | float }}"
+      unit_of_measurement: 'W'
+    washer_total_kwh:
+      friendly_name_template: "{{ state_attr('switch.kasa1','friendly_name') }} Total Consumption"
+      value_template: "{{ state_attr('switch.kasa1','total_energy_kwh') | float }}"
+      unit_of_measurement: 'kWh'
+    washer_volts:
+      friendly_name_template: "{{ state_attr('switch.kasa1','friendly_name') }} Voltage"
+      value_template: "{{ state_attr('switch.kasa1','voltage') | float }}"
+      unit_of_measurement: 'V'
+    washer_today_kwh:
+      friendly_name_template: "{{ state_attr('switch.kasa1','friendly_name') }} Today's Consumption"
+      value_template: "{{ state_attr('switch.kasa1','today_energy_kwh') | float }}"
       unit_of_measurement: 'kWh'
