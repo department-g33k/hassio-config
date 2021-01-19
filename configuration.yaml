@@ -151,15 +151,15 @@ input_select:
     name: Washing Machine Status
     options:
       - Off
+      - Waiting
       - Running
-      - Finished
     initial: Off
   dryer_status:
     name: Dryer Status
     options:
      - Off
+     - Waiting
      - Running
-     - Finished
     initial: Off
 
 counter:
