@@ -5,3 +5,9 @@ alarm_system:
       - automation.living_room_motion_alarm
       - automation.luke_door_alarm
       - automation.tablet_cabinet_alarm
+doorguards:
+    name: Doorguards
+    entities:
+      - automation.l_door_guard
+      - automation.j_door_guard
+      - automation.le_door_alarm
