@@ -192,6 +192,14 @@ camera:
 #    port: 8089
 #    name: Driveway
 #    password: !secret driveway_password
+  - platform: mjpeg
+    mjpeg_url: http://192.168.200.108:8083/axis-cgi/mjpg/video.cgi?cameraId=1884601830
+    name: Front Lawn
+    preload_stream: true
+  - platform: mjpeg
+    mjpeg_url: http://192.168.200.108:8083/axis-cgi/mjpg/video.cgi?cameraId=1861179882
+    name: Driveway
+    preload_stream: true
 
 tplink:
   switch:
