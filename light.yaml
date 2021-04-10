@@ -174,6 +174,7 @@
     192.168.200.137:
       name: joel_led_strip
       mode: "rgb"
+      protocol: ledenet
     192.168.200.136:
       name: emily_led_strip
       mode: "rgb"
