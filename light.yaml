@@ -171,6 +171,12 @@
     192.168.200.166:
       name: desk_backlight
       mode: "rgbw"
-    192.168.200.89:
-      name: joel_leds
+    192.168.200.137:
+      name: joel_led_strip
+      mode: "rgb"
+    192.168.200.136:
+      name: emily_led_strip
+      mode: "rgb"
+    192.168.200.138:
+      name: luke_led_strip
       mode: "rgb"
