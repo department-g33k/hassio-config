@@ -234,3 +234,13 @@ notify:
   api_key: !secret pushbullet_key
 
 zone: !include zone.yaml
+
+octoprint:
+  - host: 192.168.200.203
+    api_key: 9B69BDA2C12A44828A0667367B9BDE65
+    name: AnyCubicMegaZero2
+    number_of_tools: 1
+    sensors:
+      monitored_conditions:
+        - 'Current State'
+        - 'Job Percentage'
