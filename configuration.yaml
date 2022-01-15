@@ -165,7 +165,7 @@ input_select:
 counter:
 
 lovelace:
-  mode: yaml
+  mode: storage
 #  resources:
 #    - url: /local/my-custom-card.js
 #      type: js
